@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How it works - SATONA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/howitworks.css">
+</head>
+<body>
+
+    <div class="header">
+        <a href="index.html">
+            <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+        </a>
+    </div>
+
+    <main class="page">
+        <h1>How it works</h1>
+        <p class="subtitle">Enter your 24 BIP39 words to preview the punch pattern.</p>
+
+        <div class="viewer-box">
+            <div id="svgContainer" class="svg-container">
+                Loading SVG...
+            </div>
+        </div>
+
+        <div class="tool-box">
+            <h2>Enter your 24 words</h2>
+
+            <div class="words-grid">
+                <input type="text" id="word1" placeholder="Word 1">
+                <input type="text" id="word2" placeholder="Word 2">
+                <input type="text" id="word3" placeholder="Word 3">
+                <input type="text" id="word4" placeholder="Word 4">
+                <input type="text" id="word5" placeholder="Word 5">
+                <input type="text" id="word6" placeholder="Word 6">
+                <input type="text" id="word7" placeholder="Word 7">
+                <input type="text" id="word8" placeholder="Word 8">
+                <input type="text" id="word9" placeholder="Word 9">
+                <input type="text" id="word10" placeholder="Word 10">
+                <input type="text" id="word11" placeholder="Word 11">
+                <input type="text" id="word12" placeholder="Word 12">
+                <input type="text" id="word13" placeholder="Word 13">
+                <input type="text" id="word14" placeholder="Word 14">
+                <input type="text" id="word15" placeholder="Word 15">
+                <input type="text" id="word16" placeholder="Word 16">
+                <input type="text" id="word17" placeholder="Word 17">
+                <input type="text" id="word18" placeholder="Word 18">
+                <input type="text" id="word19" placeholder="Word 19">
+                <input type="text" id="word20" placeholder="Word 20">
+                <input type="text" id="word21" placeholder="Word 21">
+                <input type="text" id="word22" placeholder="Word 22">
+                <input type="text" id="word23" placeholder="Word 23">
+                <input type="text" id="word24" placeholder="Word 24">
+            </div>
+
+            <div class="buttons">
+                <button id="previewBtn">Preview</button>
+                <button id="resetBtn" class="secondary">Reset</button>
+            </div>
+
+            <div id="message" class="message"></div>
+        </div>
+    </main>
+
+    <script src="assets/bip39-list.js"></script>
+    <script src="assets/js/howitworks.js"></script>
+</body>
+</html>
