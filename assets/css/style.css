@@ -22,7 +22,6 @@ body {
 .header img {
     height: 90px;
     width: auto;
-    display: block;
 }
 
 /* HERO */
@@ -58,42 +57,48 @@ body {
 
 /* CARD */
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
+    position: relative; /* clé pour superposition */
     background: #111;
     border-radius: 20px;
     padding: 30px 20px;
     text-align: center;
-
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
-    text-decoration: none;
-
-    height: 300px;
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
+/* HOVER */
 .card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.08);
+}
+
+/* CONTENEUR IMAGE */
+.card .icon {
+    position: relative;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* IMAGE */
 .card img {
     width: 120px;
-    height: 80px;              /* 🔥 zone contrôlée */
-    object-fit: contain;
-    object-position: center;
+    height: auto;
+    opacity: 0.9;
+}
 
-    margin-bottom: 20px;
-    display: block;
+/* TEXTE AU PREMIER PLAN */
+.card h3,
+.card p {
+    position: relative;
+    z-index: 2; /* 🔥 passe devant l’image */
 }
 
 /* TITRE */
 .card h3 {
-    margin: 0 0 10px 0;
+    margin: 10px 0;
     font-size: 18px;
 }
 
@@ -101,7 +106,6 @@ body {
 .card p {
     color: #aaa;
     font-size: 14px;
-    margin: 0;
 }
 
 /* Coin Section */
