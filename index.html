@@ -1,13 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SATONA</title>
-</head>
-<body style="background:black; color:white; text-align:center; font-family:Arial;">
+<meta charset="UTF-8">
+<title>SATONA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h1>SATONA</h1>
-  <p>Site en ligne</p>
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header img {
+  height: 40px;
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+/* GRID */
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+
+.card {
+  background: #111;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.08);
+}
+
+.card img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <img src="assets/images/satona-logo-horizontal.png" alt="SATONA">
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Seed Never Dies.</h1>
+  <p>Your crypto. Safe. Forever.</p>
+</div>
+
+<!-- FEATURES -->
+<div class="section">
+  <div class="grid">
+
+    <div class="card">
+      <img src="assets/images/bip39.png">
+      <h3>BIP39 Tool</h3>
+      <p>Convert your words instantly</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/how.png">
+      <h3>How it works</h3>
+      <p>Convert. Punch. Store.</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/shop.png">
+      <h3>Buy SATONA</h3>
+      <p>Secure your seed forever</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/why.png">
+      <h3>Why SATONA</h3>
+      <p>Fire. Water. Time. Proof.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © SATONA
+</div>
 
 </body>
 </html>
