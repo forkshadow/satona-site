@@ -21,10 +21,18 @@ async function loadSvg() {
     }
 }
 
+/* ========================= */
+/* RESET */
+/* ========================= */
+
 function resetPreview() {
-    clearWordBits(1);
+    clearAllWords();
     setMessage("");
 }
+
+/* ========================= */
+/* PREVIEW */
+/* ========================= */
 
 function previewWords() {
     if (!svgLoaded) {
@@ -37,61 +45,88 @@ function previewWords() {
         return;
     }
 
-    clearWordBits(1);
+    clearAllWords();
 
-    const word1 = document.getElementById("word1").value.trim().toLowerCase();
+    let errors = [];
 
-    if (!word1) {
-        setMessage("Enter at least word 1.");
-        return;
+    for (let i = 1; i <= 24; i++) {
+        const word = document.getElementById("word" + i).value.trim().toLowerCase();
+
+        if (!word) continue;
+
+        const binary = getBinaryForWord(word);
+
+        if (!binary) {
+            errors.push("Word " + i + " not found");
+            continue;
+        }
+
+        applyBinaryToWord(i, binary);
     }
 
-    const binary = getBinaryForWord(word1);
-
-    if (!binary) {
-        setMessage("Word 1 not found in BIP39 list.");
-        return;
+    if (errors.length > 0) {
+        setMessage(errors.join(" | "));
+    } else {
+        setMessage("");
     }
-
-    applyBinaryToWord(1, binary);
-    setMessage("");
 }
+
+/* ========================= */
+/* BIP39 */
+/* ========================= */
 
 function getBinaryForWord(word) {
     if (typeof bip39List !== "undefined" && bip39List[word] !== undefined) {
         return String(bip39List[word]).padStart(11, "0");
     }
-
     return null;
 }
+
+/* ========================= */
+/* APPLY BITS */
+/* ========================= */
 
 function applyBinaryToWord(wordIndex, binary) {
     for (let i = 0; i < 11; i++) {
         const bit = binary[i];
         const element = document.getElementById(`w${wordIndex}-b${i + 1}`);
 
-        if (!element) {
-            continue;
-        }
+        if (!element) continue;
 
         if (bit === "1") {
             element.setAttribute("fill", "white");
             element.style.fill = "white";
+        } else {
+            element.setAttribute("fill", "black");
+            element.style.fill = "black";
         }
     }
 }
 
+/* ========================= */
+/* CLEAR */
+/* ========================= */
+
 function clearWordBits(wordIndex) {
     for (let i = 1; i <= 11; i++) {
         const element = document.getElementById(`w${wordIndex}-b${i}`);
-        if (!element) {
-            continue;
-        }
+
+        if (!element) continue;
 
         element.setAttribute("fill", "black");
         element.style.fill = "black";
     }
 }
+
+function clearAllWords() {
+    for (let w = 1; w <= 24; w++) {
+        clearWordBits(w);
+    }
+}
+
+/* ========================= */
+/* MESSAGE */
+/* ========================= */
 
 function setMessage(text) {
     document.getElementById("message").textContent = text;
