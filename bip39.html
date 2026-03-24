@@ -24,19 +24,26 @@
     </div>
 
     <script>
-        // Exemple de petite base JSON avec quelques mots (à compléter avec ta liste)
-        const bip39List = {
-            "abandon": "00000000000",
-            "ability": "00000000001",
-            // Ajouter les autres mots BIP39 ici
-        };
+        let bip39List = {};
+
+        // Charger le fichier JSON
+        fetch('assets/bip39-list.js')
+            .then(response => response.json())
+            .then(data => {
+                bip39List = data;
+            })
+            .catch(error => {
+                console.error('Erreur de chargement du fichier JSON :', error);
+            });
 
         function getBinary() {
-            const word = document.getElementById('bipInput').value.toLowerCase();
-            if (bip39List[word]) {
-                document.getElementById('result').textContent = 'Binaire : ' + bip39List[word];
+            const word = document.getElementById('bipInput').value.trim().toLowerCase();
+            const result = document.getElementById('result');
+
+            if (bip39List[word] !== undefined) {
+                result.textContent = 'Binaire : ' + bip39List[word];
             } else {
-                document.getElementById('result').textContent = 'Mot non trouvé.';
+                result.textContent = 'Mot non trouvé.';
             }
         }
     </script>
