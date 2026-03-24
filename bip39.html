@@ -10,7 +10,9 @@
 
     <!-- HEADER FIXE -->
     <div class="header">
-        <a href="index.html"> <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo"> </a>
+        <a href="index.html">
+            <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+        </a>
     </div>
 
     <!-- CONTENU PRINCIPAL -->
@@ -23,22 +25,19 @@
         </div>
     </div>
 
+    <!-- ON CHARGE LA LISTE -->
+    <script src="assets/bip39-list.js"></script>
+
+    <!-- SCRIPT PRINCIPAL -->
     <script>
-        let bip39List = {};
-
-        // Charger le fichier JSON
-        fetch('assets/bip39-list.js')
-            .then(response => response.json())
-            .then(data => {
-                bip39List = data;
-            })
-            .catch(error => {
-                console.error('Erreur de chargement du fichier JSON :', error);
-            });
-
         function getBinary() {
             const word = document.getElementById('bipInput').value.trim().toLowerCase();
             const result = document.getElementById('result');
+
+            if (typeof bip39List === "undefined") {
+                result.textContent = "Erreur : liste non chargée.";
+                return;
+            }
 
             if (bip39List[word] !== undefined) {
                 result.textContent = 'Binaire : ' + bip39List[word];
