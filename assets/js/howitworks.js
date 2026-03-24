@@ -75,8 +75,8 @@ function applyBinaryToWord(wordIndex, binary) {
         }
 
         if (bit === "1") {
-            element.setAttribute("fill", "red");
-            element.style.fill = "red";
+            element.setAttribute("fill", "white");
+            element.style.fill = "white";
         }
     }
 }
@@ -88,8 +88,8 @@ function clearWordBits(wordIndex) {
             continue;
         }
 
-        element.setAttribute("fill", "white");
-        element.style.fill = "white";
+        element.setAttribute("fill", "black");
+        element.style.fill = "black";
     }
 }
 
