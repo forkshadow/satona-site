@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BIP39 Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d0d0d;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+        input {
+            padding: 10px;
+            font-size: 18px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        #result {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BIP39 Tool</h1>
+    <input type="text" id="bipInput" placeholder="Tapez un mot BIP39">
+    <div id="result"></div>
+
+    <script>
+        // Exemple de petite base JSON avec quelques mots (à compléter avec ta liste)
+        const bip39List = {
+            "abandon": "0000101010...",
+            "ability": "001010101...",
+            // Ajouter les autres mots BIP39 ici
+        };
+
+        // Fonction qui s'exécute quand on tape dans le champ
+        document.getElementById('bipInput').addEventListener('input', function() {
+            const word = this.value.toLowerCase();
+            if (bip39List[word]) {
+                document.getElementById('result').textContent = 'Binaire : ' + bip39List[word];
+            } else {
+                document.getElementById('result').textContent = 'Mot non trouvé.';
+            }
+        });
+    </script>
+
+</body>
+</html>
