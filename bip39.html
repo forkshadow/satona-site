@@ -9,49 +9,95 @@
             font-family: Arial, sans-serif;
             background: #0d0d0d;
             color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #000;
+            padding: 15px 0;
             text-align: center;
-            padding: 50px 20px;
+            z-index: 1000;
+        }
+        .header img {
+            width: 200px;
+            height: auto;
+        }
+        .container {
+            padding: 150px 20px 50px 20px; /* espace pour ne pas être caché par l'en-tête */
         }
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             font-size: 36px;
         }
+        .input-box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
         input {
-            padding: 10px;
-            font-size: 18px;
-            width: 300px;
+            padding: 15px;
+            font-size: 20px;
+            width: 350px;
+            border: none;
+            border-radius: 5px;
             margin-bottom: 20px;
         }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background: #ffcc00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e6b800;
+        }
         #result {
-            font-size: 20px;
-            margin-top: 20px;
+            font-size: 24px;
+            margin-top: 30px;
             color: #aaa;
         }
     </style>
 </head>
 <body>
 
-    <h1>BIP39 Tool</h1>
-    <input type="text" id="bipInput" placeholder="Tapez un mot BIP39">
-    <div id="result"></div>
+    <!-- HEADER FIXE -->
+    <div class="header">
+        <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="container">
+        <h1>BIP39 Tool</h1>
+        <div class="input-box">
+            <input type="text" id="bipInput" placeholder="Tapez un mot BIP39">
+            <button onclick="getBinary()">Convertir</button>
+            <div id="result"></div>
+        </div>
+    </div>
 
     <script>
         // Exemple de petite base JSON avec quelques mots (à compléter avec ta liste)
         const bip39List = {
-            "abandon": "0000101010...",
-            "ability": "001010101...",
+            "abandon": "00000000000",
+            "ability": "00000000001",
             // Ajouter les autres mots BIP39 ici
         };
 
-        // Fonction qui s'exécute quand on tape dans le champ
-        document.getElementById('bipInput').addEventListener('input', function() {
-            const word = this.value.toLowerCase();
+        function getBinary() {
+            const word = document.getElementById('bipInput').value.toLowerCase();
             if (bip39List[word]) {
                 document.getElementById('result').textContent = 'Binaire : ' + bip39List[word];
             } else {
                 document.getElementById('result').textContent = 'Mot non trouvé.';
             }
-        });
+        }
     </script>
 
 </body>
