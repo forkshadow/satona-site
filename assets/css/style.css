@@ -108,6 +108,20 @@ body {
     transform: scale(1.1); /* Effet zoom au survol */
 }
 
+
+a {
+    color: inherit;     /* Prend la couleur du parent */
+    text-decoration: none; /* Enlève le soulignement */
+}
+
+a:hover {
+    color: inherit; /* Garde la même couleur au survol */
+    text-decoration: underline; /* Si tu veux ajouter un léger soulignement au survol, enlève si non voulu */
+}
+
+
+
+
 /* FOOTER */
 .footer {
     text-align: center;
