@@ -10,7 +10,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #000; /* Bande noire */
+    background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,15 +20,15 @@ body {
 }
 
 .header img {
-    height: 90px; /* Logo plus grand et étiré */
+    height: 90px;
     width: auto;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 80px 20px 40px; /* Réduction de l'espace */
-    margin-top: 90px; /* Pour ne pas être caché sous le header */
+    padding: 80px 20px 40px;
+    margin-top: 90px;
 }
 
 .hero h1 {
@@ -52,27 +52,33 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px; /* Réduction de l’écart */
+    gap: 30px;
 }
 
 /* CARD */
 .card {
+    display: block; /* IMPORTANT pour les <a> */
     background: #111;
     border-radius: 20px;
     padding: 30px 20px;
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: none; /* évite soulignement */
 }
 
 .card:hover {
     transform: translateY(-8px);
     box-shadow: none;
+    text-decoration: none;
 }
 
 .card img {
     width: 120px;
     margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card h3 {
@@ -88,7 +94,7 @@ body {
 /* Coin Section */
 .coin-section {
     text-align: center;
-    margin-top: 60px; /* Réduit l'écart */
+    margin-top: 60px;
 }
 
 .coin-section h3 {
@@ -98,33 +104,31 @@ body {
 }
 
 .coin-section img {
-    width: 180px; /* Taille ajustée au milieu */
+    width: 180px;
     height: auto;
     margin-top: 20px;
     transition: transform 0.3s ease;
 }
 
 .coin-section img:hover {
-    transform: scale(1.1); /* Effet zoom au survol */
+    transform: scale(1.1);
 }
 
-
+/* LIENS GLOBAUX */
 a {
-    color: inherit;     /* Prend la couleur du parent */
-    text-decoration: none; /* Enlève le soulignement */
+    color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
-    color: inherit; /* Garde la même couleur au survol */
-    text-decoration: underline; /* Si tu veux ajouter un léger soulignement au survol, enlève si non voulu */
+    color: inherit;
+    text-decoration: none;
 }
-
-
-
 
 /* FOOTER */
 .footer {
     text-align: center;
     padding: 40px;
     color: #666;
-    font-size:
+    font-size: 14px;
+}
