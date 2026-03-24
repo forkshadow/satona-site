@@ -15,20 +15,20 @@ body {
     align-items: center;
     justify-content: center;
     padding: 15px 0;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1); /* Légère ombre */
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
     z-index: 1000;
 }
 
 .header img {
-    height: 80px; /* Agrandi */
+    height: 90px; /* Logo plus grand et étiré */
     width: auto;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 100px 20px 60px; /* Padding augmenté pour laisser place à la barre fixe */
-    margin-top: 80px; /* Pour éviter que le contenu soit caché sous le header */
+    padding: 80px 20px 40px; /* Réduction de l'espace */
+    margin-top: 90px; /* Pour ne pas être caché sous le header */
 }
 
 .hero h1 {
@@ -52,7 +52,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
+    gap: 30px; /* Réduction de l’écart */
 }
 
 /* CARD */
@@ -88,7 +88,7 @@ body {
 /* Coin Section */
 .coin-section {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 60px; /* Réduit l'écart */
 }
 
 .coin-section h3 {
@@ -98,9 +98,14 @@ body {
 }
 
 .coin-section img {
-    width: 150px; /* Taille ajustée pour réduire les pièces */
+    width: 180px; /* Taille ajustée au milieu */
     height: auto;
     margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.coin-section img:hover {
+    transform: scale(1.1); /* Effet zoom au survol */
 }
 
 /* FOOTER */
@@ -108,5 +113,4 @@ body {
     text-align: center;
     padding: 40px;
     color: #666;
-    font-size: 14px;
-}
+    font-size:
