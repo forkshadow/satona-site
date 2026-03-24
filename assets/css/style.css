@@ -75,10 +75,9 @@ body {
 
 .card img {
     width: 120px;
+    height: 120px;        /* hauteur fixe */
+    object-fit: contain;  /* garde les proportions */
     margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .card h3 {
