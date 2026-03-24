@@ -25,20 +25,58 @@ body {
 }
 
 /* HERO */
+/* HERO */
 .hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 60px 20px 30px;
-    margin-top: 70px;
+    overflow: hidden;
 }
 
+/* IMAGE DE FOND */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: url('../images/coin-finger.png') center center / cover no-repeat;
+
+    filter: brightness(0.5); /* assombrit pour lisibilité */
+
+    z-index: 1;
+
+    /* léger zoom vivant */
+    animation: slowZoom 12s ease-in-out infinite alternate;
+}
+
+/* CONTENU AU DESSUS */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+/* TITRE */
 .hero h1 {
-    font-size: 48px;
+    font-size: 56px;
     margin-bottom: 10px;
 }
 
+/* TEXTE */
 .hero p {
-    color: #aaa;
-    font-size: 25px;
+    color: #ccc;
+    font-size: 24px;
+}
+
+/* ANIMATION ZOOM */
+@keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
 }
 
 /* SECTION */
