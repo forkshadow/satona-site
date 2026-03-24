@@ -5,22 +5,30 @@ body {
     color: white;
 }
 
-/* HEADER */
+/* HEADER FIXE */
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000; /* Bande noire */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1); /* Légère ombre */
+    z-index: 1000;
 }
 
 .header img {
-    height: 60px; /* Taille agrandie du logo */
+    height: 80px; /* Agrandi */
+    width: auto;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px 60px; /* Padding augmenté pour laisser place à la barre fixe */
+    margin-top: 80px; /* Pour éviter que le contenu soit caché sous le header */
 }
 
 .hero h1 {
@@ -80,7 +88,7 @@ body {
 /* Coin Section */
 .coin-section {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .coin-section h3 {
@@ -90,7 +98,7 @@ body {
 }
 
 .coin-section img {
-    width: 200px; /* ajustable selon la pièce */
+    width: 150px; /* Taille ajustée pour réduire les pièces */
     height: auto;
     margin-top: 20px;
 }
