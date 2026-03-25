@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SATONA</title>
+    <title>BIP39 Tool - SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- CSS spécifique -->
+    <link rel="stylesheet" href="assets/css/bip39.css">
 </head>
 
-<body>
+<body class="subpage">
 
     <!-- HEADER -->
     <header class="header">
 
-        <!-- LOGO CENTRÉ -->
         <a href="index.html" class="logo">
             <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
         </a>
@@ -41,63 +44,25 @@
         <a href="#">Security</a>
     </div>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-bg"></div>
+    <!-- CONTENU -->
+    <main class="container">
 
-        <div class="hero-content">
-            <h1>Seed Never Dies.</h1>
-            <p>Your crypto. Safe. Forever.</p>
+        <h1>BIP39 Tool</h1>
 
-            <a href="#" class="hero-cta">Buy now</a>
-        </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="section">
-        <div class="grid">
-
-            <a href="bip39.html" class="card">
-                <img src="assets/images/bip39.png" alt="BIP39 Tool">
-                <h3>BIP39 Tool</h3>
-                <p>Convert your words instantly</p>
-            </a>
-
-            <a href="howitworks.html" class="card">
-                <img src="assets/images/how.png" alt="How it works">
-                <h3>How it works</h3>
-                <p>Convert. Punch. Store.</p>
-            </a>
-
-            <div class="card">
-                <img src="assets/images/shop.png" alt="Buy SATONA">
-                <h3>Buy SATONA</h3>
-                <p>Secure your seed forever</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/images/why.png" alt="Why SATONA">
-                <h3>Why SATONA</h3>
-                <p>Fire. Water. Time. Proof.</p>
-            </div>
-
+        <div class="input-box">
+            <input type="text" id="bipInput" placeholder="Enter a BIP39 word">
+            <button onclick="getBinary()">Convert</button>
+            <div id="result"></div>
         </div>
 
-        <div class="coin-section">
-            <h3>Your SATONA Plate</h3>
-            <img src="assets/images/coin.png" alt="SATONA Coin">
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        © SATONA
-    </footer>
+    </main>
 
     <!-- HEADER SCROLL -->
     <script>
         window.addEventListener("scroll", function() {
             const header = document.querySelector(".header");
+            if (!header) return;
+
             if (window.scrollY > 50) {
                 header.classList.add("scrolled");
             } else {
@@ -111,9 +76,33 @@
         const burger = document.getElementById("burger");
         const mobileMenu = document.getElementById("mobileMenu");
 
-        burger.addEventListener("click", () => {
-            mobileMenu.classList.toggle("active");
-        });
+        if (burger && mobileMenu) {
+            burger.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+    <!-- LISTE BIP39 -->
+    <script src="assets/bip39-list.js"></script>
+
+    <!-- SCRIPT PRINCIPAL -->
+    <script>
+        function getBinary() {
+            const word = document.getElementById('bipInput').value.trim().toLowerCase();
+            const result = document.getElementById('result');
+
+            if (typeof bip39List === "undefined") {
+                result.textContent = "Error: list not loaded.";
+                return;
+            }
+
+            if (bip39List[word] !== undefined) {
+                result.textContent = 'Binary: ' + bip39List[word];
+            } else {
+                result.textContent = 'Word not found.';
+            }
+        }
     </script>
 
 </body>
