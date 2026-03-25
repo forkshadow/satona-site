@@ -5,18 +5,23 @@
     <title>How it works - SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS PAGE -->
     <link rel="stylesheet" href="assets/css/howitworks.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header class="header">
     <a href="index.html">
         <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
     </a>
 </header>
 
+<!-- HERO -->
 <section class="how-hero">
     <div class="how-bg"></div>
 
@@ -28,32 +33,29 @@
     </div>
 </section>
 
-<!-- PLATES -->
+<!-- 🪙 PLATE UNIQUE -->
 <section class="plates-section">
 
-    <div class="plates">
+    <!-- SVG UNIQUE -->
+    <div class="svg-container" id="plateFull"></div>
 
-        <div class="plate">
-            <h3>Front</h3>
-            <div class="svg-container" id="plateFront"></div>
-        </div>
-
-        <div class="plate">
-            <h3>Back</h3>
-            <div class="svg-container" id="plateBack"></div>
-        </div>
-
+    <!-- FRONT / BACK -->
+    <div class="plate-labels">
+        <span>FRONT</span>
+        <span>BACK</span>
     </div>
 
 </section>
 
+<!-- 📖 STEPS -->
 <section class="steps">
-    <div class="step">1. Enter your 24 words</div>
-    <div class="step">2. Convert to binary</div>
-    <div class="step">3. Punch the plate</div>
-    <div class="step">4. Store forever</div>
+    <div class="step">Enter your 24 words</div>
+    <div class="step">Convert to binary</div>
+    <div class="step">Punch the plate</div>
+    <div class="step">Store forever</div>
 </section>
 
+<!-- INPUT -->
 <section class="input-section">
 
     <h2>Enter your 24 BIP39 words</h2>
@@ -75,10 +77,12 @@
 
 </section>
 
+<!-- RESULT (optionnel en bas) -->
 <section class="viewer-box">
-    <div id="svgContainer" class="svg-container"></div>
+    <div id="svgContainer"></div>
 </section>
 
+<!-- JS -->
 <script src="assets/bip39-list.js"></script>
 <script src="assets/js/howitworks.js"></script>
 
