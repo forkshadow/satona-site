@@ -40,7 +40,6 @@ body {
     overflow: hidden;
 }
 
-/* 🔥 FIX CRUCIAL */
 .how-bg {
     position: absolute;
     inset: 0;
@@ -49,7 +48,6 @@ body {
     z-index: 0;
 }
 
-/* effet fumé */
 .how-bg::after {
     content: "";
     position: absolute;
@@ -68,62 +66,39 @@ body {
 
 .subtitle {
     color: #aaa;
-    font-size: 16px;
 }
 
 /* ========================= */
-/* 🪙 PLATES */
+/* 🪙 PLATE UNIQUE */
 /* ========================= */
 
 .plates-section {
-    position: relative;
-    z-index: 2;
+    text-align: center;
     padding: 40px 0 80px;
 }
 
-.plates {
-    display: flex;
-    width: 100%;
-}
-
-/* CHAQUE MOITIÉ */
-.plate {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* séparation fine */
-.plate:last-child {
-    border-left: 1px solid rgba(255,255,255,0.05);
-}
-
-/* SVG */
 .svg-container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-/* 🔥 FULL WIDTH FIX */
 .svg-container svg {
     width: 100%;
-    max-width: 600px; /* évite que ça devienne énorme sur desktop */
+    max-width: 900px;
     height: auto;
     background: transparent !important;
-
     filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
-    transition: transform 0.3s ease;
 }
 
-.svg-container svg:hover {
-    transform: scale(1.02);
-}
+/* FRONT BACK */
+.plate-labels {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 20px auto 0;
+    padding: 0 10px;
 
-/* TITRES */
-.plate h3 {
-    margin-top: 15px;
     font-size: 14px;
     letter-spacing: 2px;
     opacity: 0.6;
@@ -146,7 +121,6 @@ body {
     font-size: 13px;
     letter-spacing: 1px;
     opacity: 0.6;
-    text-transform: uppercase;
 }
 
 /* ========================= */
@@ -154,8 +128,6 @@ body {
 /* ========================= */
 
 .input-section {
-    position: relative;
-    z-index: 2;
     padding: 60px 20px;
     max-width: 1000px;
     margin: auto;
@@ -214,19 +186,12 @@ button.secondary {
 
 @media (max-width: 768px) {
 
-    .plates {
-        flex-direction: column;
-    }
-
-    .plate {
-        width: 100%;
-        margin-bottom: 50px;
-        border-left: none;
+    .plate-labels {
+        max-width: 90%;
     }
 
     .svg-container svg {
-        width: 90%;
-        max-width: none;
+        width: 95%;
     }
 
     .words-grid {
