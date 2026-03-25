@@ -5,23 +5,18 @@
     <title>How it works - SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- CSS PAGE -->
     <link rel="stylesheet" href="assets/css/howitworks.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="header">
     <a href="index.html">
-        <img src="assets/images/satona-logo-horizontal.png">
+        <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
     </a>
 </header>
 
-<!-- HERO -->
 <section class="how-hero">
     <div class="how-bg"></div>
 
@@ -33,7 +28,7 @@
     </div>
 </section>
 
-<!-- 🪙 PLATES -->
+<!-- PLATES -->
 <section class="plates-section">
 
     <div class="plates">
@@ -52,7 +47,6 @@
 
 </section>
 
-<!-- 📖 STEPS -->
 <section class="steps">
     <div class="step">1. Enter your 24 words</div>
     <div class="step">2. Convert to binary</div>
@@ -60,13 +54,11 @@
     <div class="step">4. Store forever</div>
 </section>
 
-<!-- INPUT -->
 <section class="input-section">
 
     <h2>Enter your 24 BIP39 words</h2>
 
     <div class="words-grid">
-        <!-- 24 inputs -->
         <script>
             for(let i=1;i<=24;i++){
                 document.write(`<input type="text" id="word${i}" placeholder="Word ${i}">`);
@@ -83,12 +75,10 @@
 
 </section>
 
-<!-- RESULT SVG -->
 <section class="viewer-box">
     <div id="svgContainer" class="svg-container"></div>
 </section>
 
-<!-- JS -->
 <script src="assets/bip39-list.js"></script>
 <script src="assets/js/howitworks.js"></script>
 
