@@ -78,6 +78,11 @@ body {
     padding: 60px 0;
 }
 
+#svgContainer {
+    width: 100%;
+    margin: 0 auto 24px;
+}
+
 .plates {
     display: flex;
     width: 100%;
@@ -111,6 +116,16 @@ body {
 
     filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
     transition: transform 0.3s ease;
+}
+
+#svgContainer svg {
+    width: 100%;
+    max-width: none;
+}
+
+#plateFront,
+#plateBack {
+    display: none;
 }
 
 .svg-container svg:hover {
