@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <title>How it works - SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS GLOBAL (important pour header + cohérence) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS spécifique -->
     <link rel="stylesheet" href="assets/css/howitworks.css">
 </head>
-<body>
 
-    <div class="header">
+<body class="subpage">
+
+    <!-- HEADER FIXE -->
+    <header class="header">
         <a href="index.html">
             <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
         </a>
-    </div>
+    </header>
 
     <main class="page">
+
         <h1>How it works</h1>
         <p class="subtitle">Enter your 24 BIP39 words to preview the punch pattern.</p>
 
@@ -61,9 +69,24 @@
                 Loading SVG...
             </div>
         </div>
+
     </main>
 
+    <!-- SCRIPT HEADER SCROLL -->
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+    <!-- DATA + LOGIQUE -->
     <script src="assets/bip39-list.js"></script>
     <script src="assets/js/howitworks.js"></script>
+
 </body>
 </html>
