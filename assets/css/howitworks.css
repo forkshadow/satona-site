@@ -37,11 +37,10 @@ body {
     padding: 160px 20px 80px;
     text-align: center;
     min-height: 60vh;
-    overflow: hidden;
 }
 
 .how-bg {
-    position: absolute;
+    position: fixed;
     inset: 0;
     background: url('/assets/images/howsatona.png') center 20% / cover no-repeat;
     filter: brightness(0.4);
@@ -66,17 +65,39 @@ body {
 
 .subtitle {
     color: #aaa;
+    font-size: 16px;
 }
 
 /* ========================= */
-/* 🪙 PLATE UNIQUE */
+/* 🪙 PLATES FULL WIDTH */
 /* ========================= */
 
 .plates-section {
-    text-align: center;
-    padding: 40px 0 80px;
+    position: relative;
+    z-index: 2;
+    padding: 60px 0;
 }
 
+.plates {
+    display: flex;
+    width: 100%;
+}
+
+/* CHAQUE MOITIÉ */
+.plate {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+.plate:last-child {
+    border-right: none;
+}
+
+/* SVG */
 .svg-container {
     width: 100%;
     display: flex;
@@ -84,35 +105,35 @@ body {
 }
 
 .svg-container svg {
-    width: 100%;
-    max-width: 900px;
+    width: 90%;
     height: auto;
     background: transparent !important;
+
     filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
+    transition: transform 0.3s ease;
 }
 
-/* FRONT BACK */
-.plate-labels {
-    display: flex;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 20px auto 0;
-    padding: 0 10px;
+.svg-container svg:hover {
+    transform: scale(1.03);
+}
 
+/* TITRES */
+.plate h3 {
+    margin-top: 20px;
     font-size: 14px;
     letter-spacing: 2px;
     opacity: 0.6;
 }
 
 /* ========================= */
-/* STEPS */
+/* 📖 STEPS */
 /* ========================= */
 
 .steps {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 40px 20px;
+    padding: 50px 20px;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -121,13 +142,16 @@ body {
     font-size: 13px;
     letter-spacing: 1px;
     opacity: 0.6;
+    text-transform: uppercase;
 }
 
 /* ========================= */
-/* INPUT */
+/* 🧮 INPUT */
 /* ========================= */
 
 .input-section {
+    position: relative;
+    z-index: 2;
     padding: 60px 20px;
     max-width: 1000px;
     margin: auto;
@@ -186,20 +210,28 @@ button.secondary {
 
 @media (max-width: 768px) {
 
-    .plate-labels {
-        max-width: 90%;
+    .plates {
+        flex-direction: column;
+    }
+
+    .plate {
+        width: 100%;
+        margin-bottom: 40px;
+        border-right: none;
     }
 
     .svg-container svg {
-        width: 95%;
+        width: 80%;
     }
 
     .words-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .how-hero {
-        padding: 120px 15px 40px;
+    /* FIX iPhone */
+    .how-bg {
+        position: absolute;
+        height: 120%;
     }
 }
 
