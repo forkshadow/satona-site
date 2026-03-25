@@ -62,19 +62,27 @@ body {
     align-items: center;
 }
 
-/* 🔥 SVG FIX */
+/* SVG */
 .svg-container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-/* 🔥 IMPORTANT */
+/* 🔥 FIX IMPORTANT */
 .svg-container svg {
     width: 100%;
     max-width: 900px;
     height: auto;
     background: transparent !important;
+}
+
+/* TEXTES FRONT BACK */
+.plate h3 {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.6;
 }
 
 /* INPUT */
