@@ -1,11 +1,22 @@
 let svgLoaded = false;
 
 document.addEventListener("DOMContentLoaded", async () => {
+    moveSvgContainerToTop();
     await loadSvg();
 
     document.getElementById("previewBtn").addEventListener("click", previewWords);
     document.getElementById("resetBtn").addEventListener("click", resetPreview);
 });
+
+function moveSvgContainerToTop() {
+    const platesSection = document.querySelector(".plates-section");
+    const platesRow = document.querySelector(".plates");
+    const svgContainer = document.getElementById("svgContainer");
+
+    if (!platesSection || !platesRow || !svgContainer) return;
+
+    platesSection.insertBefore(svgContainer, platesRow);
+}
 
 async function loadSvg() {
     const container = document.getElementById("svgContainer");
@@ -68,6 +79,11 @@ function previewWords() {
         setMessage(errors.join(" | "));
     } else {
         setMessage("");
+    }
+
+    const svgContainer = document.getElementById("svgContainer");
+    if (svgContainer) {
+        svgContainer.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 }
 
