@@ -37,19 +37,16 @@ body {
     padding: 160px 20px 80px;
     text-align: center;
     min-height: 60vh;
-    overflow: hidden;
 }
 
-/* 🔥 FIX CRUCIAL */
 .how-bg {
-    position: absolute;
+    position: fixed;
     inset: 0;
     background: url('/assets/images/howsatona.png') center 20% / cover no-repeat;
     filter: brightness(0.4);
     z-index: 0;
 }
 
-/* effet fumé */
 .how-bg::after {
     content: "";
     position: absolute;
@@ -72,13 +69,13 @@ body {
 }
 
 /* ========================= */
-/* 🪙 PLATES */
+/* 🪙 PLATES FULL WIDTH */
 /* ========================= */
 
 .plates-section {
     position: relative;
     z-index: 2;
-    padding: 40px 0 80px;
+    padding: 60px 0;
 }
 
 .plates {
@@ -92,11 +89,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    border-right: 1px solid rgba(255,255,255,0.05);
 }
 
-/* séparation fine */
 .plate:last-child {
-    border-left: 1px solid rgba(255,255,255,0.05);
+    border-right: none;
 }
 
 /* SVG */
@@ -106,10 +104,8 @@ body {
     justify-content: center;
 }
 
-/* 🔥 FULL WIDTH FIX */
 .svg-container svg {
-    width: 100%;
-    max-width: 600px; /* évite que ça devienne énorme sur desktop */
+    width: 90%;
     height: auto;
     background: transparent !important;
 
@@ -118,26 +114,26 @@ body {
 }
 
 .svg-container svg:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 /* TITRES */
 .plate h3 {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 14px;
     letter-spacing: 2px;
     opacity: 0.6;
 }
 
 /* ========================= */
-/* STEPS */
+/* 📖 STEPS */
 /* ========================= */
 
 .steps {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 40px 20px;
+    padding: 50px 20px;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -150,7 +146,7 @@ body {
 }
 
 /* ========================= */
-/* INPUT */
+/* 🧮 INPUT */
 /* ========================= */
 
 .input-section {
@@ -220,21 +216,22 @@ button.secondary {
 
     .plate {
         width: 100%;
-        margin-bottom: 50px;
-        border-left: none;
+        margin-bottom: 40px;
+        border-right: none;
     }
 
     .svg-container svg {
-        width: 90%;
-        max-width: none;
+        width: 80%;
     }
 
     .words-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .how-hero {
-        padding: 120px 15px 40px;
+    /* FIX iPhone */
+    .how-bg {
+        position: absolute;
+        height: 120%;
     }
 }
 
