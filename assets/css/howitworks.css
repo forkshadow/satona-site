@@ -6,164 +6,126 @@ body {
     color: white;
 }
 
-/* ========================= */
 /* HEADER */
-/* ========================= */
-
 .header {
     position: fixed;
     top: 0;
     width: 100%;
     background: #000;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 15px 0;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
     z-index: 1000;
 }
 
 .header img {
-    height: 90px;
+    height: 80px;
 }
 
-/* ========================= */
-/* HERO PARALLAX */
-/* ========================= */
-
+/* HERO */
 .how-hero {
     position: relative;
-    padding: 140px 20px 60px;
-    overflow: hidden;
-    min-height: 70vh;
+    padding: 160px 20px 80px;
+    text-align: center;
+    min-height: 60vh;
 }
 
-/* 🔥 IMAGE FIXE (TRUE PARALLAX) */
 .how-bg {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
+    inset: 0;
     background: url('/assets/images/howsatona.png') center 20% / cover no-repeat;
-
-    z-index: 0;
     filter: brightness(0.4);
+    z-index: 0;
 }
 
-/* FUMÉ */
 .how-bg::after {
     content: "";
     position: absolute;
     inset: 0;
-
-    background: radial-gradient(
-        circle at center,
-        rgba(0,0,0,0.2) 0%,
-        rgba(0,0,0,0.85) 80%
-    );
+    background: radial-gradient(circle, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
 }
 
-/* CONTENU AU-DESSUS */
 .how-content {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* ========================= */
-/* TEXTES */
-/* ========================= */
-
-h1 {
-    text-align: center;
-    margin-bottom: 10px;
 }
 
 .subtitle {
-    text-align: center;
     color: #aaa;
-    margin-bottom: 35px;
 }
 
-/* ========================= */
-/* TOOL BOX (TRANSPARENT) */
-/* ========================= */
-
-.tool-box {
-    background: transparent;
-    border-radius: 20px;
-    padding: 25px;
-    margin-bottom: 30px;
-}
-
-/* ========================= */
-/* SVG ZONE */
-/* ========================= */
-
-.viewer-box {
+/* PLATES */
+.plates-section {
     position: relative;
     z-index: 2;
-    background: transparent;
-    border-radius: 20px;
-    padding: 25px;
-    margin: 40px auto;
-    max-width: 1200px;
+    padding: 60px 20px;
 }
 
-/* ========================= */
-/* GRID */
-/* ========================= */
+.plates {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.plate {
+    text-align: center;
+}
+
+.svg-container svg {
+    background: transparent !important;
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.8));
+}
+
+/* STEPS */
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    opacity: 0.7;
+}
+
+/* INPUT */
+.input-section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
 
 .words-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(160px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
 }
 
 .words-grid input {
     background: rgba(0,0,0,0.4);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
     padding: 12px;
+    border-radius: 10px;
     color: white;
-    font-size: 14px;
 }
 
-.words-grid input:focus {
-    border-color: rgba(255,255,255,0.4);
-}
-
-/* ========================= */
 /* BUTTONS */
-/* ========================= */
-
 .buttons {
-    position: relative;
-    z-index: 2;
-
+    margin-top: 30px;
     display: flex;
-    gap: 12px;
-    margin: 30px auto;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 10px;
 }
 
 button {
-    background: #fff;
-    color: #000;
-    border: none;
-    border-radius: 12px;
     padding: 12px 18px;
-    font-weight: bold;
+    border-radius: 10px;
+    border: none;
     cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-button:hover {
-    transform: translateY(-2px);
 }
 
 button.secondary {
@@ -171,55 +133,25 @@ button.secondary {
     color: white;
 }
 
-/* ========================= */
-/* MESSAGE */
-/* ========================= */
-
-.message {
-    margin-top: 18px;
-    color: #ff8a8a;
+/* RESULT */
+.viewer-box {
+    padding: 60px;
     text-align: center;
 }
 
-/* ========================= */
-/* SVG */
-/* ========================= */
-
-.svg-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-}
-
-.svg-container svg {
-    max-width: 100%;
-    max-height: 900px;
-}
-
-/* ========================= */
-/* MOBILE FIX (IMPORTANT) */
-/* ========================= */
-
+/* MOBILE */
 @media (max-width: 768px) {
 
-    /* 🔥 iPhone fix */
+    .plates {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .words-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .how-bg {
-        position: absolute; /* sinon bug iOS */
-        height: 120%;
-    }
-
-    .how-hero {
-        padding: 120px 15px 40px;
-    }
-
-    .words-grid {
-        grid-template-columns: repeat(2, minmax(140px, 1fr));
-    }
-}
-
-@media (max-width: 560px) {
-    .words-grid {
-        grid-template-columns: 1fr;
+        position: absolute;
     }
 }
