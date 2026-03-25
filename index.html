@@ -4,65 +4,83 @@
     <meta charset="UTF-8">
     <title>SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <!-- HEADER FIXE -->
-    <div class="header">
-<a href="index.html">
-    <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
-</a>
-    </div>
+    <header class="header">
+        <a href="index.html">
+            <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+        </a>
+    </header>
 
     <!-- HERO -->
-<!-- HERO -->
-<div class="hero">
-    <div class="hero-bg"></div>
+    <section class="hero">
+        <div class="hero-bg"></div>
 
-    <div class="hero-content">
-        <h1>Seed Never Dies.</h1>
-        <p>Your crypto. Safe. Forever.</p>
-    </div>
-</div>
+        <div class="hero-content">
+            <h1>Seed Never Dies.</h1>
+            <p>Your crypto. Safe. Forever.</p>
+        </div>
+    </section>
 
     <!-- FEATURES -->
-    <div class="section">
+    <section class="section">
         <div class="grid">
+
             <a href="bip39.html" class="card">
                 <img src="assets/images/bip39.png" alt="BIP39 Tool">
                 <h3>BIP39 Tool</h3>
                 <p>Convert your words instantly</p>
             </a>
-            <div class="card">
-                <a href="howitworks.html" class="card">
+
+            <a href="howitworks.html" class="card">
                 <img src="assets/images/how.png" alt="How it works">
                 <h3>How it works</h3>
                 <p>Convert. Punch. Store.</p>
             </a>
-            </div>
+
             <div class="card">
                 <img src="assets/images/shop.png" alt="Buy SATONA">
                 <h3>Buy SATONA</h3>
                 <p>Secure your seed forever</p>
             </div>
+
             <div class="card">
                 <img src="assets/images/why.png" alt="Why SATONA">
                 <h3>Why SATONA</h3>
                 <p>Fire. Water. Time. Proof.</p>
             </div>
+
         </div>
+
         <!-- Coin Section -->
         <div class="coin-section">
             <h3>Your SATONA Plate</h3>
             <img src="assets/images/coin.png" alt="SATONA Coin">
         </div>
-    </div>
+    </section>
 
     <!-- FOOTER -->
-    <div class="footer">
+    <footer class="footer">
         © SATONA
-    </div>
+    </footer>
+
+    <!-- JS (scroll header) -->
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
 
 </body>
 </html>
