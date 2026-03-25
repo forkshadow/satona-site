@@ -224,19 +224,54 @@ button.secondary {
 /* ========================= */
 
 @media (max-width: 768px) {
+    .how-hero {
+        padding: 130px 16px 36px;
+        min-height: auto;
+    }
+
+    .plates-section {
+        padding: 20px 0 12px;
+    }
+
+    #svgContainer {
+        margin: 0 auto 10px;
+        overflow: hidden;
+    }
 
     .plates {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     .plate {
-        width: 100%;
-        margin-bottom: 40px;
+        width: 50%;
+        margin-bottom: 0;
         border-right: none;
+        padding: 0 6px;
+    }
+
+    .plate h3 {
+        margin-top: 10px;
     }
 
     .svg-container svg {
-        width: 80%;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .steps {
+        gap: 18px;
+        padding: 20px 16px;
+    }
+
+    .input-section {
+        padding: 28px 16px 20px;
+    }
+
+    .viewer-box {
+        padding: 0;
     }
 
     .words-grid {
