@@ -14,18 +14,11 @@ body {
 /* ========================= */
 
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    z-index: 1000;
+    background: transparent;
 }
 
 .header img {
-    height: 80px;
+    height: 90px;
 }
 
 /* ========================= */
@@ -34,9 +27,9 @@ body {
 
 .how-hero {
     position: relative;
-    padding: 160px 20px 80px;
+    padding: 120px 20px 28px;
     text-align: center;
-    min-height: 60vh;
+    min-height: 50vh;
 }
 
 .how-bg {
@@ -61,11 +54,13 @@ body {
 
 .how-content h1 {
     font-size: 42px;
+    margin: 0 0 6px;
 }
 
 .subtitle {
     color: #aaa;
     font-size: 16px;
+    margin: 0;
 }
 
 /* ========================= */
@@ -75,12 +70,12 @@ body {
 .plates-section {
     position: relative;
     z-index: 2;
-    padding: 60px 0;
+    padding: 16px 0;
 }
 
 #svgContainer {
     width: 100%;
-    margin: 0 auto 24px;
+    margin: 0 auto 8px;
 }
 
 .plates {
@@ -115,7 +110,6 @@ body {
     background: transparent !important;
 
     filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
-    transition: transform 0.3s ease;
 }
 
 #svgContainer svg {
@@ -128,13 +122,9 @@ body {
     display: none;
 }
 
-.svg-container svg:hover {
-    transform: scale(1.03);
-}
-
 /* TITRES */
 .plate h3 {
-    margin-top: 20px;
+    margin-top: 12px;
     font-size: 14px;
     letter-spacing: 2px;
     opacity: 0.6;
@@ -147,8 +137,8 @@ body {
 .steps {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 50px 20px;
+    gap: 24px;
+    padding: 28px 20px;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -167,7 +157,7 @@ body {
 .input-section {
     position: relative;
     z-index: 2;
-    padding: 60px 20px;
+    padding: 36px 20px;
     max-width: 1000px;
     margin: auto;
     text-align: center;
@@ -192,7 +182,7 @@ body {
 /* ========================= */
 
 .buttons {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -215,7 +205,7 @@ button.secondary {
 /* ========================= */
 
 .viewer-box {
-    padding: 60px;
+    padding: 24px;
     text-align: center;
 }
 
@@ -224,29 +214,63 @@ button.secondary {
 /* ========================= */
 
 @media (max-width: 768px) {
+    .how-hero {
+        padding: 118px 16px 24px;
+        min-height: auto;
+    }
+
+    .plates-section {
+        padding: 14px 0 8px;
+    }
+
+    #svgContainer {
+        margin: 0 auto 6px;
+        overflow: hidden;
+    }
 
     .plates {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     .plate {
-        width: 100%;
-        margin-bottom: 40px;
+        width: 50%;
+        margin-bottom: 0;
         border-right: none;
+        padding: 0 6px;
+    }
+
+    .plate h3 {
+        margin-top: 8px;
     }
 
     .svg-container svg {
-        width: 80%;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .steps {
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+    .input-section {
+        padding: 20px 16px 14px;
+    }
+
+    .viewer-box {
+        padding: 0;
     }
 
     .words-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* FIX iPhone */
     .how-bg {
-        position: absolute;
-        height: 120%;
+        position: fixed;
+        height: 100%;
     }
 }
 
