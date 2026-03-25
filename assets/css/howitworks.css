@@ -49,6 +49,14 @@ body {
     z-index: 1;
 }
 
+.how-hero {
+    position: relative;
+    padding: 140px 20px 60px;
+    overflow: hidden;
+
+    min-height: 600px; /* 🔥 LA SOLUTION */
+}
+
 /* FUMÉ */
 .how-bg::after {
     content: "";
