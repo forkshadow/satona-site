@@ -27,9 +27,9 @@ body {
 
 .how-hero {
     position: relative;
-    padding: 160px 20px 80px;
+    padding: 130px 20px 42px;
     text-align: center;
-    min-height: 60vh;
+    min-height: 50vh;
 }
 
 .how-bg {
@@ -54,11 +54,13 @@ body {
 
 .how-content h1 {
     font-size: 42px;
+    margin: 0 0 8px;
 }
 
 .subtitle {
     color: #aaa;
     font-size: 16px;
+    margin: 0;
 }
 
 /* ========================= */
@@ -68,12 +70,12 @@ body {
 .plates-section {
     position: relative;
     z-index: 2;
-    padding: 60px 0;
+    padding: 24px 0;
 }
 
 #svgContainer {
     width: 100%;
-    margin: 0 auto 24px;
+    margin: 0 auto 12px;
 }
 
 .plates {
