@@ -1,15 +1,15 @@
+
+/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #0d0d0d;
     color: white;
 
-    /* évite que le header cache le contenu */
     padding-top: 110px;
 }
 
-/* buy now */
-
+/* HERO CTA */
 .hero-cta {
     display: inline-block;
     margin-top: 30px;
@@ -22,7 +22,7 @@ body {
     font-size: 14px;
     letter-spacing: 1px;
 
-    background: rgba(255,255,255,0.05); /* léger voile glass */
+    background: rgba(255,255,255,0.05);
 
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -30,18 +30,19 @@ body {
     transition: all 0.3s ease;
 }
 
-/* HOVER */
 .hero-cta:hover {
     background: white;
     color: black;
     border-color: white;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
-
 
 /* NAV DESKTOP */
 .nav {
     position: absolute;
     right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     gap: 30px;
 }
@@ -56,18 +57,13 @@ body {
     opacity: 1;
 }
 
-/* CTA */
-.nav .cta {
-    border: 1px solid white;
-    padding: 6px 12px;
-    border-radius: 20px;
-}
-
 /* BURGER */
 .burger {
     display: none;
     position: absolute;
     right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
 }
 
@@ -82,17 +78,35 @@ body {
 /* MOBILE MENU */
 .mobile-menu {
     position: fixed;
-    top: 0;
+
+    top: 110px;
     right: -100%;
+
     width: 70%;
-    height: 100vh;
-    background: black;
+    height: calc(100vh - 110px);
+
+    background: rgba(0, 0, 0, 0.95);
+
     display: flex;
     flex-direction: column;
-    padding: 100px 30px;
-    gap: 20px;
+
+    padding: 30px;
+    gap: 25px;
+
     transition: 0.3s;
-    z-index: 999;
+
+    z-index: 2000;
+
+    backdrop-filter: blur(10px);
+}
+
+.mobile-menu a {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.mobile-menu a:hover {
+    opacity: 1;
 }
 
 .mobile-menu.active {
@@ -110,9 +124,7 @@ body {
     }
 }
 
-
-
-/* HEADER FIXE */
+/* HEADER */
 .header {
     position: fixed;
     top: 0;
@@ -121,12 +133,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: 15px 0;
 
-    /* TRANSPARENT */
     background: transparent;
 
-    /* EFFET VERRE */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
@@ -151,13 +162,12 @@ body {
     transition: all 0.3s ease;
 }
 
-/* HEADER AU SCROLL */
+/* SCROLL */
 .header.scrolled {
     background: rgba(0, 0, 0, 0.85);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
-/* LOGO PLUS PETIT AU SCROLL */
 .header.scrolled img {
     height: 70px;
 }
@@ -173,7 +183,6 @@ body {
     overflow: hidden;
 }
 
-/* IMAGE DE FOND */
 .hero-bg {
     position: absolute;
     top: 0;
@@ -190,26 +199,28 @@ body {
     animation: slowZoom 12s ease-in-out infinite alternate;
 }
 
-/* CONTENU HERO */
 .hero-content {
     position: relative;
     z-index: 2;
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* TITRE */
+/* TEXTE HERO */
 .hero h1 {
     font-size: 56px;
     margin-bottom: 10px;
 }
 
-/* TEXTE */
 .hero p {
     color: #ccc;
     font-size: 24px;
 }
 
-/* ANIMATION ZOOM */
+/* ANIMATION */
 @keyframes slowZoom {
     0% { transform: scale(1); }
     100% { transform: scale(1.05); }
@@ -241,20 +252,17 @@ body {
     overflow: hidden;
 }
 
-/* HOVER */
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(255,255,255,0.08);
 }
 
-/* IMAGE */
 .card img {
     width: 120px;
     height: auto;
     opacity: 0.9;
 }
 
-/* TEXTE */
 .card h3,
 .card p {
     position: relative;
@@ -271,7 +279,7 @@ body {
     font-size: 14px;
 }
 
-/* COIN SECTION */
+/* COIN */
 .coin-section {
     text-align: center;
     margin-top: 60px;
@@ -280,13 +288,10 @@ body {
 .coin-section h3 {
     margin-bottom: 20px;
     font-size: 32px;
-    color: #fff;
 }
 
 .coin-section img {
     width: 500px;
-    height: auto;
-    margin-top: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -296,11 +301,6 @@ body {
 
 /* LIENS */
 a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
     color: inherit;
     text-decoration: none;
 }
