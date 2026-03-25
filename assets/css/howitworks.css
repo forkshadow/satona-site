@@ -27,7 +27,7 @@ body {
 
 .how-hero {
     position: relative;
-    padding: 120px 20px 28px;
+    padding: 130px 20px 42px;
     text-align: center;
     min-height: 50vh;
 }
@@ -54,7 +54,7 @@ body {
 
 .how-content h1 {
     font-size: 42px;
-    margin: 0 0 6px;
+    margin: 0 0 8px;
 }
 
 .subtitle {
@@ -70,12 +70,12 @@ body {
 .plates-section {
     position: relative;
     z-index: 2;
-    padding: 16px 0;
+    padding: 24px 0;
 }
 
 #svgContainer {
     width: 100%;
-    margin: 0 auto 8px;
+    margin: 0 auto 12px;
 }
 
 .plates {
@@ -110,19 +110,6 @@ body {
     background: transparent !important;
 
     filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
-    transform: none !important;
-    transition: none !important;
-    -webkit-transform: none !important;
-    -webkit-transition: none !important;
-    -webkit-tap-highlight-color: transparent;
-    backface-visibility: hidden;
-}
-
-.svg-container svg:hover,
-.svg-container svg:active,
-.svg-container svg:focus {
-    transform: none !important;
-    transition: none !important;
 }
 
 #svgContainer svg {
@@ -228,22 +215,17 @@ button.secondary {
 
 @media (max-width: 768px) {
     .how-hero {
-        padding: 118px 16px 24px;
+        padding: 130px 16px 36px;
         min-height: auto;
     }
 
     .plates-section {
-        padding: 14px 0 8px;
+        padding: 20px 0 12px;
     }
 
     #svgContainer {
-        margin: 0 auto 6px;
+        margin: 0 auto 10px;
         overflow: hidden;
-    }
-
-    .plates {
-        flex-direction: row;
-        align-items: flex-start;
     }
 
     .plate {
@@ -254,7 +236,7 @@ button.secondary {
     }
 
     .plate h3 {
-        margin-top: 8px;
+        margin-top: 10px;
     }
 
     .svg-container svg {
@@ -264,17 +246,8 @@ button.secondary {
         margin: 0 auto;
     }
 
-    .steps {
-        gap: 12px;
-        padding: 14px 16px;
-    }
-
-    .input-section {
-        padding: 20px 16px 14px;
-    }
-
-    .viewer-box {
-        padding: 0;
+    #svgContainer {
+        overflow: hidden;
     }
 
     .words-grid {
