@@ -231,11 +231,6 @@ button.secondary {
         overflow: hidden;
     }
 
-    .plates {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
     .plate {
         width: 50%;
         margin-bottom: 0;
@@ -254,17 +249,8 @@ button.secondary {
         margin: 0 auto;
     }
 
-    .steps {
-        gap: 18px;
-        padding: 20px 16px;
-    }
-
-    .input-section {
-        padding: 28px 16px 20px;
-    }
-
-    .viewer-box {
-        padding: 0;
+    #svgContainer {
+        overflow: hidden;
     }
 
     .words-grid {
