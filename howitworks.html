@@ -5,7 +5,7 @@
     <title>How it works - SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS GLOBAL (important pour header + cohérence) -->
+    <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- CSS spécifique -->
@@ -14,13 +14,38 @@
 
 <body class="subpage">
 
-    <!-- HEADER FIXE -->
+    <!-- HEADER -->
     <header class="header">
-        <a href="index.html">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
             <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
         </a>
+
+        <!-- MENU DESKTOP -->
+        <nav class="nav">
+            <a href="bip39.html">BIP39</a>
+            <a href="howitworks.html">How it works</a>
+            <a href="#">Security</a>
+        </nav>
+
+        <!-- BURGER MOBILE -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
     </header>
 
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="bip39.html">BIP39 Tool</a>
+        <a href="howitworks.html">How it works</a>
+        <a href="#">Security</a>
+    </div>
+
+    <!-- CONTENU -->
     <main class="page">
 
         <h1>How it works</h1>
@@ -72,7 +97,7 @@
 
     </main>
 
-    <!-- SCRIPT HEADER SCROLL -->
+    <!-- HEADER SCROLL -->
     <script>
         window.addEventListener("scroll", function() {
             const header = document.querySelector(".header");
@@ -84,7 +109,17 @@
         });
     </script>
 
-    <!-- DATA + LOGIQUE -->
+    <!-- MENU MOBILE -->
+    <script>
+        const burger = document.getElementById("burger");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        burger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+    </script>
+
+    <!-- DATA -->
     <script src="assets/bip39-list.js"></script>
     <script src="assets/js/howitworks.js"></script>
 
