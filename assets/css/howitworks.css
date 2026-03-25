@@ -224,11 +224,29 @@ button.secondary {
 /* ========================= */
 
 @media (max-width: 768px) {
+    .how-hero {
+        padding: 130px 16px 36px;
+        min-height: auto;
+    }
+
+    .plates-section {
+        padding: 20px 0 12px;
+    }
+
+    #svgContainer {
+        margin: 0 auto 10px;
+        overflow: hidden;
+    }
 
     .plate {
         width: 50%;
         margin-bottom: 0;
         border-right: none;
+        padding: 0 6px;
+    }
+
+    .plate h3 {
+        margin-top: 10px;
     }
 
     .svg-container svg {
