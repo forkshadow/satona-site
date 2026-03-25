@@ -7,18 +7,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("resetBtn").addEventListener("click", resetPreview);
 });
 
+/* LOAD SVG */
 async function loadSvg() {
 
-    const front = document.getElementById("plateFront");
-    const back = document.getElementById("plateBack");
+    const container = document.getElementById("plateFront"); // 🔥 ICI
 
     try {
         const response = await fetch("assets/images/seedrectobip39.ai.svg");
         const svgText = await response.text();
 
-        // 🔥 SVG en haut
-        front.innerHTML = svgText;
-        back.innerHTML = svgText;
+        container.innerHTML = svgText;
+
+        const svg = container.querySelector("svg");
+        svg.style.width = "100%";
+        svg.style.height = "auto";
 
         svgLoaded = true;
 
@@ -70,11 +72,11 @@ function applyBinaryToWord(wordIndex, binary) {
 
     for (let i = 0; i < 11; i++) {
 
-        const elements = document.querySelectorAll(`#w${wordIndex}-b${i+1}`);
+        const element = document.getElementById(`w${wordIndex}-b${i + 1}`);
 
-        elements.forEach(el => {
-            el.setAttribute("fill", binary[i] === "1" ? "white" : "black");
-        });
+        if (!element) continue;
+
+        element.setAttribute("fill", binary[i] === "1" ? "white" : "black");
     }
 }
 
@@ -82,8 +84,9 @@ function applyBinaryToWord(wordIndex, binary) {
 function clearAllWords() {
     for (let w = 1; w <= 24; w++) {
         for (let i = 1; i <= 11; i++) {
-            const elements = document.querySelectorAll(`#w${w}-b${i}`);
-            elements.forEach(el => el.setAttribute("fill", "black"));
+            const el = document.getElementById(`w${w}-b${i}`);
+            if (!el) continue;
+            el.setAttribute("fill", "black");
         }
     }
 }
