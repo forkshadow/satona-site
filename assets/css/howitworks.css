@@ -1,4 +1,7 @@
+/* ========================= */
 /* GLOBAL */
+/* ========================= */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -36,7 +39,6 @@ body {
     min-height: 60vh;
 }
 
-/* IMAGE FIXE */
 .how-bg {
     position: fixed;
     inset: 0;
@@ -45,7 +47,6 @@ body {
     z-index: 0;
 }
 
-/* FUMÉ */
 .how-bg::after {
     content: "";
     position: absolute;
@@ -53,7 +54,6 @@ body {
     background: radial-gradient(circle, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
 }
 
-/* CONTENU HERO */
 .how-content {
     position: relative;
     z-index: 2;
@@ -69,39 +69,32 @@ body {
 }
 
 /* ========================= */
-/* 🪙 PLATES */
+/* 🪙 PLATES FULL WIDTH */
 /* ========================= */
 
 .plates-section {
     position: relative;
     z-index: 2;
-    padding: 60px 20px;
+    padding: 60px 0;
 }
 
 .plates {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-
-    max-width: 100%;
-    margin: 60px auto 0;
+    width: 100%;
 }
 
+/* CHAQUE MOITIÉ */
 .plate {
-    width: 100%;
-    max-width: 320px;
-    text-align: center;
-
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    border-right: 1px solid rgba(255,255,255,0.05);
 }
 
-.plate h3 {
-    margin-bottom: 20px;
-    opacity: 0.6;
+.plate:last-child {
+    border-right: none;
 }
 
 /* SVG */
@@ -112,19 +105,24 @@ body {
 }
 
 .svg-container svg {
-    width: 100%;
-    max-width: 280px;
+    width: 90%;
     height: auto;
-    display: block;
-
     background: transparent !important;
 
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.9));
+    filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
     transition: transform 0.3s ease;
 }
 
 .svg-container svg:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+}
+
+/* TITRES */
+.plate h3 {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.6;
 }
 
 /* ========================= */
@@ -214,23 +212,23 @@ button.secondary {
 
     .plates {
         flex-direction: column;
-        align-items: center;
-        gap: 50px;
     }
 
     .plate {
-        max-width: 260px;
+        width: 100%;
+        margin-bottom: 40px;
+        border-right: none;
     }
 
     .svg-container svg {
-        max-width: 220px;
+        width: 80%;
     }
 
     .words-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* fix iPhone */
+    /* FIX iPhone */
     .how-bg {
         position: absolute;
         height: 120%;
