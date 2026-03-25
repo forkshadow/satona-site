@@ -3,6 +3,9 @@ body {
     font-family: Arial, sans-serif;
     background: #0d0d0d;
     color: white;
+
+    /* évite que le header cache le contenu */
+    padding-top: 110px;
 }
 
 /* HEADER FIXE */
@@ -10,21 +13,51 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #000;
+
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px 0;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+
+    /* TRANSPARENT */
+    background: transparent;
+
+    /* EFFET VERRE */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
     z-index: 1000;
+    transition: all 0.3s ease;
 }
 
+/* LIGNE SUBTILE */
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.05);
+}
+
+/* LOGO */
 .header img {
     height: 90px;
     width: auto;
+    transition: all 0.3s ease;
 }
 
-/* HERO */
+/* HEADER AU SCROLL */
+.header.scrolled {
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* LOGO PLUS PETIT AU SCROLL */
+.header.scrolled img {
+    height: 70px;
+}
+
 /* HERO */
 .hero {
     position: relative;
@@ -46,15 +79,14 @@ body {
 
     background: url('../images/coin-finger.png') center center / cover no-repeat;
 
-    filter: brightness(0.5); /* assombrit pour lisibilité */
+    filter: brightness(0.5);
 
     z-index: 1;
 
-    /* léger zoom vivant */
     animation: slowZoom 12s ease-in-out infinite alternate;
 }
 
-/* CONTENU AU DESSUS */
+/* CONTENU HERO */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -95,7 +127,7 @@ body {
 
 /* CARD */
 .card {
-    position: relative; /* clé pour superposition */
+    position: relative;
     background: #111;
     border-radius: 20px;
     padding: 30px 20px;
@@ -111,15 +143,6 @@ body {
     box-shadow: 0 10px 30px rgba(255,255,255,0.08);
 }
 
-/* CONTENEUR IMAGE */
-.card .icon {
-    position: relative;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* IMAGE */
 .card img {
     width: 120px;
@@ -127,26 +150,24 @@ body {
     opacity: 0.9;
 }
 
-/* TEXTE AU PREMIER PLAN */
+/* TEXTE */
 .card h3,
 .card p {
     position: relative;
-    z-index: 2; /* 🔥 passe devant l’image */
+    z-index: 2;
 }
 
-/* TITRE */
 .card h3 {
     margin: 10px 0;
     font-size: 18px;
 }
 
-/* TEXTE */
 .card p {
     color: #aaa;
     font-size: 14px;
 }
 
-/* Coin Section */
+/* COIN SECTION */
 .coin-section {
     text-align: center;
     margin-top: 60px;
