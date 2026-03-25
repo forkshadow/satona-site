@@ -7,26 +7,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("resetBtn").addEventListener("click", resetPreview);
 });
 
-/* ========================= */
-/* LOAD SVG */
-/* ========================= */
-
 async function loadSvg() {
-
-    const container = document.getElementById("plateFull");
+    const container = document.getElementById("svgContainer");
 
     try {
         const response = await fetch("assets/images/seedrectobip39.ai.svg");
         const svgText = await response.text();
-
         container.innerHTML = svgText;
-
-        const svg = container.querySelector("svg");
-        svg.style.width = "100%";
-        svg.style.height = "auto";
-
         svgLoaded = true;
-
     } catch (error) {
         container.innerHTML = "Unable to load SVG.";
         console.error(error);
@@ -47,7 +35,6 @@ function resetPreview() {
 /* ========================= */
 
 function previewWords() {
-
     if (!svgLoaded) {
         setMessage("SVG not loaded yet.");
         return;
@@ -63,7 +50,6 @@ function previewWords() {
     let errors = [];
 
     for (let i = 1; i <= 24; i++) {
-
         const word = document.getElementById("word" + i).value.trim().toLowerCase();
 
         if (!word) continue;
@@ -83,10 +69,6 @@ function previewWords() {
     } else {
         setMessage("");
     }
-
-    document.querySelector(".plates-section").scrollIntoView({
-        behavior: "smooth"
-    });
 }
 
 /* ========================= */
@@ -94,27 +76,30 @@ function previewWords() {
 /* ========================= */
 
 function getBinaryForWord(word) {
-    if (bip39List[word] !== undefined) {
+    if (typeof bip39List !== "undefined" && bip39List[word] !== undefined) {
         return String(bip39List[word]).padStart(11, "0");
     }
     return null;
 }
 
 /* ========================= */
-/* APPLY */
+/* APPLY BITS */
 /* ========================= */
 
 function applyBinaryToWord(wordIndex, binary) {
-
     for (let i = 0; i < 11; i++) {
-
         const bit = binary[i];
-
         const element = document.getElementById(`w${wordIndex}-b${i + 1}`);
 
         if (!element) continue;
 
-        element.setAttribute("fill", bit === "1" ? "white" : "black");
+        if (bit === "1") {
+            element.setAttribute("fill", "white");
+            element.style.fill = "white";
+        } else {
+            element.setAttribute("fill", "black");
+            element.style.fill = "black";
+        }
     }
 }
 
@@ -122,17 +107,20 @@ function applyBinaryToWord(wordIndex, binary) {
 /* CLEAR */
 /* ========================= */
 
+function clearWordBits(wordIndex) {
+    for (let i = 1; i <= 11; i++) {
+        const element = document.getElementById(`w${wordIndex}-b${i}`);
+
+        if (!element) continue;
+
+        element.setAttribute("fill", "black");
+        element.style.fill = "black";
+    }
+}
+
 function clearAllWords() {
-
     for (let w = 1; w <= 24; w++) {
-
-        for (let i = 1; i <= 11; i++) {
-
-            const el = document.getElementById(`w${w}-b${i}`);
-            if (!el) continue;
-
-            el.setAttribute("fill", "black");
-        }
+        clearWordBits(w);
     }
 }
 
