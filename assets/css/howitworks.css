@@ -46,7 +46,12 @@ body {
     position: absolute;
     inset: 0;
 
-    background: url('../images/howsatona.png') center top / cover no-repeat;
+    background-image: url('/assets/images/howsatona.png');
+    background-repeat: no-repeat;
+
+    /* 🔥 cadrage maîtrisé */
+    background-size: cover;
+    background-position: center 20%;
 
     filter: brightness(0.4);
     z-index: 1;
