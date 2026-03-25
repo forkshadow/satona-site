@@ -1,7 +1,4 @@
-/* ========================= */
 /* GLOBAL */
-/* ========================= */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -9,10 +6,7 @@ body {
     color: white;
 }
 
-/* ========================= */
 /* HEADER */
-/* ========================= */
-
 .header {
     position: fixed;
     top: 0;
@@ -28,10 +22,7 @@ body {
     height: 80px;
 }
 
-/* ========================= */
 /* HERO */
-/* ========================= */
-
 .how-hero {
     position: relative;
     padding: 160px 20px 80px;
@@ -47,31 +38,12 @@ body {
     z-index: 0;
 }
 
-.how-bg::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
-}
-
 .how-content {
     position: relative;
     z-index: 2;
 }
 
-.how-content h1 {
-    font-size: 42px;
-}
-
-.subtitle {
-    color: #aaa;
-    font-size: 16px;
-}
-
-/* ========================= */
-/* 🪙 PLATES FULL WIDTH */
-/* ========================= */
-
+/* PLATES */
 .plates-section {
     position: relative;
     z-index: 2;
@@ -83,81 +55,29 @@ body {
     width: 100%;
 }
 
-/* CHAQUE MOITIÉ */
 .plate {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    border-right: 1px solid rgba(255,255,255,0.05);
 }
 
-.plate:last-child {
-    border-right: none;
-}
-
-/* SVG */
+/* 🔥 SVG FIX */
 .svg-container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
+/* 🔥 IMPORTANT */
 .svg-container svg {
-    width: 90%;
+    width: 100%;
+    max-width: 900px;
     height: auto;
     background: transparent !important;
-
-    filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
-    transition: transform 0.3s ease;
 }
 
-.svg-container svg:hover {
-    transform: scale(1.03);
-}
-
-/* TITRES */
-.plate h3 {
-    margin-top: 20px;
-    font-size: 14px;
-    letter-spacing: 2px;
-    opacity: 0.6;
-}
-
-/* ========================= */
-/* 📖 STEPS */
-/* ========================= */
-
-.steps {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 50px 20px;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.step {
-    font-size: 13px;
-    letter-spacing: 1px;
-    opacity: 0.6;
-    text-transform: uppercase;
-}
-
-/* ========================= */
-/* 🧮 INPUT */
-/* ========================= */
-
-.input-section {
-    position: relative;
-    z-index: 2;
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-}
-
+/* INPUT */
 .words-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -172,10 +92,7 @@ body {
     color: white;
 }
 
-/* ========================= */
 /* BUTTONS */
-/* ========================= */
-
 .buttons {
     margin-top: 30px;
     display: flex;
@@ -183,60 +100,17 @@ body {
     gap: 10px;
 }
 
-button {
-    padding: 12px 18px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button.secondary {
-    background: rgba(255,255,255,0.1);
-    color: white;
-}
-
-/* ========================= */
-/* RESULT */
-/* ========================= */
-
-.viewer-box {
-    padding: 60px;
-    text-align: center;
-}
-
-/* ========================= */
 /* MOBILE */
-/* ========================= */
-
 @media (max-width: 768px) {
-
     .plates {
         flex-direction: column;
     }
 
     .plate {
         width: 100%;
-        margin-bottom: 40px;
-        border-right: none;
-    }
-
-    .svg-container svg {
-        width: 80%;
     }
 
     .words-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* FIX iPhone */
-    .how-bg {
-        position: absolute;
-        height: 120%;
-    }
-}
-
-@media (max-width: 560px) {
-    .words-grid {
-        grid-template-columns: 1fr;
     }
 }
