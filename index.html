@@ -47,7 +47,6 @@
             <h1>Seed Never Dies.</h1>
             <p>Your crypto. Safe. Forever.</p>
 
-            <!-- CTA ajouté au BON endroit -->
             <a href="#" class="hero-cta">Buy now</a>
         </div>
     </section>
@@ -81,12 +80,47 @@
             </div>
 
         </div>
+    </section>
 
-        <!-- Coin Section -->
-        <div class="coin-section">
-            <h3>Your SATONA Plate</h3>
-            <img src="assets/images/coin.png" alt="SATONA Coin">
+    <!-- NOUVELLE SECTION SATONA INFO -->
+    <section class="satona-info">
+
+        <div class="satona-container">
+
+            <!-- IMAGE -->
+            <div class="satona-image">
+                <img src="assets/images/coin.png" alt="SATONA Plate Front and Back">
+            </div>
+
+            <!-- TEXTE -->
+            <div class="satona-text">
+                <h2>SATONA Plate – Secure Your Crypto Seed Forever</h2>
+
+                <p>
+                    The SATONA Plate is a durable solution designed to securely store your BIP39 recovery phrase offline.
+                    Unlike paper or digital backups, it protects your crypto seed against fire, water, time and physical damage.
+                </p>
+
+                <p>
+                    Your recovery phrase is the only access to your cryptocurrency. If it is lost, your assets are gone forever.
+                    SATONA ensures your Bitcoin, Ethereum and crypto wallets remain recoverable in all situations.
+                </p>
+
+                <ul>
+                    <li>🔥 Fire resistant</li>
+                    <li>💧 Waterproof</li>
+                    <li>🛡️ Corrosion resistant</li>
+                    <li>💥 Impact resistant</li>
+                </ul>
+
+                <p>
+                    Compatible with Ledger, Trezor, SafePal and Trust Wallet.
+                    Store your 24-word seed safely, offline, forever.
+                </p>
+            </div>
+
         </div>
+
     </section>
 
     <!-- FOOTER -->
@@ -111,9 +145,11 @@
         const burger = document.getElementById("burger");
         const mobileMenu = document.getElementById("mobileMenu");
 
-        burger.addEventListener("click", () => {
-            mobileMenu.classList.toggle("active");
-        });
+        if (burger && mobileMenu) {
+            burger.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+            });
+        }
     </script>
 
 </body>
