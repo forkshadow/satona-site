@@ -33,21 +33,28 @@
     </div>
 </section>
 
-<!-- 🪙 PLATE UNIQUE -->
+<!-- 🪙 PLATES (CORRIGÉ) -->
 <section class="plates-section">
 
-    <!-- SVG UNIQUE -->
-    <div class="svg-container" id="plateFull"></div>
+    <div class="plates">
 
-    <!-- FRONT / BACK -->
-    <div class="plate-labels">
-        <span>FRONT</span>
-        <span>BACK</span>
+        <!-- FRONT -->
+        <div class="plate">
+            <div class="svg-container" id="plateFront"></div>
+            <h3>FRONT</h3>
+        </div>
+
+        <!-- BACK -->
+        <div class="plate">
+            <div class="svg-container" id="plateBack"></div>
+            <h3>BACK</h3>
+        </div>
+
     </div>
 
 </section>
 
-<!-- 📖 STEPS -->
+<!-- 📖 STEPS (plus visuel + cohérent) -->
 <section class="steps">
     <div class="step">Enter your 24 words</div>
     <div class="step">Convert to binary</div>
@@ -77,9 +84,9 @@
 
 </section>
 
-<!-- RESULT (optionnel en bas) -->
+<!-- RESULT SVG -->
 <section class="viewer-box">
-    <div id="svgContainer"></div>
+    <div id="svgContainer" class="svg-container"></div>
 </section>
 
 <!-- JS -->
