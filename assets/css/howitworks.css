@@ -37,16 +37,19 @@ body {
     padding: 160px 20px 80px;
     text-align: center;
     min-height: 60vh;
+    overflow: hidden;
 }
 
+/* 🔥 FIX ICI : plus de position fixed */
 .how-bg {
-    position: fixed;
+    position: absolute;
     inset: 0;
     background: url('/assets/images/howsatona.png') center 20% / cover no-repeat;
     filter: brightness(0.4);
     z-index: 0;
 }
 
+/* effet fumé */
 .how-bg::after {
     content: "";
     position: absolute;
@@ -54,6 +57,7 @@ body {
     background: radial-gradient(circle, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
 }
 
+/* contenu au-dessus */
 .how-content {
     position: relative;
     z-index: 2;
@@ -69,7 +73,7 @@ body {
 }
 
 /* ========================= */
-/* 🪙 PLATES FULL WIDTH */
+/* 🪙 PLATES */
 /* ========================= */
 
 .plates-section {
@@ -89,12 +93,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    border-right: 1px solid rgba(255,255,255,0.05);
 }
 
 .plate:last-child {
-    border-right: none;
+    border-left: 1px solid rgba(255,255,255,0.05);
 }
 
 /* SVG */
@@ -117,16 +119,16 @@ body {
     transform: scale(1.03);
 }
 
-/* TITRES */
+/* LABEL */
 .plate h3 {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 14px;
     letter-spacing: 2px;
     opacity: 0.6;
 }
 
 /* ========================= */
-/* 📖 STEPS */
+/* STEPS */
 /* ========================= */
 
 .steps {
@@ -146,7 +148,7 @@ body {
 }
 
 /* ========================= */
-/* 🧮 INPUT */
+/* INPUT */
 /* ========================= */
 
 .input-section {
@@ -217,7 +219,7 @@ button.secondary {
     .plate {
         width: 100%;
         margin-bottom: 40px;
-        border-right: none;
+        border-left: none;
     }
 
     .svg-container svg {
@@ -228,10 +230,8 @@ button.secondary {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* FIX iPhone */
-    .how-bg {
-        position: absolute;
-        height: 120%;
+    .how-hero {
+        padding: 120px 15px 40px;
     }
 }
 
