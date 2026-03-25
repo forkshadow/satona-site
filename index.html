@@ -13,38 +13,31 @@
 
     <!-- HEADER FIXE -->
     <header class="header">
-    <a href="index.html" class="logo">
-        <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
-    </a>
+        <a href="index.html" class="logo">
+            <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+        </a>
 
-    <!-- MENU DESKTOP -->
-    <nav class="nav">
-        <a href="bip39.html">BIP39</a>
-        <a href="howitworks.html">How it works</a>
-        <a href="#">Security</a>
-    </nav>
+        <!-- MENU DESKTOP -->
+        <nav class="nav">
+            <a href="bip39.html">BIP39</a>
+            <a href="howitworks.html">How it works</a>
+            <a href="#">Security</a>
+        </nav>
 
-    <!-- BURGER MOBILE -->
-    <div class="burger" id="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+        <!-- BURGER MOBILE -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <!-- MENU MOBILE -->
-<div class="mobile-menu" id="mobileMenu">
-    <a href="bip39.html">BIP39 Tool</a>
-    <a href="howitworks.html">How it works</a>
-    <a href="#">Security</a>
-</div>
-
-    <div class="hero-content">
-    <h1>Seed Never Dies.</h1>
-    <p>Your crypto. Safe. Forever.</p>
-
-    <a href="#" class="hero-cta">Buy now</a>
-</div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="bip39.html">BIP39 Tool</a>
+        <a href="howitworks.html">How it works</a>
+        <a href="#">Security</a>
+    </div>
 
     <!-- HERO -->
     <section class="hero">
@@ -53,6 +46,9 @@
         <div class="hero-content">
             <h1>Seed Never Dies.</h1>
             <p>Your crypto. Safe. Forever.</p>
+
+            <!-- CTA ajouté au BON endroit -->
+            <a href="#" class="hero-cta">Buy now</a>
         </div>
     </section>
 
@@ -98,7 +94,7 @@
         © SATONA
     </footer>
 
-    <!-- JS (scroll header) -->
+    <!-- JS HEADER SCROLL -->
     <script>
         window.addEventListener("scroll", function() {
             const header = document.querySelector(".header");
@@ -110,14 +106,15 @@
         });
     </script>
 
+    <!-- MENU MOBILE -->
     <script>
-const burger = document.getElementById("burger");
-const mobileMenu = document.getElementById("mobileMenu");
+        const burger = document.getElementById("burger");
+        const mobileMenu = document.getElementById("mobileMenu");
 
-burger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
-});
-</script>
+        burger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+    </script>
 
 </body>
 </html>
