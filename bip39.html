@@ -2,30 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BIP39 Tool</title>
+    <title>BIP39 Tool - SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS GLOBAL (IMPORTANT pour cohérence) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- CSS spécifique -->
     <link rel="stylesheet" href="assets/css/bip39.css">
 </head>
-<body>
+
+<body class="subpage">
 
     <!-- HEADER FIXE -->
-    <div class="header">
+    <header class="header">
         <a href="index.html">
             <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
         </a>
-    </div>
+    </header>
 
     <!-- CONTENU PRINCIPAL -->
-    <div class="container">
+    <main class="container">
         <h1>BIP39 Tool</h1>
+
         <div class="input-box">
-            <input type="text" id="bipInput" placeholder="Tapez un mot BIP39">
-            <button onclick="getBinary()">Convertir</button>
+            <input type="text" id="bipInput" placeholder="Enter a BIP39 word">
+            <button onclick="getBinary()">Convert</button>
             <div id="result"></div>
         </div>
-    </div>
+    </main>
 
-    <!-- ON CHARGE LA LISTE -->
+    <!-- SCRIPT SCROLL HEADER -->
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+    <!-- LISTE BIP39 -->
     <script src="assets/bip39-list.js"></script>
 
     <!-- SCRIPT PRINCIPAL -->
@@ -35,14 +54,14 @@
             const result = document.getElementById('result');
 
             if (typeof bip39List === "undefined") {
-                result.textContent = "Erreur : liste non chargée.";
+                result.textContent = "Error: list not loaded.";
                 return;
             }
 
             if (bip39List[word] !== undefined) {
-                result.textContent = 'Binaire : ' + bip39List[word];
+                result.textContent = 'Binary: ' + bip39List[word];
             } else {
-                result.textContent = 'Mot non trouvé.';
+                result.textContent = 'Word not found.';
             }
         }
     </script>
