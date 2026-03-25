@@ -1,3 +1,4 @@
+/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,7 +6,10 @@ body {
     color: white;
 }
 
+/* ========================= */
 /* HEADER */
+/* ========================= */
+
 .header {
     position: fixed;
     top: 0;
@@ -25,39 +29,30 @@ body {
 }
 
 /* ========================= */
-/* HERO BACKGROUND SECTION */
+/* HERO BACKGROUND */
 /* ========================= */
 
 .how-hero {
     position: relative;
     padding: 140px 20px 60px;
     overflow: hidden;
+
+    /* 🔥 clé pour afficher l’image */
+    min-height: 70vh;
 }
 
-/* IMAGE */
+/* IMAGE BACKGROUND */
 .how-bg {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
 
     background: url('../images/howsatona.png') center top / cover no-repeat;
 
     filter: brightness(0.4);
-
     z-index: 1;
 }
 
-.how-hero {
-    position: relative;
-    padding: 140px 20px 60px;
-    overflow: hidden;
-
-    min-height: 600px; /* 🔥 LA SOLUTION */
-}
-
-/* FUMÉ */
+/* EFFET FUMÉ */
 .how-bg::after {
     content: "";
     position: absolute;
@@ -65,12 +60,12 @@ body {
 
     background: radial-gradient(
         circle at center,
-        rgba(0,0,0,0.2) 0%,
-        rgba(0,0,0,0.85) 80%
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.85) 80%
     );
 }
 
-/* CONTENU AU-DESSUS */
+/* CONTENU */
 .how-content {
     position: relative;
     z-index: 2;
@@ -78,7 +73,10 @@ body {
     margin: auto;
 }
 
-/* TITRES */
+/* ========================= */
+/* TEXTES */
+/* ========================= */
+
 h1 {
     text-align: center;
     margin-bottom: 10px;
@@ -90,7 +88,10 @@ h1 {
     margin-bottom: 35px;
 }
 
-/* TOOL BOX (TRANSPARENT PREMIUM) */
+/* ========================= */
+/* TOOL BOX */
+/* ========================= */
+
 .tool-box {
     background: rgba(17, 17, 17, 0.6);
     backdrop-filter: blur(8px);
@@ -111,14 +112,16 @@ h1 {
     max-width: 1200px;
 }
 
-/* GRID */
+/* ========================= */
+/* GRID INPUTS */
+/* ========================= */
+
 .words-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(160px, 1fr));
     gap: 12px;
 }
 
-/* INPUTS */
 .words-grid input {
     background: rgba(26, 26, 26, 0.7);
     border: 1px solid #333;
@@ -127,13 +130,17 @@ h1 {
     color: white;
     font-size: 14px;
     outline: none;
+    transition: border 0.2s ease;
 }
 
 .words-grid input:focus {
     border-color: #666;
 }
 
+/* ========================= */
 /* BUTTONS */
+/* ========================= */
+
 .buttons {
     display: flex;
     gap: 12px;
@@ -150,6 +157,11 @@ button {
     padding: 12px 18px;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
 }
 
 button.secondary {
@@ -157,7 +169,10 @@ button.secondary {
     color: white;
 }
 
+/* ========================= */
 /* MESSAGE */
+/* ========================= */
+
 .message {
     margin-top: 18px;
     color: #ff8a8a;
@@ -165,7 +180,10 @@ button.secondary {
     text-align: center;
 }
 
+/* ========================= */
 /* SVG */
+/* ========================= */
+
 .svg-container {
     display: flex;
     justify-content: center;
