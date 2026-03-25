@@ -7,36 +7,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("resetBtn").addEventListener("click", resetPreview);
 });
 
-/* ========================= */
-/* LOAD SVG */
-/* ========================= */
-
 async function loadSvg() {
-
-    const front = document.getElementById("plateFront");
-    const back = document.getElementById("plateBack");
+    const container = document.getElementById("svgContainer");
 
     try {
         const response = await fetch("assets/images/seedrectobip39.ai.svg");
         const svgText = await response.text();
-
-        // 🔥 inject SVG dans les deux zones
-        front.innerHTML = svgText;
-        back.innerHTML = svgText;
-
-        // 🔥 force responsive
-        const svgs = document.querySelectorAll("#plateFront svg, #plateBack svg");
-
-        svgs.forEach(svg => {
-            svg.style.width = "100%";
-            svg.style.height = "auto";
-        });
-
+        container.innerHTML = svgText;
         svgLoaded = true;
-
     } catch (error) {
-        front.innerHTML = "Unable to load SVG.";
-        back.innerHTML = "Unable to load SVG.";
+        container.innerHTML = "Unable to load SVG.";
         console.error(error);
     }
 }
@@ -70,8 +50,7 @@ function previewWords() {
     let errors = [];
 
     for (let i = 1; i <= 24; i++) {
-        const input = document.getElementById("word" + i);
-        const word = input.value.trim().toLowerCase();
+        const word = document.getElementById("word" + i).value.trim().toLowerCase();
 
         if (!word) continue;
 
@@ -90,11 +69,6 @@ function previewWords() {
     } else {
         setMessage("");
     }
-
-    // 🔥 scroll vers les plaques
-    document.querySelector(".plates-section").scrollIntoView({
-        behavior: "smooth"
-    });
 }
 
 /* ========================= */
@@ -113,27 +87,19 @@ function getBinaryForWord(word) {
 /* ========================= */
 
 function applyBinaryToWord(wordIndex, binary) {
-
-    // ⚠️ IMPORTANT : querySelectorAll pour gérer les 2 SVG (front + back)
     for (let i = 0; i < 11; i++) {
-
         const bit = binary[i];
+        const element = document.getElementById(`w${wordIndex}-b${i + 1}`);
 
-        const elements = document.querySelectorAll(
-            `[id="w${wordIndex}-b${i + 1}"]`
-        );
+        if (!element) continue;
 
-        elements.forEach(element => {
-
-            if (bit === "1") {
-                element.setAttribute("fill", "white");
-                element.style.fill = "white";
-            } else {
-                element.setAttribute("fill", "black");
-                element.style.fill = "black";
-            }
-
-        });
+        if (bit === "1") {
+            element.setAttribute("fill", "white");
+            element.style.fill = "white";
+        } else {
+            element.setAttribute("fill", "black");
+            element.style.fill = "black";
+        }
     }
 }
 
@@ -142,17 +108,13 @@ function applyBinaryToWord(wordIndex, binary) {
 /* ========================= */
 
 function clearWordBits(wordIndex) {
-
     for (let i = 1; i <= 11; i++) {
+        const element = document.getElementById(`w${wordIndex}-b${i}`);
 
-        const elements = document.querySelectorAll(
-            `[id="w${wordIndex}-b${i}"]`
-        );
+        if (!element) continue;
 
-        elements.forEach(el => {
-            el.setAttribute("fill", "black");
-            el.style.fill = "black";
-        });
+        element.setAttribute("fill", "black");
+        element.style.fill = "black";
     }
 }
 
