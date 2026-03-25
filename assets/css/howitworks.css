@@ -1,4 +1,7 @@
+/* ========================= */
 /* GLOBAL */
+/* ========================= */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,7 +9,10 @@ body {
     color: white;
 }
 
+/* ========================= */
 /* HEADER */
+/* ========================= */
+
 .header {
     position: fixed;
     top: 0;
@@ -22,20 +28,33 @@ body {
     height: 80px;
 }
 
+/* ========================= */
 /* HERO */
+/* ========================= */
+
 .how-hero {
     position: relative;
     padding: 160px 20px 80px;
     text-align: center;
     min-height: 60vh;
+    overflow: hidden;
 }
 
+/* 🔥 FIX CRUCIAL */
 .how-bg {
-    position: fixed;
+    position: absolute;
     inset: 0;
     background: url('/assets/images/howsatona.png') center 20% / cover no-repeat;
     filter: brightness(0.4);
     z-index: 0;
+}
+
+/* effet fumé */
+.how-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
 }
 
 .how-content {
@@ -43,11 +62,23 @@ body {
     z-index: 2;
 }
 
-/* PLATES */
+.how-content h1 {
+    font-size: 42px;
+}
+
+.subtitle {
+    color: #aaa;
+    font-size: 16px;
+}
+
+/* ========================= */
+/* 🪙 PLATES */
+/* ========================= */
+
 .plates-section {
     position: relative;
     z-index: 2;
-    padding: 60px 0;
+    padding: 40px 0 80px;
 }
 
 .plates {
@@ -55,11 +86,17 @@ body {
     width: 100%;
 }
 
+/* CHAQUE MOITIÉ */
 .plate {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* séparation fine */
+.plate:last-child {
+    border-left: 1px solid rgba(255,255,255,0.05);
 }
 
 /* SVG */
@@ -69,23 +106,62 @@ body {
     justify-content: center;
 }
 
-/* 🔥 FIX IMPORTANT */
+/* 🔥 FULL WIDTH FIX */
 .svg-container svg {
     width: 100%;
-    max-width: 900px;
+    max-width: 600px; /* évite que ça devienne énorme sur desktop */
     height: auto;
     background: transparent !important;
+
+    filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
+    transition: transform 0.3s ease;
 }
 
-/* TEXTES FRONT BACK */
+.svg-container svg:hover {
+    transform: scale(1.02);
+}
+
+/* TITRES */
 .plate h3 {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 14px;
     letter-spacing: 2px;
     opacity: 0.6;
 }
 
+/* ========================= */
+/* STEPS */
+/* ========================= */
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.step {
+    font-size: 13px;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+/* ========================= */
 /* INPUT */
+/* ========================= */
+
+.input-section {
+    position: relative;
+    z-index: 2;
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
 .words-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -100,7 +176,10 @@ body {
     color: white;
 }
 
+/* ========================= */
 /* BUTTONS */
+/* ========================= */
+
 .buttons {
     margin-top: 30px;
     display: flex;
@@ -108,17 +187,59 @@ body {
     gap: 10px;
 }
 
+button {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button.secondary {
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* ========================= */
+/* RESULT */
+/* ========================= */
+
+.viewer-box {
+    padding: 60px;
+    text-align: center;
+}
+
+/* ========================= */
 /* MOBILE */
+/* ========================= */
+
 @media (max-width: 768px) {
+
     .plates {
         flex-direction: column;
     }
 
     .plate {
         width: 100%;
+        margin-bottom: 50px;
+        border-left: none;
+    }
+
+    .svg-container svg {
+        width: 90%;
+        max-width: none;
     }
 
     .words-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .how-hero {
+        padding: 120px 15px 40px;
+    }
+}
+
+@media (max-width: 560px) {
+    .words-grid {
+        grid-template-columns: 1fr;
     }
 }
