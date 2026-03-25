@@ -14,12 +14,33 @@
 
 <body>
 
-<!-- HEADER -->
+<!-- HEADER FIXE -->
 <header class="header">
-    <a href="index.html">
+    <a href="index.html" class="logo">
         <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
     </a>
+
+    <!-- MENU DESKTOP -->
+    <nav class="nav">
+        <a href="bip39.html">BIP39</a>
+        <a href="howitworks.html">How it works</a>
+        <a href="#">Security</a>
+    </nav>
+
+    <!-- BURGER MOBILE -->
+    <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </header>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="bip39.html">BIP39 Tool</a>
+    <a href="howitworks.html">How it works</a>
+    <a href="#">Security</a>
+</div>
 
 <!-- HERO -->
 <section class="how-hero">
@@ -92,6 +113,26 @@
 <!-- JS -->
 <script src="assets/bip39-list.js"></script>
 <script src="assets/js/howitworks.js"></script>
+<script>
+    window.addEventListener("scroll", function() {
+        const header = document.querySelector(".header");
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+</script>
+<script>
+    const burger = document.getElementById("burger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (burger && mobileMenu) {
+        burger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+    }
+</script>
 
 </body>
 </html>

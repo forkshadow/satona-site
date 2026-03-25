@@ -14,18 +14,11 @@ body {
 /* ========================= */
 
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    z-index: 1000;
+    background: transparent;
 }
 
 .header img {
-    height: 80px;
+    height: 90px;
 }
 
 /* ========================= */
@@ -264,10 +257,9 @@ button.secondary {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* FIX iPhone */
     .how-bg {
-        position: absolute;
-        height: 120%;
+        position: fixed;
+        height: 100%;
     }
 }
 
