@@ -25,11 +25,10 @@ body {
 
 .header img {
     height: 90px;
-    width: auto;
 }
 
 /* ========================= */
-/* HERO BACKGROUND */
+/* HERO PARALLAX */
 /* ========================= */
 
 .how-hero {
@@ -39,18 +38,18 @@ body {
     min-height: 70vh;
 }
 
-/* IMAGE */
+/* 🔥 IMAGE FIXE (TRUE PARALLAX) */
 .how-bg {
-    position: absolute;
-    inset: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-    background-image: url('/assets/images/howsatona.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 20%;
+    background: url('/assets/images/howsatona.png') center 20% / cover no-repeat;
 
+    z-index: 0;
     filter: brightness(0.4);
-    z-index: 1;
 }
 
 /* FUMÉ */
@@ -61,12 +60,12 @@ body {
 
     background: radial-gradient(
         circle at center,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.85) 80%
+        rgba(0,0,0,0.2) 0%,
+        rgba(0,0,0,0.85) 80%
     );
 }
 
-/* CONTENU */
+/* CONTENU AU-DESSUS */
 .how-content {
     position: relative;
     z-index: 2;
@@ -90,42 +89,32 @@ h1 {
 }
 
 /* ========================= */
-/* TOOL BOX (TRANSPARENT TOTAL) */
+/* TOOL BOX (TRANSPARENT) */
 /* ========================= */
 
 .tool-box {
     background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-
     border-radius: 20px;
     padding: 25px;
     margin-bottom: 30px;
-
-    box-shadow: none;
 }
 
 /* ========================= */
-/* SVG (🔥 TRANSPARENCE) */
+/* SVG ZONE */
 /* ========================= */
 
 .viewer-box {
-    background: transparent; /* 🔥 enlève le fond noir */
+    position: relative;
+    z-index: 2;
+    background: transparent;
     border-radius: 20px;
     padding: 25px;
     margin: 40px auto;
     max-width: 1200px;
-
-    box-shadow: none;
-}
-
-/* SVG direct */
-.svg-container svg {
-    background: transparent !important;
 }
 
 /* ========================= */
-/* GRID INPUTS */
+/* GRID */
 /* ========================= */
 
 .words-grid {
@@ -135,13 +124,12 @@ h1 {
 }
 
 .words-grid input {
-    background: rgba(0, 0, 0, 0.4); /* 👈 lisible mais transparent */
+    background: rgba(0,0,0,0.4);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 12px;
     padding: 12px;
     color: white;
     font-size: 14px;
-    outline: none;
 }
 
 .words-grid input:focus {
@@ -153,6 +141,9 @@ h1 {
 /* ========================= */
 
 .buttons {
+    position: relative;
+    z-index: 2;
+
     display: flex;
     gap: 12px;
     margin: 30px auto;
@@ -187,12 +178,11 @@ button.secondary {
 .message {
     margin-top: 18px;
     color: #ff8a8a;
-    min-height: 20px;
     text-align: center;
 }
 
 /* ========================= */
-/* SVG CONTAINER */
+/* SVG */
 /* ========================= */
 
 .svg-container {
@@ -200,26 +190,31 @@ button.secondary {
     justify-content: center;
     align-items: center;
     min-height: 300px;
-    overflow: auto;
+}
+
+.svg-container svg {
+    max-width: 100%;
+    max-height: 900px;
 }
 
 /* ========================= */
-/* RESPONSIVE */
+/* MOBILE FIX (IMPORTANT) */
 /* ========================= */
-
-@media (max-width: 900px) {
-    .words-grid {
-        grid-template-columns: repeat(2, minmax(140px, 1fr));
-    }
-}
 
 @media (max-width: 768px) {
+
+    /* 🔥 iPhone fix */
+    .how-bg {
+        position: absolute; /* sinon bug iOS */
+        height: 120%;
+    }
+
     .how-hero {
         padding: 120px 15px 40px;
     }
 
-    .how-bg {
-        background-position: center;
+    .words-grid {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
     }
 }
 
