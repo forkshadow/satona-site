@@ -8,6 +8,81 @@ body {
     padding-top: 110px;
 }
 
+
+/* NAV DESKTOP */
+.nav {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    font-size: 14px;
+    color: white;
+    opacity: 0.8;
+}
+
+.nav a:hover {
+    opacity: 1;
+}
+
+/* CTA */
+.nav .cta {
+    border: 1px solid white;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* BURGER */
+.burger {
+    display: none;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: white;
+    margin: 5px 0;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 30px;
+    gap: 20px;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+
+
 /* HEADER FIXE */
 .header {
     position: fixed;
