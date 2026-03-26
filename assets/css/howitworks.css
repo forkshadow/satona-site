@@ -122,6 +122,22 @@ body {
     display: none;
 }
 
+/* ========================= */
+/* FRONT / BACK (INDÉPENDANTS) */
+/* ========================= */
+
+.front-label {
+    transform: translateX(-10%) rotate(-90deg);
+    display: inline-block;
+    pointer-events: none;
+}
+
+.back-label {
+    transform: translateX(10%) rotate(-90deg);
+    display: inline-block;
+    pointer-events: none;
+}
+
 /* TITRES */
 
 .plate h3 {
