@@ -263,6 +263,11 @@ button.secondary {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Prevent mobile browsers (notably iOS Safari) from auto-zooming on focus */
+    .words-grid input {
+        font-size: 16px;
+    }
+
     .how-bg {
         position: fixed;
         height: 100%;
