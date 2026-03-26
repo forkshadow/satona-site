@@ -136,11 +136,11 @@ body {
 }
 
 .front-label {
-    transform: translateX(-10%);
+    transform: translateX(-20%);
 }
 
 .back-label {
-    transform: translateX(10%);
+    transform: translateX(20%);
 }
 
 /* ========================= */
