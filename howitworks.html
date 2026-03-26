@@ -54,7 +54,7 @@
     </div>
 </section>
 
-<!-- 🪙 PLATES (CORRIGÉ) -->
+<!-- 🪙 PLATES -->
 <section class="plates-section">
 
     <div class="plates">
@@ -62,20 +62,20 @@
         <!-- FRONT -->
         <div class="plate">
             <div class="svg-container" id="plateFront"></div>
-            <h3>FRONT</h3>
+            <h3 class="front-label">FRONT</h3>
         </div>
 
         <!-- BACK -->
         <div class="plate">
             <div class="svg-container" id="plateBack"></div>
-            <h3>BACK</h3>
+            <h3 class="back-label">BACK</h3>
         </div>
 
     </div>
 
 </section>
 
-<!-- 📖 STEPS (plus visuel + cohérent) -->
+<!-- 📖 STEPS -->
 <section class="steps">
     <div class="step">Enter your 24 words</div>
     <div class="step">Convert to binary</div>
@@ -113,6 +113,7 @@
 <!-- JS -->
 <script src="assets/bip39-list.js"></script>
 <script src="assets/js/howitworks.js"></script>
+
 <script>
     window.addEventListener("scroll", function() {
         const header = document.querySelector(".header");
@@ -123,6 +124,7 @@
         }
     });
 </script>
+
 <script>
     const burger = document.getElementById("burger");
     const mobileMenu = document.getElementById("mobileMenu");
