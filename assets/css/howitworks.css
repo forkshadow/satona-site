@@ -97,6 +97,19 @@ body {
     border-right: none;
 }
 
+.plate-label-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 22.5%;
+    padding-right: 22.5%;
+    margin: 28px auto 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    box-sizing: border-box;
+}
+
 /* SVG */
 
 .svg-container {
@@ -128,15 +141,6 @@ body {
 
 .back-label {
     transform: translateX(10%);
-}
-
-/* TITRES */
-
-.plate h3 {
-    margin-top: 12px;
-    font-size: 14px;
-    letter-spacing: 2px;
-    opacity: 0.6;
 }
 
 /* ========================= */
@@ -242,10 +246,6 @@ button.secondary {
         margin-bottom: 0;
         border-right: none;
         padding: 0 6px;
-    }
-
-    .plate h3 {
-        margin-top: 10px;
     }
 
     .svg-container svg {
