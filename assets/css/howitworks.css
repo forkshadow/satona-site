@@ -27,7 +27,7 @@ body {
 
 .how-hero {
     position: relative;
-    padding: 130px 20px 42px;
+    padding: 130px 20px 130px;
     text-align: center;
     min-height: 50vh;
 }
@@ -228,7 +228,7 @@ button.secondary {
 
 @media (max-width: 768px) {
     .how-hero {
-        padding: 130px 16px 36px;
+        padding: 130px 16px 130px;
         min-height: auto;
     }
 
