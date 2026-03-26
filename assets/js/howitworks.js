@@ -1,6 +1,5 @@
 let svgLoaded = false;
-let pointsMap = {};
-let loadingInProgress = false;
+let pointsMap = {}; // 🔥 cache des éléments SVG
 
 document.addEventListener("DOMContentLoaded", async () => {
     moveSvgContainerToTop();
@@ -20,53 +19,20 @@ function moveSvgContainerToTop() {
     platesSection.insertBefore(svgContainer, platesRow);
 }
 
-/* ========================= */
-/* LOAD SVG SÉCURISÉ */
-/* ========================= */
-
-async function loadSvg(retries = 2) {
-    if (loadingInProgress) return;
-    loadingInProgress = true;
-
+async function loadSvg() {
     const container = document.getElementById("svgContainer");
 
     try {
-        const response = await fetch("assets/images/seedrectobip39.ai.svg", {
-            cache: "no-store"
-        });
-
+        const response = await fetch("assets/images/seedrectobip39.ai.svg");
         const svgText = await response.text();
-
-        // 🔥 vérification critique
-        if (!svgText.includes("w1-b1")) {
-            throw new Error("SVG incomplete");
-        }
-
         container.innerHTML = svgText;
 
-        buildPointsMap();
-
-        // 🔥 validation réelle DOM
-        if (Object.keys(pointsMap).length < 200) {
-            throw new Error("SVG missing elements");
-        }
+        buildPointsMap(); // 🔥 important
 
         svgLoaded = true;
-        loadingInProgress = false;
-
-        console.log("✅ SVG loaded OK");
-
     } catch (error) {
-        console.warn("⚠️ SVG load failed:", error);
-
-        if (retries > 0) {
-            loadingInProgress = false;
-            console.log("🔄 retry SVG...");
-            await loadSvg(retries - 1);
-        } else {
-            container.innerHTML = "Network issue. Please refresh.";
-            loadingInProgress = false;
-        }
+        container.innerHTML = "Unable to load SVG.";
+        console.error(error);
     }
 }
 
@@ -75,9 +41,8 @@ async function loadSvg(retries = 2) {
 /* ========================= */
 
 function buildPointsMap() {
-    pointsMap = {};
-
     const svg = document.getElementById("svgContainer");
+
     if (!svg) return;
 
     const elements = svg.querySelectorAll("[id^='w']");
@@ -85,8 +50,6 @@ function buildPointsMap() {
     elements.forEach(el => {
         pointsMap[el.id] = el;
     });
-
-    console.log("🔎 mapped:", Object.keys(pointsMap).length);
 }
 
 /* ========================= */
@@ -102,12 +65,9 @@ function resetPreview() {
 /* PREVIEW */
 /* ========================= */
 
-async function previewWords() {
-
-    // 🔥 bloque si SVG pas prêt
-    if (!svgLoaded || Object.keys(pointsMap).length < 200) {
-        setMessage("Loading SVG...");
-        await loadSvg();
+function previewWords() {
+    if (!svgLoaded) {
+        setMessage("SVG not loaded yet.");
         return;
     }
 
@@ -165,7 +125,7 @@ function getBinaryForWord(word) {
 function applyBinaryToWord(wordIndex, binary) {
     for (let i = 0; i < 11; i++) {
         const bit = binary[i];
-        const element = pointsMap[`w${wordIndex}-b${i + 1}`];
+        const element = pointsMap[`w${wordIndex}-b${i + 1}`]; // 🔥 optimisé
 
         if (!element) continue;
 
@@ -185,7 +145,7 @@ function applyBinaryToWord(wordIndex, binary) {
 
 function clearWordBits(wordIndex) {
     for (let i = 1; i <= 11; i++) {
-        const element = pointsMap[`w${wordIndex}-b${i}`];
+        const element = pointsMap[`w${wordIndex}-b${i}`]; // 🔥 optimisé
 
         if (!element) continue;
 
