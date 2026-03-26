@@ -27,7 +27,7 @@ body {
 
 .how-hero {
     position: relative;
-    padding: 130px 20px 42px;
+    padding: 130px 20px 130px;
     text-align: center;
     min-height: 50vh;
 }
@@ -97,6 +97,19 @@ body {
     border-right: none;
 }
 
+.plate-label-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 22.5%;
+    padding-right: 22.5%;
+    margin: 28px auto 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    box-sizing: border-box;
+}
+
 /* SVG */
 
 .svg-container {
@@ -128,15 +141,6 @@ body {
 
 .back-label {
     transform: translateX(10%);
-}
-
-/* TITRES */
-
-.plate h3 {
-    margin-top: 12px;
-    font-size: 14px;
-    letter-spacing: 2px;
-    opacity: 0.6;
 }
 
 /* ========================= */
@@ -224,7 +228,7 @@ button.secondary {
 
 @media (max-width: 768px) {
     .how-hero {
-        padding: 130px 16px 36px;
+        padding: 130px 16px 130px;
         min-height: auto;
     }
 
@@ -244,10 +248,6 @@ button.secondary {
         padding: 0 6px;
     }
 
-    .plate h3 {
-        margin-top: 10px;
-    }
-
     .svg-container svg {
         width: 100%;
         max-width: 100%;
@@ -261,6 +261,11 @@ button.secondary {
 
     .words-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Prevent mobile browsers (notably iOS Safari) from auto-zooming on focus */
+    .words-grid input {
+        font-size: 16px;
     }
 
     .how-bg {
