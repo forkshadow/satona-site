@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>How it works - SATONA</title>
@@ -14,127 +15,126 @@
 
 <body>
 
-<!-- HEADER FIXE -->
-<header class="header">
-    <a href="index.html" class="logo">
-        <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
-    </a>
+    <!-- HEADER FIXE -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+        </a>
 
-    <!-- MENU DESKTOP -->
-    <nav class="nav">
-        <a href="bip39.html">BIP39</a>
+        <!-- MENU DESKTOP -->
+        <nav class="nav">
+            <a href="bip39.html">BIP39</a>
+            <a href="howitworks.html">How it works</a>
+            <a href="#">Security</a>
+        </nav>
+
+        <!-- BURGER MOBILE -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="bip39.html">BIP39 Tool</a>
         <a href="howitworks.html">How it works</a>
         <a href="#">Security</a>
-    </nav>
-
-    <!-- BURGER MOBILE -->
-    <div class="burger" id="burger">
-        <span></span>
-        <span></span>
-        <span></span>
     </div>
-</header>
 
-<!-- MENU MOBILE -->
-<div class="mobile-menu" id="mobileMenu">
-    <a href="bip39.html">BIP39 Tool</a>
-    <a href="howitworks.html">How it works</a>
-    <a href="#">Security</a>
-</div>
+    <!-- HERO -->
+    <section class="how-hero">
+        <div class="how-bg"></div>
 
-<!-- HERO -->
-<section class="how-hero">
-    <div class="how-bg"></div>
+        <div class="how-content">
+            <h1>Punch your seed into metal.</h1>
+            <p class="subtitle">
+                No cloud. No hardware dependency. Just steel.
+            </p>
+        </div>
+    </section>
 
-    <div class="how-content">
-        <h1>Punch your seed into metal.</h1>
-        <p class="subtitle">
-            No cloud. No hardware dependency. Just steel.
-        </p>
-    </div>
-</section>
+    <!-- 🪙 PLATES (CORRIGÉ) -->
+    <section class="plates-section">
+        <div class="plates">
 
-<!-- 🪙 PLATES -->
-<section class="plates-section">
+            <!-- FRONT -->
+            <div class="plate">
+                <div class="svg-container" id="plateFront"></div>
+                <h3>FRONT</h3>
+            </div>
 
-    <div class="plates">
+            <!-- BACK -->
+            <div class="plate">
+                <div class="svg-container" id="plateBack"></div>
+                <h3>BACK</h3>
+            </div>
 
-        <!-- FRONT -->
-        <div class="plate">
-            <div class="svg-container" id="plateFront"></div>
-            <h3 class="front-label">FRONT</h3>
+        </div>
+    </section>
+
+    <!-- 📖 STEPS (plus visuel + cohérent) -->
+    <section class="steps">
+        <div class="step">Enter your 24 words</div>
+        <div class="step">Convert to binary</div>
+        <div class="step">Punch the plate</div>
+        <div class="step">Store forever</div>
+    </section>
+
+    <!-- INPUT -->
+    <section class="input-section">
+
+        <h2>Enter your 24 BIP39 words</h2>
+
+        <div class="words-grid">
+            <script>
+                for (let i = 1; i <= 24; i++) {
+                    document.write(`<input type="text" id="word${i}" placeholder="Word ${i}">`);
+                }
+            </script>
         </div>
 
-        <!-- BACK -->
-        <div class="plate">
-            <div class="svg-container" id="plateBack"></div>
-            <h3 class="back-label">BACK</h3>
+        <div class="buttons">
+            <button id="previewBtn">Preview your plate</button>
+            <button id="resetBtn" class="secondary">Reset</button>
         </div>
 
-    </div>
+        <div id="message" class="message"></div>
 
-</section>
+    </section>
 
-<!-- 📖 STEPS -->
-<section class="steps">
-    <div class="step">Enter your 24 words</div>
-    <div class="step">Convert to binary</div>
-    <div class="step">Punch the plate</div>
-    <div class="step">Store forever</div>
-</section>
+    <!-- RESULT SVG -->
+    <section class="viewer-box">
+        <div id="svgContainer" class="svg-container"></div>
+    </section>
 
-<!-- INPUT -->
-<section class="input-section">
+    <!-- JS -->
+    <script src="assets/bip39-list.js"></script>
+    <script src="assets/js/howitworks.js"></script>
 
-    <h2>Enter your 24 BIP39 words</h2>
-
-    <div class="words-grid">
-        <script>
-            for(let i=1;i<=24;i++){
-                document.write(`<input type="text" id="word${i}" placeholder="Word ${i}">`);
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
             }
-        </script>
-    </div>
-
-    <div class="buttons">
-        <button id="previewBtn">Preview your plate</button>
-        <button id="resetBtn" class="secondary">Reset</button>
-    </div>
-
-    <div id="message" class="message"></div>
-
-</section>
-
-<!-- RESULT SVG -->
-<section class="viewer-box">
-    <div id="svgContainer" class="svg-container"></div>
-</section>
-
-<!-- JS -->
-<script src="assets/bip39-list.js"></script>
-<script src="assets/js/howitworks.js"></script>
-
-<script>
-    window.addEventListener("scroll", function() {
-        const header = document.querySelector(".header");
-        if (window.scrollY > 50) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-    });
-</script>
-
-<script>
-    const burger = document.getElementById("burger");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    if (burger && mobileMenu) {
-        burger.addEventListener("click", () => {
-            mobileMenu.classList.toggle("active");
         });
-    }
-</script>
+    </script>
+
+    <script>
+        const burger = document.getElementById("burger");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        if (burger && mobileMenu) {
+            burger.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+            });
+        }
+    </script>
 
 </body>
+
 </html>
