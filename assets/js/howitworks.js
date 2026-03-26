@@ -1,4 +1,5 @@
 let svgLoaded = false;
+let pointsMap = {}; // 🔥 cache des éléments SVG
 
 document.addEventListener("DOMContentLoaded", async () => {
     moveSvgContainerToTop();
@@ -25,11 +26,30 @@ async function loadSvg() {
         const response = await fetch("assets/images/seedrectobip39.ai.svg");
         const svgText = await response.text();
         container.innerHTML = svgText;
+
+        buildPointsMap(); // 🔥 important
+
         svgLoaded = true;
     } catch (error) {
         container.innerHTML = "Unable to load SVG.";
         console.error(error);
     }
+}
+
+/* ========================= */
+/* BUILD MAP */
+/* ========================= */
+
+function buildPointsMap() {
+    const svg = document.getElementById("svgContainer");
+
+    if (!svg) return;
+
+    const elements = svg.querySelectorAll("[id^='w']");
+
+    elements.forEach(el => {
+        pointsMap[el.id] = el;
+    });
 }
 
 /* ========================= */
@@ -105,7 +125,7 @@ function getBinaryForWord(word) {
 function applyBinaryToWord(wordIndex, binary) {
     for (let i = 0; i < 11; i++) {
         const bit = binary[i];
-        const element = document.getElementById(`w${wordIndex}-b${i + 1}`);
+        const element = pointsMap[`w${wordIndex}-b${i + 1}`]; // 🔥 optimisé
 
         if (!element) continue;
 
@@ -125,7 +145,7 @@ function applyBinaryToWord(wordIndex, binary) {
 
 function clearWordBits(wordIndex) {
     for (let i = 1; i <= 11; i++) {
-        const element = document.getElementById(`w${wordIndex}-b${i}`);
+        const element = pointsMap[`w${wordIndex}-b${i}`]; // 🔥 optimisé
 
         if (!element) continue;
 
