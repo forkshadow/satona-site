@@ -93,6 +93,17 @@ body {
     border-right: 1px solid rgba(255,255,255,0.05);
 }
 
+/* FRONT → décale vers la gauche */
+.plate:first-child h3 {
+    transform: translateX(-10%);
+}
+
+/* BACK → décale vers la droite */
+.plate:last-child h3 {
+    transform: translateX(10%);
+}
+
+
 .plate:last-child {
     border-right: none;
 }
