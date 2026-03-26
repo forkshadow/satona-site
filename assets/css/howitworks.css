@@ -95,12 +95,12 @@ body {
 
 /* FRONT → décale vers la gauche */
 .plate:first-child h3 {
-    transform: translateX(-10%);
+    transform: translateX(-15%);
 }
 
 /* BACK → décale vers la droite */
 .plate:last-child h3 {
-    transform: translateX(10%);
+    transform: translateX(15%);
 }
 
 
