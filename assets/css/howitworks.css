@@ -27,7 +27,11 @@ body {
 
 .how-hero {
     position: relative;
+<<<<<<< codex/fix-input-zoom-behavior-on-mobile-vlijl8
+    padding: 130px 20px 80px;
+=======
     padding: 130px 20px 130px;
+>>>>>>> main
     text-align: center;
     min-height: 50vh;
 }
@@ -101,9 +105,15 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+<<<<<<< codex/fix-input-zoom-behavior-on-mobile-vlijl8
+    padding-left: 22.5%;
+    padding-right: 22.5%;
+    margin: 28px auto 0;
+=======
     padding-left: 20.0%;
     padding-right: 20.0%;
     margin: 14px auto 0;
+>>>>>>> main
     font-size: 14px;
     letter-spacing: 2px;
     opacity: 0.6;
@@ -140,7 +150,11 @@ body {
 }
 
 .back-label {
+<<<<<<< codex/fix-input-zoom-behavior-on-mobile-vlijl8
+    transform: translateX(10%);
+=======
     transform: translateX(20%);
+>>>>>>> main
 }
 
 /* ========================= */
