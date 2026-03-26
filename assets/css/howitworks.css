@@ -89,20 +89,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative; /* 🔑 IMPORTANT */
 
     border-right: 1px solid rgba(255,255,255,0.05);
 }
-
-/* FRONT → décale vers la gauche */
-.plate:first-child h3 {
-    transform: translateX(-15%);
-}
-
-/* BACK → décale vers la droite */
-.plate:last-child h3 {
-    transform: translateX(15%);
-}
-
 
 .plate:last-child {
     border-right: none;
@@ -119,7 +109,6 @@ body {
     width: 90%;
     height: auto;
     background: transparent !important;
-
     filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
 }
 
@@ -133,12 +122,29 @@ body {
     display: none;
 }
 
-/* TITRES */
+/* ========================= */
+/* TITRES POSITIONNÉS PRÉCISÉMENT */
+/* ========================= */
+
 .plate h3 {
-    margin-top: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     font-size: 14px;
     letter-spacing: 2px;
     opacity: 0.6;
+    z-index: 5;
+}
+
+/* FRONT → 22.5% */
+.plate:first-child h3 {
+    left: 45%;
+}
+
+/* BACK → 77.5% */
+.plate:last-child h3 {
+    left: 55%;
 }
 
 /* ========================= */
