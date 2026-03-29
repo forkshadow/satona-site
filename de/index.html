@@ -5,251 +5,128 @@
     <title>SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- HEADER FIXE -->
-    <header class="header">
-        <a href="/de/" class="logo">
-            <img src="../assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
-        </a>
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+    </a>
 
-        <!-- MENU DESKTOP -->
-        <nav class="nav">
-            <a href="/de/bip39.html">BIP39</a>
-            <a href="/de/howitworks.html">How it works</a>
-            <a href="#">Security</a>
-            <div class="lang-switch">
-                <a href="/" class="lang-item" onclick="localStorage.setItem('userLang','fr')">🇫🇷 FR</a>
-                <a href="/en/" class="lang-item" onclick="localStorage.setItem('userLang','en')">🇬🇧 EN</a>
-                <a href="/de/" class="lang-item active" onclick="localStorage.setItem('userLang','de')">🇩🇪 DE</a>
-            </div>
-        </nav>
-
-        <!-- BURGER MOBILE -->
-        <div class="burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav class="nav">
+        <a href="bip39.html">BIP39</a>
+        <a href="howitworks.html">Funktionsweise</a>
+        <a href="#">Sicherheit</a>
+        <div class="lang-switch">
+            <a href="/" onclick="localStorage.setItem('userLang','fr')">🇫🇷 FR</a>
+            <a href="/en/" onclick="localStorage.setItem('userLang','en')">🇬🇧 EN</a>
+            <a href="/de/" class="active" onclick="localStorage.setItem('userLang','de')">🇩🇪 DE</a>
         </div>
+    </nav>
 
-        <div class="mobile-tab" id="mobileTab">
-            <span>MENU</span>
-        </div>
-    </header>
-
-    <!-- MENU MOBILE -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="/de/bip39.html">BIP39 Tool</a>
-        <a href="/de/howitworks.html">How it works</a>
-        <a href="#">Security</a>
-        <div class="mobile-lang">
-            <p>Language</p>
-            <a href="/" onclick="localStorage.setItem('userLang','fr')">🇫🇷 Français</a>
-            <a href="/en/" onclick="localStorage.setItem('userLang','en')">🇬🇧 English</a>
-            <a href="/de/" class="active" onclick="localStorage.setItem('userLang','de')">🇩🇪 Deutsch</a>
-        </div>
+    <div class="burger" id="burger">
+        <span></span><span></span><span></span>
     </div>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-bg"></div>
+    <div class="mobile-tab" id="mobileTab">
+        <span>MENU</span>
+    </div>
+</header>
 
-        <div class="hero-content">
-            <h1>Seed Never Dies.</h1>
-            <p>Your crypto. Safe. Forever.</p>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="bip39.html">BIP39 Tool</a>
+    <a href="howitworks.html">Funktionsweise</a>
+    <a href="#">Sicherheit</a>
+    <div class="mobile-lang">
+        <p>Sprache</p>
+        <a href="/" onclick="localStorage.setItem('userLang','fr')">🇫🇷 Français</a>
+        <a href="/en/" onclick="localStorage.setItem('userLang','en')">🇬🇧 English</a>
+        <a href="/de/" class="active" onclick="localStorage.setItem('userLang','de')">🇩🇪 Deutsch</a>
+    </div>
+</div>
 
-            <a href="#" class="hero-cta">Buy now</a>
-        </div>
-    </section>
+<section class="hero">
+    <div class="hero-bg"></div>
 
-    <!-- FEATURES -->
-    <section class="section">
-        <div class="grid">
+    <div class="hero-content">
+        <h1>Ihre Seed Phrase bleibt für immer sicher.</h1>
+        <p>Ihre Kryptowährung. Geschützt. Für immer.</p>
+        <a href="#" class="hero-cta">Jetzt kaufen</a>
+    </div>
+</section>
 
-            <a href="/de/bip39.html" class="card">
-                <img src="../assets/images/bip39.png" alt="BIP39 Tool">
-                <h3>BIP39 Tool</h3>
-                <p>Convert your words instantly</p>
-            </a>
+<section class="section">
+    <div class="grid">
 
-            <a href="/de/howitworks.html" class="card">
-                <img src="../assets/images/how.png" alt="How it works">
-                <h3>How it works</h3>
-                <p>Convert. Punch. Store.</p>
-            </a>
+        <a href="bip39.html" class="card">
+            <img src="assets/images/bip39.png">
+            <h3>BIP39 Tool</h3>
+            <p>Wörter sofort umwandeln</p>
+        </a>
 
-            <div class="card">
-                <img src="../assets/images/shop.png" alt="Buy SATONA">
-                <h3>Buy SATONA</h3>
-                <p>Secure your seed forever</p>
-            </div>
+        <a href="howitworks.html" class="card">
+            <img src="assets/images/how.png">
+            <h3>Funktionsweise</h3>
+            <p>Umwandeln. Prägen. Sicher aufbewahren.</p>
+        </a>
 
-            <div class="card">
-                <img src="../assets/images/why.png" alt="Why SATONA">
-                <h3>Why SATONA</h3>
-                <p>Fire. Water. Time. Proof.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- NOUVELLE SECTION SATONA INFO -->
-    <section class="satona-info">
-
-        <div class="satona-container">
-
-            <!-- IMAGE -->
-            <div class="satona-image">
-                <img src="../assets/images/coin.png" alt="SATONA Plate Front and Back">
-            </div>
-
-            <!-- TEXTE -->
-            <div class="satona-text">
-                <h2>SATONA Plate – Secure Your Crypto Seed Forever</h2>
-
-                <p>
-                    The SATONA Plate is a durable solution designed to securely store your BIP39 recovery phrase offline.
-                    Unlike paper or digital backups, it protects your crypto seed against fire, water, time and physical damage.
-                </p>
-
-                <p>
-                    Your recovery phrase is the only access to your cryptocurrency. If it is lost, your assets are gone forever.
-                    SATONA ensures your Bitcoin, Ethereum and crypto wallets remain recoverable in all situations.
-                </p>
-
-                <ul>
-                    <li>🔥 Fire resistant</li>
-                    <li>💧 Waterproof</li>
-                    <li>🛡️ Corrosion resistant</li>
-                    <li>💥 Impact resistant</li>
-                </ul>
-
-                <p>
-                    Compatible with Ledger, Trezor, SafePal and Trust Wallet.
-                    Store your 24-word seed safely, offline, forever.
-                </p>
-            </div>
-
+        <div class="card">
+            <img src="assets/images/shop.png">
+            <h3>SATONA kaufen</h3>
+            <p>Ihre Seed Phrase dauerhaft sichern</p>
         </div>
 
-    </section>
+        <div class="card">
+            <img src="assets/images/why.png">
+            <h3>Warum SATONA</h3>
+            <p>Feuer. Wasser. Zeit. Beständigkeit.</p>
+        </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        © SATONA
-    </footer>
+    </div>
+</section>
 
-    <!-- JS HEADER SCROLL -->
-    <script>
-        window.addEventListener("scroll", function() {
-            const header = document.querySelector(".header");
-            if (window.scrollY > 50) {
-                header.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-            }
-        });
-    </script>
+<section class="satona-info">
+    <div class="satona-container">
 
-    <!-- MENU MOBILE -->
-    <script>
-        const burger = document.getElementById("burger");
-        const mobileTab = document.getElementById("mobileTab");
-        const mobileMenu = document.getElementById("mobileMenu");
+        <div class="satona-image">
+            <img src="assets/images/coin.png">
+        </div>
 
-        function checkHeaderFit() {
-            const header = document.querySelector(".header");
-            const logo = document.querySelector(".logo");
-            const nav = document.querySelector(".nav");
+        <div class="satona-text">
+            <h2>SATONA Plate – Ihre Seed Phrase sicher aufbewahren</h2>
 
-            if (!header || !logo || !nav || !burger) {
-                return;
-            }
+            <p>
+                Die SATONA Plate wurde entwickelt, um Ihre BIP39 Wiederherstellungsphrase dauerhaft offline zu speichern.
+                Im Gegensatz zu Papier oder digitalen Backups schützt sie zuverlässig vor Feuer, Wasser, Zeit und physischen Schäden.
+            </p>
 
-            const previousNavDisplay = nav.style.display;
-            const previousNavVisibility = nav.style.visibility;
+            <p>
+                Ihre Seed Phrase ist der einzige Zugang zu Ihren Kryptowerten.
+                Geht sie verloren, sind Ihre Assets unwiederbringlich verloren.
+                SATONA sorgt dafür, dass Ihre Bitcoin-, Ethereum- und Krypto-Wallets jederzeit wiederherstellbar bleiben.
+            </p>
 
-            nav.style.visibility = "hidden";
-            nav.style.display = "flex";
+            <ul>
+                <li>🔥 Feuerbeständig</li>
+                <li>💧 Wasserdicht</li>
+                <li>🛡️ Korrosionsbeständig</li>
+                <li>💥 Stoßfest</li>
+            </ul>
 
-            const logoRect = logo.getBoundingClientRect();
-            const navRect = nav.getBoundingClientRect();
-            const shouldUseBurger = navRect.left <= logoRect.right + 10;
+            <p>
+                Kompatibel mit Ledger, Trezor, SafePal und Trust Wallet.
+                Bewahren Sie Ihre 24 Wörter sicher, offline und dauerhaft auf.
+            </p>
+        </div>
 
-            nav.style.display = previousNavDisplay;
-            nav.style.visibility = previousNavVisibility;
+    </div>
+</section>
 
-            nav.style.display = shouldUseBurger ? "none" : "flex";
-            burger.style.display = shouldUseBurger ? "block" : "none";
-
-            if (!shouldUseBurger && mobileMenu) {
-                mobileMenu.classList.remove("active");
-            }
-        }
-
-        let headerFitRafId = null;
-        function queueHeaderFitCheck() {
-            if (headerFitRafId !== null) {
-                cancelAnimationFrame(headerFitRafId);
-            }
-
-            headerFitRafId = requestAnimationFrame(() => {
-                checkHeaderFit();
-                headerFitRafId = null;
-            });
-        }
-
-        if (burger && mobileMenu) {
-            burger.addEventListener("click", () => {
-                mobileMenu.classList.toggle("active");
-            });
-        }
-
-        if (mobileTab && mobileMenu) {
-            mobileTab.addEventListener("click", () => {
-                mobileMenu.classList.toggle("active");
-            });
-        }
-
-        window.addEventListener("resize", queueHeaderFitCheck);
-        window.addEventListener("DOMContentLoaded", queueHeaderFitCheck);
-        window.addEventListener("load", queueHeaderFitCheck);
-    </script>
-
-    <script>
-        (function () {
-            const savedLang = localStorage.getItem("userLang");
-
-            if (savedLang) {
-                return;
-            }
-
-            const langs = navigator.languages || [navigator.language];
-            let detected = (langs[0] || "en").toLowerCase();
-            let preferredLang = "en";
-            let targetPath = "/en/";
-
-            if (detected.startsWith("fr")) {
-                preferredLang = "fr";
-                targetPath = "/";
-            } else if (detected.startsWith("de")) {
-                preferredLang = "de";
-                targetPath = "/de/";
-            }
-
-            localStorage.setItem("userLang", preferredLang);
-
-            const currentPath = window.location.pathname;
-
-            if (!currentPath.startsWith(targetPath)) {
-                window.location.href = targetPath;
-            }
-        })();
-    </script>
+<footer class="footer">
+    © SATONA
+</footer>
 
 </body>
 </html>
