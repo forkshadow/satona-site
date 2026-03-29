@@ -5,238 +5,93 @@
     <title>BIP39 Tool - SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- CSS GLOBAL -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    
-    <!-- CSS spécifique -->
-    <link rel="stylesheet" href="../assets/css/bip39.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bip39.css">
 </head>
 
 <body class="subpage">
 
-    <!-- HEADER -->
-    <header class="header">
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+    </a>
 
-        <a href="/de/" class="logo">
-            <img src="../assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
-        </a>
-
-        <!-- MENU DESKTOP -->
-        <nav class="nav">
-            <a href="/de/bip39.html">BIP39</a>
-            <a href="/de/howitworks.html">How it works</a>
-            <a href="#">Security</a>
-            <div class="lang-switch">
-                <a href="/" class="lang-item" onclick="localStorage.setItem('userLang','fr')">🇫🇷 FR</a>
-                <a href="/en/" class="lang-item" onclick="localStorage.setItem('userLang','en')">🇬🇧 EN</a>
-                <a href="/de/" class="lang-item active" onclick="localStorage.setItem('userLang','de')">🇩🇪 DE</a>
-            </div>
-        </nav>
-
-        <!-- BURGER MOBILE -->
-        <div class="burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav class="nav">
+        <a href="bip39.html">BIP39</a>
+        <a href="howitworks.html">Funktionsweise</a>
+        <a href="#">Sicherheit</a>
+        <div class="lang-switch">
+            <a href="/">🇫🇷 FR</a>
+            <a href="/en/">🇬🇧 EN</a>
+            <a href="/de/" class="active">🇩🇪 DE</a>
         </div>
+    </nav>
 
-        <div class="mobile-tab" id="mobileTab">
-            <span>MENU</span>
-        </div>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    <div class="mobile-tab" id="mobileTab"><span>MENU</span></div>
+</header>
 
-    </header>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="bip39.html">BIP39 Tool</a>
+    <a href="howitworks.html">Funktionsweise</a>
+    <a href="#">Sicherheit</a>
+    <div class="mobile-lang">
+        <p>Sprache</p>
+        <a href="/">🇫🇷 Français</a>
+        <a href="/en/">🇬🇧 English</a>
+        <a href="/de/" class="active">🇩🇪 Deutsch</a>
+    </div>
+</div>
 
-    <!-- MENU MOBILE -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="/de/bip39.html">BIP39 Tool</a>
-        <a href="/de/howitworks.html">How it works</a>
-        <a href="#">Security</a>
-        <div class="mobile-lang">
-            <p>Language</p>
-            <a href="/" onclick="localStorage.setItem('userLang','fr')">🇫🇷 Français</a>
-            <a href="/en/" onclick="localStorage.setItem('userLang','en')">🇬🇧 English</a>
-            <a href="/de/" class="active" onclick="localStorage.setItem('userLang','de')">🇩🇪 Deutsch</a>
-        </div>
+<main class="container">
+
+    <h1>BIP39 Tool</h1>
+    <p class="bip39-intro">
+        Wandeln Sie ein BIP39-Wort in seine 11-Bit-Binärdarstellung um.
+    </p>
+
+    <div class="input-box">
+        <input type="text" id="bipInput" placeholder="BIP39-Wort eingeben">
+        <button onclick="getBinary()">Umwandeln</button>
+        <div id="result"></div>
     </div>
 
-    <!-- CONTENU -->
-    <main class="container">
-
-        <h1>BIP39 Tool</h1>
-        <p class="bip39-intro">
-            Convert any BIP39 word into its 11-bit binary equivalent.
+    <div class="bip39-info">
+        <p>
+            Jedes Wort entspricht einer Zahl zwischen 0 und 2047, codiert in 11 Bits.
         </p>
 
-        <div class="input-box">
-            <input type="text" id="bipInput" placeholder="Enter a BIP39 word">
-            <button onclick="getBinary()">Convert</button>
-            <div id="result"></div>
-        </div>
+        <p>
+            Diese Binärfolge wird auf Ihre Satona Plate übertragen:
+            <br>
+            1 = Feld prägen<br>
+            0 = leer lassen
+        </p>
+    </div>
 
-        <div class="bip39-info">
-            <p>
-                Each word corresponds to a number between 0 and 2047, encoded in 11 bits.
-            </p>
+    <div class="bip39-warning">
+        ⚠️ Geben Sie niemals Ihre vollständige Seed Phrase online ein.
+    </div>
 
-            <p>
-                This binary sequence is what you punch onto your Satona plate:
-                <br>
-                1 = punch the square<br>
-                0 = leave it empty
-            </p>
-        </div>
+    <div class="bip39-link">
+        <p>
+            Möchten Sie den gesamten Prozess verstehen?
+            <a href="howitworks.html">Funktionsweise ansehen</a>
+        </p>
+    </div>
 
-        <div class="bip39-warning">
-            ⚠️ Never enter your full seed phrase online.
-        </div>
+    <div class="bip39-offline">
+        <p>
+            Für maximale Sicherheit offline arbeiten →
+            <a href="assets/pdf/bip39binary.pdf" download>Hier herunterladen</a>
+        </p>
+    </div>
 
-        <div class="bip39-link">
-            <p>
-                Need a full explanation of the process?
-                <a href="/de/howitworks.html">See how it works</a>
-            </p>
-        </div>
+</main>
 
-        <div class="bip39-offline">
-            <p>
-                For maximum security, you can work offline using the BIP39 binary list →
-                <a href="../assets/pdf/bip39binary.pdf" download>download here</a>
-            </p>
-        </div>
-
-    </main>
-
-    <!-- HEADER SCROLL -->
-    <script>
-        window.addEventListener("scroll", function() {
-            const header = document.querySelector(".header");
-            if (!header) return;
-
-            if (window.scrollY > 50) {
-                header.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-            }
-        });
-    </script>
-
-    <!-- MENU MOBILE -->
-    <script>
-        const burger = document.getElementById("burger");
-        const mobileTab = document.getElementById("mobileTab");
-        const mobileMenu = document.getElementById("mobileMenu");
-
-        function checkHeaderFit() {
-            const header = document.querySelector(".header");
-            const logo = document.querySelector(".logo");
-            const nav = document.querySelector(".nav");
-
-            if (!header || !logo || !nav || !burger) {
-                return;
-            }
-
-            const previousNavDisplay = nav.style.display;
-            const previousNavVisibility = nav.style.visibility;
-
-            nav.style.visibility = "hidden";
-            nav.style.display = "flex";
-
-            const logoRect = logo.getBoundingClientRect();
-            const navRect = nav.getBoundingClientRect();
-            const shouldUseBurger = navRect.left <= logoRect.right + 10;
-
-            nav.style.display = previousNavDisplay;
-            nav.style.visibility = previousNavVisibility;
-
-            nav.style.display = shouldUseBurger ? "none" : "flex";
-            burger.style.display = shouldUseBurger ? "block" : "none";
-
-            if (!shouldUseBurger && mobileMenu) {
-                mobileMenu.classList.remove("active");
-            }
-        }
-
-        let headerFitRafId = null;
-        function queueHeaderFitCheck() {
-            if (headerFitRafId !== null) {
-                cancelAnimationFrame(headerFitRafId);
-            }
-
-            headerFitRafId = requestAnimationFrame(() => {
-                checkHeaderFit();
-                headerFitRafId = null;
-            });
-        }
-
-        if (burger && mobileMenu) {
-            burger.addEventListener("click", () => {
-                mobileMenu.classList.toggle("active");
-            });
-        }
-
-        if (mobileTab && mobileMenu) {
-            mobileTab.addEventListener("click", () => {
-                mobileMenu.classList.toggle("active");
-            });
-        }
-
-        window.addEventListener("resize", queueHeaderFitCheck);
-        window.addEventListener("DOMContentLoaded", queueHeaderFitCheck);
-        window.addEventListener("load", queueHeaderFitCheck);
-    </script>
-
-    <!-- LISTE BIP39 -->
-    <script src="../assets/bip39-list.js"></script>
-
-    <!-- SCRIPT PRINCIPAL -->
-    <script>
-        function getBinary() {
-            const word = document.getElementById('bipInput').value.trim().toLowerCase();
-            const result = document.getElementById('result');
-
-            if (typeof bip39List === "undefined") {
-                result.textContent = "Error: list not loaded.";
-                return;
-            }
-
-            if (bip39List[word] !== undefined) {
-                result.textContent = 'Binary: ' + bip39List[word];
-            } else {
-                result.textContent = 'Word not found.';
-            }
-        }
-    </script>
-
-    <script>
-        (function () {
-            const savedLang = localStorage.getItem("userLang");
-
-            if (savedLang) {
-                return;
-            }
-
-            const langs = navigator.languages || [navigator.language];
-            let detected = (langs[0] || "en").toLowerCase();
-            let preferredLang = "en";
-            let targetPath = "/en/";
-
-            if (detected.startsWith("fr")) {
-                preferredLang = "fr";
-                targetPath = "/";
-            } else if (detected.startsWith("de")) {
-                preferredLang = "de";
-                targetPath = "/de/";
-            }
-
-            localStorage.setItem("userLang", preferredLang);
-
-            const currentPath = window.location.pathname;
-
-            if (!currentPath.startsWith(targetPath)) {
-                window.location.href = targetPath;
-            }
-        })();
-    </script>
+<footer class="footer">
+    © SATONA
+</footer>
 
 </body>
 </html>
