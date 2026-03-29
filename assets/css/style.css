@@ -74,6 +74,11 @@ body {
     margin: 5px 0;
 }
 
+/* MOBILE EDGE TAB */
+.mobile-tab {
+    display: none;
+}
+
 /* MOBILE MENU (corrigé propre) */
 .mobile-menu {
     position: fixed;
@@ -119,7 +124,35 @@ body {
     }
 
     .burger {
+        display: none;
+    }
+
+    .mobile-tab {
         display: block;
+        position: fixed;
+        top: 90px;
+        right: 0;
+        background: rgba(255,255,255,0.08);
+        backdrop-filter: blur(6px);
+        padding: 10px 8px;
+        border-radius: 8px 0 0 8px;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .mobile-tab span {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: white;
+        opacity: 0.7;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-tab {
+        display: none;
     }
 }
 
