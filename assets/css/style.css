@@ -139,7 +139,7 @@ body {
 }
 
 .mobile-lang {
-    margin-top: auto;
+    margin-top: 8px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 15px;
 }
@@ -169,7 +169,7 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .nav {
         display: none;
     }
@@ -183,7 +183,7 @@ body {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1081px) {
     .mobile-tab {
         display: none;
     }
