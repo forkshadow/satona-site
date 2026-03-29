@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Fonctionnement - SATONA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/howitworks.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+    </a>
+
+    <nav class="nav">
+        <a href="bip39.html">BIP39</a>
+        <a href="howitworks.html">Fonctionnement</a>
+        <a href="#">Sécurité</a>
+        <div class="lang-switch">
+            <a href="/" class="lang-item active">🇫🇷 FR</a>
+            <a href="/en/">🇬🇧 EN</a>
+            <a href="/de/">🇩🇪 DE</a>
+        </div>
+    </nav>
+
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    <div class="mobile-tab" id="mobileTab"><span>MENU</span></div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="bip39.html">Outil BIP39</a>
+    <a href="howitworks.html">Fonctionnement</a>
+    <a href="#">Sécurité</a>
+    <div class="mobile-lang">
+        <p>Langue</p>
+        <a href="/" class="active">🇫🇷 Français</a>
+        <a href="/en/">🇬🇧 English</a>
+        <a href="/de/">🇩🇪 Deutsch</a>
+    </div>
+</div>
+
+<section class="how-hero">
+    <div class="how-bg"></div>
+    <div class="hero-subtle">
+        <p>Gravez votre seed dans le métal.</p>
+        <p>Pas de cloud. Pas de dépendance. Juste l’essentiel.</p>
+    </div>
+</section>
+
+<section class="usage-guide">
+    <div class="usage-guide-inner">
+        <h2>🪙 Utiliser votre plaque Satona</h2>
+
+        <article class="guide-block">
+            <h3>1. Convertir vos mots en binaire</h3>
+            <p>Chaque mot BIP39 correspond à une valeur codée sur 11 bits.</p>
+            <p>
+                Utilisez notre outil pour convertir vos mots facilement →
+                <a href="/bip39.html">accéder à l’outil</a>
+            </p>
+            <p>
+                Pour plus de sécurité, vous pouvez travailler hors ligne avec la liste complète →
+                <a href="assets/pdf/bip39binary.pdf" download>télécharger</a>
+            </p>
+        </article>
+
+        <article class="guide-block">
+            <h3>2. Reporter les informations sur la plaque</h3>
+            <p>Chaque mot correspond à une ligne (1 à 24).</p>
+            <ul>
+                <li>Chaque case = 1 bit</li>
+                <li><strong>1 = poinçonner</strong></li>
+                <li><strong>0 = laisser vide</strong></li>
+            </ul>
+            <p>Travaillez méthodiquement, de gauche à droite.</p>
+        </article>
+
+        <article class="guide-block">
+            <h3>3. Marquer le métal</h3>
+            <p>Positionnez l’outil, alignez précisément et appliquez une pression franche.</p>
+            <p>Répétez si nécessaire pour garantir une lisibilité durable.</p>
+            <p>La précision est essentielle.</p>
+        </article>
+
+        <article class="guide-block">
+            <h3>4. Vérifier avant stockage</h3>
+            <ul>
+                <li>Correspondance exacte entre mots et binaire</li>
+                <li>11 bits par ligne</li>
+                <li>Aucune erreur ou omission</li>
+            </ul>
+            <p>Une erreur rendrait la récupération impossible.</p>
+        </article>
+
+        <article class="guide-block">
+            <h3>5. Conserver en sécurité</h3>
+            <p>Votre plaque résiste à :</p>
+            <ul>
+                <li>🔥 Feu</li>
+                <li>💧 Eau</li>
+                <li>⏳ Temps</li>
+            </ul>
+
+            <p>Mais votre sécurité dépend de vous :</p>
+            <ul>
+                <li>Conservez-la <strong>hors ligne</strong></li>
+                <li>Rangez-la dans un <strong>endroit discret</strong></li>
+                <li>Ne la photographiez jamais</li>
+            </ul>
+        </article>
+
+        <article class="guide-block guide-warning">
+            <h2>⚠️ À propos de l’outil interactif</h2>
+            <p>Un outil est disponible ci-dessous pour visualiser le placement des mots.</p>
+            <p>Il est destiné à l’apprentissage uniquement.</p>
+            <p><strong>Ne saisissez jamais votre seed complète.</strong></p>
+        </article>
+    </div>
+</section>
+
+<section class="plates-section">
+    <div class="plates">
+        <div class="plate"><div class="svg-container" id="plateFront"></div></div>
+        <div class="plate"><div class="svg-container" id="plateBack"></div></div>
+    </div>
+</section>
+
+<section class="viewer-box">
+    <div id="svgContainer" class="svg-container"></div>
+</section>
+
+<section class="input-section">
+    <h2>Entrez vos 24 mots BIP39</h2>
+
+    <div class="words-grid">
+        <script>
+            for (let i = 1; i <= 24; i++) {
+                document.write(`<input type="text" id="word${i}" placeholder="Mot ${i}">`);
+            }
+        </script>
+    </div>
+
+    <div class="buttons">
+        <button id="previewBtn">Visualiser</button>
+        <button id="resetBtn" class="secondary">Réinitialiser</button>
+    </div>
+
+    <div id="message"></div>
+</section>
+
+<script src="assets/bip39-list.js"></script>
+<script src="assets/js/howitworks.js"></script>
+
+</body>
+</html>
