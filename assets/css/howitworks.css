@@ -27,9 +27,24 @@ body {
 
 .how-hero {
     position: relative;
-    padding: 120px 20px 28px;
+    padding: 20px 20px 10px;
     text-align: center;
     min-height: 0;
+}
+
+.hero-subtle {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+.hero-subtle p {
+    margin: 4px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .how-bg {
@@ -278,8 +293,13 @@ button.secondary {
 
 @media (max-width: 768px) {
     .how-hero {
-        padding: 110px 16px 16px;
+        padding: 12px 16px 8px;
         min-height: auto;
+    }
+
+    .hero-subtle {
+        margin-top: 16px;
+        margin-bottom: 8px;
     }
 
     .plates-section {
