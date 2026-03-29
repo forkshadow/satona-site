@@ -48,11 +48,45 @@
     <main class="container">
 
         <h1>BIP39 Tool</h1>
+        <p class="bip39-intro">
+            Convert any BIP39 word into its 11-bit binary equivalent.
+        </p>
 
         <div class="input-box">
             <input type="text" id="bipInput" placeholder="Enter a BIP39 word">
             <button onclick="getBinary()">Convert</button>
             <div id="result"></div>
+        </div>
+
+        <div class="bip39-info">
+            <p>
+                Each word corresponds to a number between 0 and 2047, encoded in 11 bits.
+            </p>
+
+            <p>
+                This binary sequence is what you punch onto your Satona plate:
+                <br>
+                1 = punch the square<br>
+                0 = leave it empty
+            </p>
+        </div>
+
+        <div class="bip39-warning">
+            ⚠️ Never enter your full seed phrase online.
+        </div>
+
+        <div class="bip39-link">
+            <p>
+                Need a full explanation of the process?
+                <a href="howitworks.html">See how it works</a>
+            </p>
+        </div>
+
+        <div class="bip39-offline">
+            <p>
+                For maximum security, you can work offline using the BIP39 binary list →
+                <a href="assets/pdf/bip39binary.pdf" download>download here</a>
+            </p>
         </div>
 
     </main>
