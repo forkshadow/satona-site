@@ -43,6 +43,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 
@@ -54,6 +55,30 @@ body {
 
 .nav a:hover {
     opacity: 1;
+}
+
+.lang-switch {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.lang-item {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.lang-item:hover {
+    color: white;
+}
+
+.lang-item.active {
+    color: white;
+    font-weight: 600;
 }
 
 /* BURGER */
@@ -110,6 +135,32 @@ body {
 }
 
 .mobile-menu a:hover {
+    opacity: 1;
+}
+
+.mobile-lang {
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+}
+
+.mobile-lang p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.mobile-lang a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 6px 0;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.mobile-lang a:hover,
+.mobile-lang a.active {
     opacity: 1;
 }
 
