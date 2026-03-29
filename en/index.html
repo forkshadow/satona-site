@@ -170,13 +170,18 @@
                 return;
             }
 
-            const headerRect = header.getBoundingClientRect();
+            const previousNavDisplay = nav.style.display;
+            const previousNavVisibility = nav.style.visibility;
+
+            nav.style.visibility = "hidden";
+            nav.style.display = "flex";
+
             const logoRect = logo.getBoundingClientRect();
             const navRect = nav.getBoundingClientRect();
+            const shouldUseBurger = navRect.left <= logoRect.right + 10;
 
-            const navTouchesLogo = navRect.left <= logoRect.right + 10;
-            const navOverflowsHeader = navRect.right >= headerRect.right - 10;
-            const shouldUseBurger = navTouchesLogo || navOverflowsHeader;
+            nav.style.display = previousNavDisplay;
+            nav.style.visibility = previousNavVisibility;
 
             nav.style.display = shouldUseBurger ? "none" : "flex";
             burger.style.display = shouldUseBurger ? "block" : "none";
