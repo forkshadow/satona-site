@@ -29,6 +29,8 @@ async function loadSvg() {
 
         buildPointsMap(); // 🔥 important
 
+        console.log("Points loaded:", Object.keys(pointsMap).length); // debug
+
         svgLoaded = true;
     } catch (error) {
         container.innerHTML = "Unable to load SVG.";
@@ -37,7 +39,7 @@ async function loadSvg() {
 }
 
 /* ========================= */
-/* BUILD MAP */
+/* BUILD MAP (CORRIGÉ) */
 /* ========================= */
 
 function buildPointsMap() {
@@ -45,10 +47,16 @@ function buildPointsMap() {
 
     if (!svg) return;
 
-    const elements = svg.querySelectorAll("[id^='w']");
+    pointsMap = {}; // reset
+
+    // 🔥 IMPORTANT : on ne prend QUE les vraies formes
+    const elements = svg.querySelectorAll("path[id^='w'], rect[id^='w']");
 
     elements.forEach(el => {
-        pointsMap[el.id] = el;
+        // évite les doublons / écrasements
+        if (!pointsMap[el.id]) {
+            pointsMap[el.id] = el;
+        }
     });
 }
 
@@ -125,7 +133,7 @@ function getBinaryForWord(word) {
 function applyBinaryToWord(wordIndex, binary) {
     for (let i = 0; i < 11; i++) {
         const bit = binary[i];
-        const element = pointsMap[`w${wordIndex}-b${i + 1}`]; // 🔥 optimisé
+        const element = pointsMap[`w${wordIndex}-b${i + 1}`];
 
         if (!element) continue;
 
@@ -145,7 +153,7 @@ function applyBinaryToWord(wordIndex, binary) {
 
 function clearWordBits(wordIndex) {
     for (let i = 1; i <= 11; i++) {
-        const element = pointsMap[`w${wordIndex}-b${i}`]; // 🔥 optimisé
+        const element = pointsMap[`w${wordIndex}-b${i}`];
 
         if (!element) continue;
 
