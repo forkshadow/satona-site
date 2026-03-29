@@ -217,6 +217,20 @@ body {
     max-width: none;
 }
 
+/* Desktop: keep SVG aligned with the input section width */
+@media (min-width: 768px) {
+    #svgContainer {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #svgContainer svg {
+        width: 100%;
+        height: auto;
+    }
+}
+
 #plateFront,
 #plateBack {
     display: none;
@@ -381,5 +395,12 @@ button.secondary {
 @media (max-width: 560px) {
     .words-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile: keep existing full-width behavior */
+@media (max-width: 767px) {
+    #svgContainer {
+        width: 100%;
     }
 }
