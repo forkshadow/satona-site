@@ -66,6 +66,91 @@ body {
 }
 
 /* ========================= */
+/* USAGE GUIDE */
+/* ========================= */
+
+.usage-guide {
+    position: relative;
+    z-index: 2;
+    padding: 8px 20px 42px;
+}
+
+.usage-guide-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 28px 24px;
+    background: rgba(10, 10, 10, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    text-align: left;
+}
+
+.usage-guide h2 {
+    font-size: clamp(28px, 4vw, 34px);
+    margin: 0 0 26px;
+    font-weight: 700;
+}
+
+.guide-block {
+    margin-bottom: 28px;
+}
+
+.guide-block:last-child {
+    margin-bottom: 0;
+}
+
+.guide-block h3 {
+    font-size: clamp(20px, 2.8vw, 24px);
+    line-height: 1.35;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+.guide-block p {
+    margin: 0 0 12px;
+    color: #d9d9d9;
+    line-height: 1.7;
+}
+
+.guide-block p:last-child {
+    margin-bottom: 0;
+}
+
+.guide-block ul {
+    margin: 0 0 14px;
+    padding-left: 20px;
+}
+
+.guide-block li {
+    margin-bottom: 8px;
+    color: #d9d9d9;
+    line-height: 1.6;
+}
+
+.guide-block a {
+    color: #f6c95d;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(246, 201, 93, 0.55);
+}
+
+.guide-block a:hover {
+    color: #ffe7a5;
+    border-bottom-color: rgba(255, 231, 165, 0.7);
+}
+
+.guide-warning {
+    margin-top: 34px;
+    padding-top: 26px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.guide-warning h2 {
+    font-size: clamp(24px, 3.5vw, 30px);
+    margin: 0 0 12px;
+}
+
+/* ========================= */
 /* 🪙 PLATES FULL WIDTH */
 /* ========================= */
 
@@ -273,6 +358,23 @@ button.secondary {
     .how-bg {
         position: fixed;
         height: 100%;
+    }
+
+    .usage-guide {
+        padding: 0 14px 32px;
+    }
+
+    .usage-guide-inner {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .guide-block {
+        margin-bottom: 24px;
+    }
+
+    .guide-block h3 {
+        margin-bottom: 10px;
     }
 }
 
