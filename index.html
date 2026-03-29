@@ -30,6 +30,10 @@
             <span></span>
             <span></span>
         </div>
+
+        <div class="mobile-tab" id="mobileTab">
+            <span>MENU</span>
+        </div>
     </header>
 
     <!-- MENU MOBILE -->
@@ -143,10 +147,17 @@
     <!-- MENU MOBILE -->
     <script>
         const burger = document.getElementById("burger");
+        const mobileTab = document.getElementById("mobileTab");
         const mobileMenu = document.getElementById("mobileMenu");
 
         if (burger && mobileMenu) {
             burger.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+            });
+        }
+
+        if (mobileTab && mobileMenu) {
+            mobileTab.addEventListener("click", () => {
                 mobileMenu.classList.toggle("active");
             });
         }
