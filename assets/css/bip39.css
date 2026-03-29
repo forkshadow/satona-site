@@ -70,3 +70,45 @@ button:hover {
     margin-top: 30px;
     color: #aaa;
 }
+
+.bip39-intro {
+    text-align: center;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bip39-info {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.bip39-warning {
+    text-align: center;
+    color: #ffcc00;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.bip39-link,
+.bip39-offline {
+    text-align: center;
+    margin-top: 15px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.bip39-link a,
+.bip39-offline a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    input {
+        width: min(350px, calc(100vw - 40px));
+    }
+}
