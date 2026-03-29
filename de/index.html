@@ -23,9 +23,9 @@
             <a href="/de/howitworks.html">How it works</a>
             <a href="#">Security</a>
             <div class="lang-switch">
-                <a href="/" class="lang-item">🇫🇷 FR</a>
-                <a href="/en/" class="lang-item">🇬🇧 EN</a>
-                <a href="/de/" class="lang-item active">🇩🇪 DE</a>
+                <a href="/" class="lang-item" onclick="localStorage.setItem('userLang','fr')">🇫🇷 FR</a>
+                <a href="/en/" class="lang-item" onclick="localStorage.setItem('userLang','en')">🇬🇧 EN</a>
+                <a href="/de/" class="lang-item active" onclick="localStorage.setItem('userLang','de')">🇩🇪 DE</a>
             </div>
         </nav>
 
@@ -48,9 +48,9 @@
         <a href="#">Security</a>
         <div class="mobile-lang">
             <p>Language</p>
-            <a href="/">🇫🇷 Français</a>
-            <a href="/en/">🇬🇧 English</a>
-            <a href="/de/" class="active">🇩🇪 Deutsch</a>
+            <a href="/" onclick="localStorage.setItem('userLang','fr')">🇫🇷 Français</a>
+            <a href="/en/" onclick="localStorage.setItem('userLang','en')">🇬🇧 English</a>
+            <a href="/de/" class="active" onclick="localStorage.setItem('userLang','de')">🇩🇪 Deutsch</a>
         </div>
     </div>
 
@@ -218,6 +218,37 @@
         window.addEventListener("resize", queueHeaderFitCheck);
         window.addEventListener("DOMContentLoaded", queueHeaderFitCheck);
         window.addEventListener("load", queueHeaderFitCheck);
+    </script>
+
+    <script>
+        (function () {
+            const savedLang = localStorage.getItem("userLang");
+
+            if (savedLang) {
+                return;
+            }
+
+            const langs = navigator.languages || [navigator.language];
+            let detected = (langs[0] || "en").toLowerCase();
+            let preferredLang = "en";
+            let targetPath = "/en/";
+
+            if (detected.startsWith("fr")) {
+                preferredLang = "fr";
+                targetPath = "/";
+            } else if (detected.startsWith("de")) {
+                preferredLang = "de";
+                targetPath = "/de/";
+            }
+
+            localStorage.setItem("userLang", preferredLang);
+
+            const currentPath = window.location.pathname;
+
+            if (!currentPath.startsWith(targetPath)) {
+                window.location.href = targetPath;
+            }
+        })();
     </script>
 
 </body>
