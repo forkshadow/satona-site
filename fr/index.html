@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SATONA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="assets/images/satona-logo-horizontal.png" alt="Logo SATONA">
+    </a>
+
+    <nav class="nav">
+        <a href="bip39.html">BIP39</a>
+        <a href="howitworks.html">Fonctionnement</a>
+        <a href="#">Sécurité</a>
+        <div class="lang-switch">
+            <a href="/" class="lang-item active" onclick="localStorage.setItem('userLang','fr')">🇫🇷 FR</a>
+            <a href="/en/" class="lang-item" onclick="localStorage.setItem('userLang','en')">🇬🇧 EN</a>
+            <a href="/de/" class="lang-item" onclick="localStorage.setItem('userLang','de')">🇩🇪 DE</a>
+        </div>
+    </nav>
+
+    <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+    </div>
+
+    <div class="mobile-tab" id="mobileTab">
+        <span>MENU</span>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="bip39.html">Outil BIP39</a>
+    <a href="howitworks.html">Fonctionnement</a>
+    <a href="#">Sécurité</a>
+    <div class="mobile-lang">
+        <p>Langue</p>
+        <a href="/" class="active" onclick="localStorage.setItem('userLang','fr')">🇫🇷 Français</a>
+        <a href="/en/" onclick="localStorage.setItem('userLang','en')">🇬🇧 English</a>
+        <a href="/de/" onclick="localStorage.setItem('userLang','de')">🇩🇪 Deutsch</a>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+        <h1>Votre seed ne disparaît jamais.</h1>
+        <p>Votre crypto. Protégée. Pour toujours.</p>
+        <a href="#" class="hero-cta">Acheter maintenant</a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="grid">
+
+        <a href="bip39.html" class="card">
+            <img src="assets/images/bip39.png">
+            <h3>Outil BIP39</h3>
+            <p>Convertissez vos mots instantanément</p>
+        </a>
+
+        <a href="howitworks.html" class="card">
+            <img src="assets/images/how.png">
+            <h3>Fonctionnement</h3>
+            <p>Convertir. Graver. Conserver.</p>
+        </a>
+
+        <div class="card">
+            <img src="assets/images/shop.png">
+            <h3>Acheter SATONA</h3>
+            <p>Protégez votre seed définitivement</p>
+        </div>
+
+        <div class="card">
+            <img src="assets/images/why.png">
+            <h3>Pourquoi SATONA</h3>
+            <p>Feu. Eau. Temps. Résistance.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="satona-info">
+    <div class="satona-container">
+
+        <div class="satona-image">
+            <img src="assets/images/coin.png">
+        </div>
+
+        <div class="satona-text">
+            <h2>Plaque SATONA – Sécurisez votre phrase de récupération</h2>
+
+            <p>
+                La plaque SATONA est conçue pour stocker durablement votre phrase de récupération BIP39 hors ligne.
+                Contrairement au papier ou aux solutions numériques, elle protège vos accès contre le feu, l’eau, le temps et les dommages physiques.
+            </p>
+
+            <p>
+                Votre phrase de récupération est l’unique accès à vos cryptomonnaies.
+                Si elle est perdue, vos fonds le sont définitivement.
+                SATONA garantit l’accès à vos portefeuilles Bitcoin, Ethereum et autres, quelles que soient les circonstances.
+            </p>
+
+            <ul>
+                <li>🔥 Résistante au feu</li>
+                <li>💧 Étanche</li>
+                <li>🛡️ Anti-corrosion</li>
+                <li>💥 Résistante aux chocs</li>
+            </ul>
+
+            <p>
+                Compatible avec Ledger, Trezor, SafePal et Trust Wallet.
+                Stockez votre seed de 24 mots en toute sécurité, hors ligne, pour toujours.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    © SATONA
+</footer>
+
+</body>
+</html>
