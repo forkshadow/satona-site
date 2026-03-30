@@ -10,16 +10,12 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 
     <style>
-        body {
-            background-image: url('/assets/images/backwhy.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+        body.whysatona {
+            background: url("/assets/images/backwhy.png") center / cover no-repeat fixed;
             position: relative;
         }
 
-        body::before {
+        body.whysatona::before {
             content: "";
             position: fixed;
             inset: 0;
@@ -28,7 +24,9 @@
             pointer-events: none;
         }
 
-        body>* {
+        main,
+        .why-container,
+        .satona-slider {
             position: relative;
             z-index: 1;
         }
@@ -146,7 +144,7 @@
     </style>
 </head>
 
-<body>
+<body class="whysatona">
 
     <!-- HEADER FIXE -->
     <header class="header">
@@ -191,12 +189,8 @@
         </div>
     </div>
 
-    <section class="why-hero">
-        <h1>NOT JUST RESISTANT</h1>
-        <p class="subtitle">Designed to outlast everything that can fail.</p>
-    </section>
-
-    <section class="why-block">
+    <main class="why-container">
+        <section class="why-block">
         <div class="satona-slider">
             <div class="satona-icons">
                 <img src="/assets/images/fire.png" class="icon active" alt="Fire resistance icon">
@@ -214,9 +208,14 @@
                 <p class="text">Designed to last for decades.</p>
             </div>
         </div>
-    </section>
+        </section>
 
-    <section class="why-block">
+        <section class="why-hero">
+            <h1>NOT JUST RESISTANT</h1>
+            <p class="subtitle">Designed to outlast everything that can fail.</p>
+        </section>
+
+        <section class="why-block">
         <h2>Your seed is everything.</h2>
         <p>
             It is the only access to your crypto.
@@ -225,9 +224,9 @@
         <p class="highlight">
             SATONA makes that impossible.
         </p>
-    </section>
+        </section>
 
-    <section class="why-block">
+        <section class="why-block">
         <h2>Built to survive.</h2>
 
         <ul class="why-features">
@@ -241,10 +240,10 @@
         <p>
             No cloud. No electronics. No failure point.
         </p>
-    </section>
+        </section>
 
-    <section class="why-block">
-        <h2>Simple. Precise. Permanent.</h2>
+        <section class="why-block">
+            <h2>Simple. Precise. Permanent.</h2>
 
         <p>Your 24-word seed is converted into binary.</p>
 
@@ -254,13 +253,12 @@
             <li>Punch only the "1"</li>
         </ul>
 
-        <p class="highlight">
-            Encoding takes about 10 minutes.
-        </p>
-    </section>
-
-    <section class="why-block">
-        <h2>Why not paper or digital?</h2>
+            <p class="highlight">
+                Encoding takes about 10 minutes.
+            </p>
+        </section>
+        <section class="why-block">
+            <h2>Why not paper or digital?</h2>
 
         <div class="comparison">
             <div>
@@ -283,10 +281,10 @@
                 <p>Offline. Physical. Permanent.</p>
             </div>
         </div>
-    </section>
+        </section>
 
-    <section class="why-block">
-        <h2>True ownership.</h2>
+        <section class="why-block">
+            <h2>True ownership.</h2>
 
         <p>
             Your wealth should not depend on fragile systems.
@@ -300,11 +298,12 @@
             SATONA is not storage.
             It is permanence.
         </p>
-    </section>
+        </section>
 
-    <section class="why-cta">
-        <p>Secure your seed. Forever.</p>
-    </section>
+        <section class="why-cta">
+            <p>Secure your seed. Forever.</p>
+        </section>
+    </main>
 
     <footer class="footer">
         © SATONA
