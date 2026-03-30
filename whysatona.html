@@ -11,25 +11,21 @@
 
     <style>
         body.whysatona {
-            background: url("/assets/images/backwhy.png") center / cover no-repeat fixed;
+            background: url("/assets/images/backwhy.png") center / cover no-repeat;
             position: relative;
+            min-height: 100vh;
         }
 
         body.whysatona::before {
             content: "";
-            position: fixed;
+            position: absolute;
             inset: 0;
-            background: linear-gradient(
-                rgba(0, 0, 0, 0.55),
-                rgba(0, 0, 0, 0.35)
-            );
+            background: rgba(0, 0, 0, 0.35);
             z-index: 0;
-            pointer-events: none;
         }
 
         main,
-        .why-container,
-        .satona-slider {
+        .why-container {
             position: relative;
             z-index: 1;
         }
