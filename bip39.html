@@ -218,14 +218,16 @@
             const langs = navigator.languages || [navigator.language];
             let detected = (langs[0] || "en").toLowerCase();
             let preferredLang = "en";
-            let targetPath = "/en/";
+            let targetPath = "/";
 
             if (detected.startsWith("fr")) {
                 preferredLang = "fr";
-                targetPath = "/";
+                targetPath = "/fr/";
             } else if (detected.startsWith("de")) {
                 preferredLang = "de";
                 targetPath = "/de/";
+            } else {
+                targetPath = "/";
             }
 
             localStorage.setItem("userLang", preferredLang);
