@@ -6,231 +6,300 @@
     <title>Funktionsweise - SATONA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- CSS PAGE -->
     <link rel="stylesheet" href="/assets/css/howitworks.css">
 </head>
 
 <body>
 
-<header class="header">
-    <a href="index.html" class="logo">
-        <img src="/assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
-    </a>
+    <!-- HEADER FIXE -->
+    <header class="header">
+        <a href="/de/" class="logo">
+            <img src="/assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+        </a>
 
-    <nav class="nav">
-        <a href="bip39.html">BIP39</a>
-        <a href="howitworks.html">Funktionsweise</a>
-        <a href="#">Sicherheit</a>
-        <div class="lang-switch">
-            <a href="/fr/" onclick="localStorage.setItem('userLang','fr')">🇫🇷 FR</a>
-            <a href="/" onclick="localStorage.setItem('userLang','en')">🇬🇧 EN</a>
-            <a href="/de/" class="active" onclick="localStorage.setItem('userLang','de')">🇩🇪 DE</a>
+        <!-- MENU DESKTOP -->
+        <nav class="nav">
+            <a href="/de/bip39.html">BIP39</a>
+            <a href="/de/howitworks.html">Funktionsweise</a>
+            <a href="#">Sicherheit</a>
+            <div class="lang-switch">
+                <a href="/" class="lang-item" onclick="localStorage.setItem('userLang','fr')">🇫🇷 FR</a>
+                <a href="/en/" class="lang-item" onclick="localStorage.setItem('userLang','en')">🇬🇧 EN</a>
+                <a href="/de/" class="lang-item active" onclick="localStorage.setItem('userLang','de')">🇩🇪 DE</a>
+            </div>
+        </nav>
+
+        <!-- BURGER MOBILE -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </nav>
 
-    <div class="burger" id="burger"><span></span><span></span><span></span></div>
-    <div class="mobile-tab" id="mobileTab"><span>MENU</span></div>
-</header>
+        <div class="mobile-tab" id="mobileTab">
+            <span>MENU</span>
+        </div>
+    </header>
 
-<div class="mobile-menu" id="mobileMenu">
-    <a href="bip39.html">BIP39 Tool</a>
-    <a href="howitworks.html">Funktionsweise</a>
-    <a href="#">Sicherheit</a>
-    <div class="mobile-lang">
-        <p>Sprache</p>
-        <a href="/fr/" onclick="localStorage.setItem('userLang','fr')">🇫🇷 Français</a>
-        <a href="/" onclick="localStorage.setItem('userLang','en')">🇬🇧 English</a>
-        <a href="/de/" class="active" onclick="localStorage.setItem('userLang','de')">🇩🇪 Deutsch</a>
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/de/bip39.html">BIP39 Tool</a>
+        <a href="/de/howitworks.html">Funktionsweise</a>
+        <a href="#">Sicherheit</a>
+        <div class="mobile-lang">
+            <p>Sprache</p>
+            <a href="/" onclick="localStorage.setItem('userLang','fr')">🇫🇷 Français</a>
+            <a href="/en/" onclick="localStorage.setItem('userLang','en')">🇬🇧 English</a>
+            <a href="/de/" class="active" onclick="localStorage.setItem('userLang','de')">🇩🇪 Deutsch</a>
+        </div>
     </div>
-</div>
 
-<section class="how-hero">
-    <div class="how-bg"></div>
-    <div class="hero-subtle">
-        <p>Präge deine Seed in Metall.</p>
-        <p>Keine Cloud. Keine Hardware. Nur Stahl.</p>
-    </div>
-</section>
+    <!-- HERO -->
+    <section class="how-hero">
+        <div class="how-bg"></div>
+        <div class="hero-subtle">
+            <p>Präge deine Seed-Phrase in Metall.</p>
+            <p>Keine Cloud. Keine Hardware. Nur Stahl.</p>
+        </div>
+    </section>
 
-<section class="usage-guide">
-<div class="usage-guide-inner">
+    <section class="usage-guide" aria-labelledby="usage-guide-title">
+        <div class="usage-guide-inner">
+            <h2 id="usage-guide-title">🪙 So verwendest du deine Satona-Platte</h2>
 
-<h2>🪙 So verwendest du deine Satona Plate</h2>
+            <article class="guide-block">
+                <h3>1. Wandle deine Wörter in Binärcode um</h3>
+                <p>Beginne damit, jedes deiner 24 BIP39-Wörter in sein Binäräquivalent umzuwandeln (11 Bits pro Wort).</p>
+                <p>
+                    Du kannst dafür ganz einfach unser Online-Tool nutzen →
+                    <a href="/de/bip39.html">hier klicken</a>
+                </p>
+                <p>
+                    Für maximale Sicherheit kannst du auch die vollständige BIP39-Liste mit Binäräquivalenten herunterladen und
+                    offline arbeiten →
+                    <a href="/assets/pdf/bip39binary.pdf" download>hier klicken</a>
+                </p>
+            </article>
 
-<article class="guide-block">
-<h3>1. Wörter in Binär umwandeln</h3>
-<p>Wandle jedes deiner 24 BIP39-Wörter in seine binäre Darstellung um (11 Bits pro Wort).</p>
+            <article class="guide-block">
+                <h3>2. Markiere die Platte</h3>
+                <p>Jedes Wort entspricht einer Zeile auf deiner Platte, von 1 bis 24.</p>
+                <p>Für jedes Wort gilt:</p>
+                <ul>
+                    <li>Jedes Kästchen steht für ein Binär-Bit</li>
+                    <li>Eine <strong>„1“ = Kästchen stanzen</strong></li>
+                    <li>Eine <strong>„0“ = leer lassen</strong></li>
+                </ul>
+                <p>Arbeite pro Zeile sorgfältig von links nach rechts.</p>
+            </article>
 
-<p>
-Du kannst dafür unser Online-Tool nutzen →
-<a href="/bip39.html">hier klicken</a>
-</p>
+            <article class="guide-block">
+                <h3>3. Stanze das Metall</h3>
+                <p>Setze die Spitze in das Stanzwerkzeug ein, richte sie am richtigen Kästchen aus und drücke fest, bis du den Klick spürst.</p>
+                <p>Falls nötig, wiederhole den Vorgang, um die Markierung zu vertiefen und dauerhaft lesbar zu machen.</p>
+                <p>Lass dir Zeit. Präzision ist entscheidend.</p>
+            </article>
 
-<p>
-Für maximale Sicherheit kannst du auch die komplette BIP39-Liste mit Binärwerten herunterladen und offline arbeiten →
-<a href="/assets/pdf/bip39binary.pdf" download>hier klicken</a>
-</p>
-</article>
+            <article class="guide-block">
+                <h3>4. Überprüfe deine Kodierung</h3>
+                <p>Bevor du deine Platte sicher verwahrst, kontrolliere alles doppelt:</p>
+                <ul>
+                    <li>Jedes Wort passt zu seinem Binärmuster</li>
+                    <li>Jede Zeile enthält genau 11 Bits</li>
+                    <li>Keine fehlenden oder zusätzlichen Markierungen</li>
+                </ul>
+                <p>Ein einziger Fehler kann die Wiederherstellung unmöglich machen.</p>
+            </article>
 
-<article class="guide-block">
-<h3>2. Die Platte markieren</h3>
-<p>Jedes Wort entspricht einer Zeile auf deiner Platte (1 bis 24).</p>
+            <article class="guide-block">
+                <h3>5. Bewahre sie sicher auf</h3>
+                <p>Deine Satona-Platte ist dafür ausgelegt, Folgendem zu widerstehen:</p>
+                <ul>
+                    <li>Feuer</li>
+                    <li>Wasser</li>
+                    <li>Zeit</li>
+                </ul>
+                <p>Aber deine Sicherheit hängt von deinen Gewohnheiten ab:</p>
+                <ul>
+                    <li>Halte sie <strong>offline</strong></li>
+                    <li>Lagere sie an einem <strong>sicheren, unauffälligen Ort</strong></li>
+                    <li>Fotografiere sie niemals und speichere sie nicht digital</li>
+                </ul>
+            </article>
 
-<p>Für jedes Wort:</p>
-<ul>
-<li>Jedes Feld entspricht einem Bit</li>
-<li><strong>„1“ = Feld prägen</strong></li>
-<li><strong>„0“ = leer lassen</strong></li>
-</ul>
+            <article class="guide-block guide-warning">
+                <h2>⚠️ Zum interaktiven Tool unten</h2>
+                <p>Unten findest du eine interaktive Möglichkeit zu visualisieren, wie deine Wörter auf deine Satona-Platte abgebildet werden.</p>
+                <p>Dieses Tool dient <strong>nur zu Lern- und Verifizierungszwecken</strong>.</p>
+                <p>Aus Sicherheitsgründen wird dringend empfohlen, hier <strong>nicht deine vollständige Seed-Phrase einzugeben</strong>.</p>
+                <p>Verwende es nur, um:</p>
+                <ul>
+                    <li>Zu verstehen, wie das System funktioniert</li>
+                    <li>Bei Bedarf einige Wörter zu überprüfen</li>
+                </ul>
+                <p>Setze deine vollständige Seed-Phrase niemals in einer Online-Umgebung ein.</p>
+            </article>
+        </div>
+    </section>
 
-<p>Arbeite sorgfältig von links nach rechts.</p>
-</article>
+    <!-- 🪙 PLATES (CORRIGÉ) -->
+    <section class="plates-section">
+        <div class="plates">
 
-<article class="guide-block">
-<h3>3. Metall prägen</h3>
-<p>Setze die Spitze in das Werkzeug ein, positioniere sie auf dem richtigen Feld und drücke fest, bis du ein Klicken spürst.</p>
-<p>Wiederhole den Vorgang bei Bedarf für eine tiefere Markierung.</p>
-<p>Nimm dir Zeit. Präzision ist entscheidend.</p>
-</article>
+            <!-- FRONT -->
+            <div class="plate">
+                <div class="svg-container" id="plateFront"></div>
+            </div>
 
-<article class="guide-block">
-<h3>4. Überprüfung</h3>
-<p>Kontrolliere alles sorgfältig:</p>
-<ul>
-<li>Jedes Wort stimmt mit dem Binärmuster überein</li>
-<li>Jede Zeile enthält genau 11 Bits</li>
-<li>Keine fehlenden oder zusätzlichen Markierungen</li>
-</ul>
-<p>Ein einziger Fehler kann die Wiederherstellung unmöglich machen.</p>
-</article>
+            <!-- BACK -->
+            <div class="plate">
+                <div class="svg-container" id="plateBack"></div>
+            </div>
 
-<article class="guide-block">
-<h3>5. Sicher aufbewahren</h3>
-<p>Deine Satona Plate ist resistent gegen:</p>
-<ul>
-<li>Feuer</li>
-<li>Wasser</li>
-<li>Zeit</li>
-</ul>
+        </div>
+    </section>
 
-<p>Deine Sicherheit hängt jedoch von deinem Verhalten ab:</p>
-<ul>
-<li><strong>Offline aufbewahren</strong></li>
-<li>An einem <strong>sicheren, diskreten Ort</strong></li>
-<li>Niemals fotografieren oder digital speichern</li>
-</ul>
-</article>
+    <!-- RESULT SVG -->
+    <section class="viewer-box">
+        <div id="svgContainer" class="svg-container"></div>
+    </section>
 
-<article class="guide-block guide-warning">
-<h2>⚠️ Interaktives Tool</h2>
-<p>Unten findest du eine visuelle Darstellung deiner Seed auf der Satona Plate.</p>
-<p>Dieses Tool dient nur zu <strong>Lern- und Prüfzwecken</strong>.</p>
-<p>Gib aus Sicherheitsgründen <strong>niemals deine vollständige Seed online ein</strong>.</p>
+    <!-- INPUT -->
+    <section class="input-section">
 
-<p>Nutze es nur um:</p>
-<ul>
-<li>Das System zu verstehen</li>
-<li>Einige Wörter zu überprüfen</li>
-</ul>
+        <h2>Gib deine 24 BIP39-Wörter ein</h2>
 
-<p>Expose niemals deine vollständige Seed online.</p>
-</article>
+        <div class="words-grid">
+            <script>
+                for (let i = 1; i <= 24; i++) {
+                    document.write(`<input type="text" id="word${i}" placeholder="Wort ${i}">`);
+                }
+            </script>
+        </div>
 
-</div>
-</section>
+        <div class="buttons">
+            <button id="previewBtn">Platte anzeigen</button>
+            <button id="resetBtn" class="secondary">Zurücksetzen</button>
+        </div>
 
-<section class="plates-section">
-<div class="plates">
-<div class="plate"><div id="plateFront" class="svg-container"></div></div>
-<div class="plate"><div id="plateBack" class="svg-container"></div></div>
-</div>
-</section>
+        <div id="message" class="message"></div>
 
-<section class="viewer-box">
-<div id="svgContainer" class="svg-container"></div>
-</section>
+    </section>
 
-<section class="input-section">
-<h2>Gib deine 24 BIP39-Wörter ein</h2>
+    <!-- JS -->
+    <script src="/assets/bip39-list.js"></script>
+    <script src="/assets/js/howitworks.js"></script>
 
-<div class="words-grid">
-<script>
-for (let i = 1; i <= 24; i++) {
-document.write(`<input type="text" id="word${i}" placeholder="Wort ${i}">`);
-}
-</script>
-</div>
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
 
-<div class="buttons">
-<button id="previewBtn">Vorschau anzeigen</button>
-<button id="resetBtn" class="secondary">Zurücksetzen</button>
-</div>
+    <script>
+        const burger = document.getElementById("burger");
+        const mobileTab = document.getElementById("mobileTab");
+        const mobileMenu = document.getElementById("mobileMenu");
 
-<div id="message" class="message"></div>
-</section>
+        function checkHeaderFit() {
+            const header = document.querySelector(".header");
+            const logo = document.querySelector(".logo");
+            const nav = document.querySelector(".nav");
 
-<script src="/assets/bip39-list.js"></script>
-<script src="/assets/js/howitworks.js"></script>
+            if (!header || !logo || !nav || !burger) {
+                return;
+            }
 
-<script>
-window.addEventListener("scroll", function () {
-const header = document.querySelector(".header");
-header.classList.toggle("scrolled", window.scrollY > 50);
-});
-</script>
+            const previousNavDisplay = nav.style.display;
+            const previousNavVisibility = nav.style.visibility;
 
-<script>
-const burger = document.getElementById("burger");
-const mobileTab = document.getElementById("mobileTab");
-const mobileMenu = document.getElementById("mobileMenu");
+            nav.style.visibility = "hidden";
+            nav.style.display = "flex";
 
-function checkHeaderFit() {
-const header = document.querySelector(".header");
-const logo = document.querySelector(".logo");
-const nav = document.querySelector(".nav");
+            const logoRect = logo.getBoundingClientRect();
+            const navRect = nav.getBoundingClientRect();
+            const shouldUseBurger = navRect.left <= logoRect.right + 10;
 
-if (!header || !logo || !nav || !burger) return;
+            nav.style.display = previousNavDisplay;
+            nav.style.visibility = previousNavVisibility;
 
-nav.style.visibility = "hidden";
-nav.style.display = "flex";
+            nav.style.display = shouldUseBurger ? "none" : "flex";
+            burger.style.display = shouldUseBurger ? "block" : "none";
 
-const shouldUseBurger = nav.getBoundingClientRect().left <= logo.getBoundingClientRect().right + 10;
+            if (!shouldUseBurger && mobileMenu) {
+                mobileMenu.classList.remove("active");
+            }
+        }
 
-nav.style.display = shouldUseBurger ? "none" : "flex";
-burger.style.display = shouldUseBurger ? "block" : "none";
+        let headerFitRafId = null;
+        function queueHeaderFitCheck() {
+            if (headerFitRafId !== null) {
+                cancelAnimationFrame(headerFitRafId);
+            }
 
-nav.style.visibility = "";
-}
+            headerFitRafId = requestAnimationFrame(() => {
+                checkHeaderFit();
+                headerFitRafId = null;
+            });
+        }
 
-window.addEventListener("resize", checkHeaderFit);
-window.addEventListener("DOMContentLoaded", checkHeaderFit);
-window.addEventListener("load", checkHeaderFit);
+        if (burger && mobileMenu) {
+            burger.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+            });
+        }
 
-burger?.addEventListener("click", () => mobileMenu.classList.toggle("active"));
-mobileTab?.addEventListener("click", () => mobileMenu.classList.toggle("active"));
-</script>
+        if (mobileTab && mobileMenu) {
+            mobileTab.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+            });
+        }
 
-<script>
-(function () {
-const savedLang = localStorage.getItem("userLang");
-if (savedLang) return;
+        window.addEventListener("resize", queueHeaderFitCheck);
+        window.addEventListener("DOMContentLoaded", queueHeaderFitCheck);
+        window.addEventListener("load", queueHeaderFitCheck);
+    </script>
 
-const lang = (navigator.language || "en").toLowerCase();
+    <script>
+        (function () {
+            const savedLang = localStorage.getItem("userLang");
 
-if (lang.startsWith("fr")) {
-localStorage.setItem("userLang", "fr");
-window.location.href = "/";
-}
-else if (lang.startsWith("de")) {
-localStorage.setItem("userLang", "de");
-window.location.href = "/de/";
-}
-else {
-localStorage.setItem("userLang", "en");
-window.location.href = "/en/";
-}
-})();
-</script>
+            if (savedLang) {
+                return;
+            }
+
+            const langs = navigator.languages || [navigator.language];
+            let detected = (langs[0] || "en").toLowerCase();
+            let preferredLang = "en";
+            let targetPath = "/en/";
+
+            if (detected.startsWith("fr")) {
+                preferredLang = "fr";
+                targetPath = "/";
+            } else if (detected.startsWith("de")) {
+                preferredLang = "de";
+                targetPath = "/de/";
+            }
+
+            localStorage.setItem("userLang", preferredLang);
+
+            const currentPath = window.location.pathname;
+
+            if (!currentPath.startsWith(targetPath)) {
+                window.location.href = targetPath;
+            }
+        })();
+    </script>
 
 </body>
+
 </html>
