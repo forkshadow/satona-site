@@ -23,7 +23,7 @@ async function loadSvg() {
     const container = document.getElementById("svgContainer");
 
     try {
-        const response = await fetch("assets/images/seedrectobip39.ai.svg");
+        const response = await fetch("/assets/images/seedrectobip39.ai.svg");
         const svgText = await response.text();
         container.innerHTML = svgText;
 
