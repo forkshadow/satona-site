@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Why SATONA - SATONA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <style>
+        .why-hero {
+            text-align: center;
+            padding: 120px 20px 60px;
+        }
+
+        .why-hero h1 {
+            font-size: 42px;
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            color: #d6a85c;
+            margin-top: 10px;
+        }
+
+        .why-block {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .why-block h2 {
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #d6a85c;
+            margin-top: 20px;
+        }
+
+        .why-features {
+            margin: 20px 0;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .comparison .satona {
+            color: #d6a85c;
+        }
+
+        .why-cta {
+            text-align: center;
+            padding: 80px 20px;
+            font-size: 20px;
+            color: #d6a85c;
+        }
+
+        @media (max-width: 700px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER FIXE -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="/assets/images/satona-logo-horizontal.png" alt="SATONA Logo">
+        </a>
+
+        <!-- MENU DESKTOP -->
+        <nav class="nav">
+            <a href="bip39.html">BIP39</a>
+            <a href="howitworks.html">How it works</a>
+            <a href="#">Security</a>
+            <div class="lang-switch">
+                <a href="/fr/" class="lang-item active" onclick="localStorage.setItem('userLang','fr')">🇫🇷</a>
+                <a href="/" class="lang-item" onclick="localStorage.setItem('userLang','en')">🇬🇧</a>
+                <a href="/de/" class="lang-item" onclick="localStorage.setItem('userLang','de')">🇩🇪</a>
+            </div>
+        </nav>
+
+        <!-- BURGER MOBILE -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="mobile-tab" id="mobileTab">
+            <span>MENU</span>
+        </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="bip39.html">BIP39 Tool</a>
+        <a href="howitworks.html">How it works</a>
+        <a href="#">Security</a>
+        <div class="mobile-lang">
+            <p>Language</p>
+            <a href="/fr/" class="active" onclick="localStorage.setItem('userLang','fr')">🇫🇷 Français</a>
+            <a href="/" onclick="localStorage.setItem('userLang','en')">🇬🇧 English</a>
+            <a href="/de/" onclick="localStorage.setItem('userLang','de')">🇩🇪 Deutsch</a>
+        </div>
+    </div>
+
+    <section class="why-hero">
+        <h1>Why SATONA</h1>
+        <p class="subtitle">Fire. Water. Time. Proof.</p>
+    </section>
+
+    <section class="why-block">
+        <h2>Your seed is everything.</h2>
+        <p>
+            It is the only access to your crypto.
+            Lose it once, and your funds are gone forever.
+        </p>
+        <p class="highlight">
+            SATONA makes that impossible.
+        </p>
+    </section>
+
+    <section class="why-block">
+        <h2>Built to survive.</h2>
+
+        <ul class="why-features">
+            <li>🔥 Withstands extreme heat conditions beyond typical house fires</li>
+            <li>💧 Resistant to water and humidity</li>
+            <li>🛡️ Corrosion resistant</li>
+            <li>💥 Shock resistant</li>
+            <li>⏳ Designed to last for decades</li>
+        </ul>
+
+        <p>
+            No cloud. No electronics. No failure point.
+        </p>
+    </section>
+
+    <section class="why-block">
+        <h2>Simple. Precise. Permanent.</h2>
+
+        <p>Your 24-word seed is converted into binary.</p>
+
+        <ul>
+            <li>1 word = 1 line</li>
+            <li>1 bit = 1 square</li>
+            <li>Punch only the "1"</li>
+        </ul>
+
+        <p class="highlight">
+            Encoding takes about 10 minutes.
+        </p>
+    </section>
+
+    <section class="why-block">
+        <h2>Why not paper or digital?</h2>
+
+        <div class="comparison">
+            <div>
+                <h3>Paper</h3>
+                <p>Burns. Fades. Tears.</p>
+            </div>
+
+            <div>
+                <h3>Cloud</h3>
+                <p>Hackable. Traceable. Vulnerable.</p>
+            </div>
+
+            <div>
+                <h3>Hardware</h3>
+                <p>Can fail. Can break. Needs updates.</p>
+            </div>
+
+            <div class="satona">
+                <h3>SATONA</h3>
+                <p>Offline. Physical. Permanent.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-block">
+        <h2>True ownership.</h2>
+
+        <p>
+            Your wealth should not depend on fragile systems.
+        </p>
+
+        <p>
+            It should be engraved into something that outlives you.
+        </p>
+
+        <p class="highlight">
+            SATONA is not storage.
+            It is permanence.
+        </p>
+    </section>
+
+    <section class="why-cta">
+        <p>Secure your seed. Forever.</p>
+    </section>
+
+    <footer class="footer">
+        © SATONA
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+    <script>
+        const burger = document.getElementById("burger");
+        const mobileTab = document.getElementById("mobileTab");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        function checkHeaderFit() {
+            const header = document.querySelector(".header");
+            const logo = document.querySelector(".logo");
+            const nav = document.querySelector(".nav");
+
+            if (!header || !logo || !nav || !burger) {
+                return;
+            }
+
+            const previousNavDisplay = nav.style.display;
+            const previousNavVisibility = nav.style.visibility;
+
+            nav.style.visibility = "hidden";
+            nav.style.display = "flex";
+
+            const logoRect = logo.getBoundingClientRect();
+            const navRect = nav.getBoundingClientRect();
+            const shouldUseBurger = navRect.left <= logoRect.right + 10;
+
+            nav.style.display = previousNavDisplay;
+            nav.style.visibility = previousNavVisibility;
+
+            nav.style.display = shouldUseBurger ? "none" : "flex";
+            burger.style.display = shouldUseBurger ? "block" : "none";
+
+            if (!shouldUseBurger && mobileMenu) {
+                mobileMenu.classList.remove("active");
+            }
+        }
+
+        let headerFitRafId = null;
+        function queueHeaderFitCheck() {
+            if (headerFitRafId !== null) {
+                cancelAnimationFrame(headerFitRafId);
+            }
+
+            headerFitRafId = requestAnimationFrame(() => {
+                checkHeaderFit();
+                headerFitRafId = null;
+            });
+        }
+
+        if (burger && mobileMenu) {
+            burger.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+            });
+        }
+
+        if (mobileTab && mobileMenu) {
+            mobileTab.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+            });
+        }
+
+        window.addEventListener("resize", queueHeaderFitCheck);
+        window.addEventListener("DOMContentLoaded", queueHeaderFitCheck);
+        window.addEventListener("load", queueHeaderFitCheck);
+    </script>
+
+    <script>
+        (function () {
+            const savedLang = localStorage.getItem("userLang");
+
+            if (savedLang) {
+                return;
+            }
+
+            const langs = navigator.languages || [navigator.language];
+            let detected = (langs[0] || "en").toLowerCase();
+            let preferredLang = "en";
+            let targetPath = "/";
+
+            if (detected.startsWith("fr")) {
+                preferredLang = "fr";
+                targetPath = "/fr/";
+            } else if (detected.startsWith("de")) {
+                preferredLang = "de";
+                targetPath = "/de/";
+            } else {
+                targetPath = "/";
+            }
+
+            localStorage.setItem("userLang", preferredLang);
+
+            const currentPath = window.location.pathname;
+
+            if (!currentPath.startsWith(targetPath)) {
+                window.location.href = targetPath;
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
