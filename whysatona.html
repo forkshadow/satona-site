@@ -87,9 +87,9 @@
         .satona-slider {
             position: relative;
             width: 100%;
-            height: 220px;
+            height: 260px;
             overflow: hidden;
-            margin-top: 60px;
+            margin-top: 80px;
         }
 
         .satona-slide {
@@ -98,7 +98,7 @@
             text-align: center;
             opacity: 0;
             transform: translateX(100%);
-            transition: all 0.6s ease;
+            transition: all 0.8s ease;
         }
 
         .satona-slide.active {
@@ -112,16 +112,25 @@
         }
 
         .satona-slide img {
-            height: 80px;
-            margin-bottom: 15px;
-            opacity: 0.9;
+            height: 110px;
+            margin-bottom: 20px;
+            opacity: 0.95;
         }
 
         .satona-slide p {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.4s ease;
             color: #d4a85c;
-            font-size: 14px;
+            font-size: 15px;
             letter-spacing: 1px;
             text-transform: uppercase;
+        }
+
+        .satona-slide.active p {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.4s;
         }
 
         @media (max-width: 700px) {
@@ -185,13 +194,18 @@
     <section class="why-block">
         <div class="satona-slider">
             <div class="satona-slide active">
-                <img src="/assets/images/fire.png" alt="Fire resistance icon" />
+                <img src="/assets/images/fires.png" alt="Fire resistance icon" />
                 <p>Withstands extreme heat and fire exposure.</p>
             </div>
 
             <div class="satona-slide">
+                <img src="/assets/images/water.png" alt="Water resistance icon" />
+                <p>Fully resistant to water exposure and humidity.</p>
+            </div>
+
+            <div class="satona-slide">
                 <img src="/assets/images/oxy.png" alt="Oxidation resistance icon" />
-                <p>Resistant to water, humidity and oxidation.</p>
+                <p>Resistant to oxidation and long-term corrosion.</p>
             </div>
 
             <div class="satona-slide">
@@ -379,21 +393,40 @@
         const slides = document.querySelectorAll('.satona-slide');
         let index = 0;
 
-        function showNextSlide() {
+        function resetSlides() {
+            slides.forEach(slide => {
+                slide.classList.remove('active', 'exit-left');
+                slide.style.transition = "none";
+                slide.style.transform = "translateX(100%)";
+                slide.style.opacity = "0";
+            });
+        }
+
+        function showSlide(i) {
+            slides[i].style.transition = "all 0.8s ease";
+            slides[i].classList.add('active');
+        }
+
+        function nextSlide() {
             const current = slides[index];
             current.classList.remove('active');
             current.classList.add('exit-left');
 
-            index = (index + 1) % slides.length;
+            index++;
 
-            const next = slides[index];
-            next.classList.remove('exit-left');
-            next.classList.add('active');
+            if (index >= slides.length) {
+                setTimeout(() => {
+                    resetSlides();
+                    index = 0;
+                    showSlide(index);
+                }, 800);
+            } else {
+                showSlide(index);
+            }
         }
 
-        if (slides.length > 1) {
-            setInterval(showNextSlide, 2000);
-        }
+        showSlide(index);
+        setInterval(nextSlide, 3000);
     </script>
 
     <script>
