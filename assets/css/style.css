@@ -430,57 +430,48 @@ a {
 }
 
 
-.trusted-section {
-    position: relative;
-    padding: 80px 20px;
-    text-align: center;
-    overflow: hidden;
-
-    background: radial-gradient(circle at 30% 30%, #3a2a14, #0a0a0a 70%);
+.trusted-premium {
+    padding: 80px 20px 40px;
     margin-top: 80px;
-}
+    text-align: center;
 
-.trusted-overlay {
-    position: absolute;
-    inset: 0;
     background: linear-gradient(
-        120deg,
-        rgba(255, 215, 120, 0.08),
-        rgba(255, 200, 80, 0.02),
-        rgba(255, 215, 120, 0.08)
+        90deg,
+        #0a0a0a 0%,
+        #2a1d0f 20%,
+        #5a3d1c 50%,
+        #2a1d0f 80%,
+        #0a0a0a 100%
     );
-    pointer-events: none;
 }
 
-.trusted-content {
-    position: relative;
-    z-index: 2;
+.trusted-inner {
+    max-width: 900px;
+    margin: auto;
 }
 
-.trusted-title {
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255, 215, 150, 0.7);
+.trusted-text {
+    color: #d6a85c;
+    letter-spacing: 3px;
+    font-size: 13px;
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 .trusted-logos {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 60px;
-    flex-wrap: wrap;
+    gap: 80px;
 }
 
 .trusted-logos img {
-    height: 40px;
-    opacity: 0.7;
-    filter: brightness(0) invert(1);
+    height: 36px;
+    opacity: 0.8;
+    filter: invert(1) brightness(2);
     transition: all 0.3s ease;
 }
 
 .trusted-logos img:hover {
     opacity: 1;
-    transform: scale(1.08);
+    transform: translateY(-2px);
 }
