@@ -11,7 +11,7 @@
 
     <style>
         body {
-            background-image: url('/assets/images/whysatona.png');
+            background-image: url('/assets/images/backwhy.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -85,39 +85,45 @@
         }
 
         .satona-slider {
-            position: relative;
             width: 100%;
-            height: 260px;
-            overflow: hidden;
+            text-align: center;
             margin-top: 80px;
         }
 
-        .satona-slide {
+        .satona-icons {
+            position: relative;
+            height: 140px;
+            overflow: hidden;
+        }
+
+        .icon {
+            position: absolute;
+            left: 50%;
+            transform: translateX(100%);
+            opacity: 0;
+            transition: all 0.8s ease;
+            height: 120px;
+        }
+
+        .icon.active {
+            transform: translateX(-50%);
+            opacity: 1;
+        }
+
+        .icon.exit {
+            transform: translateX(-200%);
+            opacity: 0;
+        }
+
+        .satona-text {
+            margin-top: 25px;
+            height: 30px;
+            position: relative;
+        }
+
+        .text {
             position: absolute;
             width: 100%;
-            text-align: center;
-            opacity: 0;
-            transform: translateX(100%);
-            transition: all 0.8s ease;
-        }
-
-        .satona-slide.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .satona-slide.exit-left {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-
-        .satona-slide img {
-            height: 110px;
-            margin-bottom: 20px;
-            opacity: 0.95;
-        }
-
-        .satona-slide p {
             opacity: 0;
             transform: translateY(10px);
             transition: all 0.4s ease;
@@ -127,10 +133,9 @@
             text-transform: uppercase;
         }
 
-        .satona-slide.active p {
+        .text.active {
             opacity: 1;
             transform: translateY(0);
-            transition-delay: 0.4s;
         }
 
         @media (max-width: 700px) {
@@ -193,29 +198,20 @@
 
     <section class="why-block">
         <div class="satona-slider">
-            <div class="satona-slide active">
-                <img src="/assets/images/fire.png" alt="Fire resistance icon" />
-                <p>Withstands extreme heat and fire exposure.</p>
+            <div class="satona-icons">
+                <img src="/assets/images/fire.png" class="icon active" alt="Fire resistance icon">
+                <img src="/assets/images/water.png" class="icon" alt="Water resistance icon">
+                <img src="/assets/images/oxy.png" class="icon" alt="Oxidation resistance icon">
+                <img src="/assets/images/choc.png" class="icon" alt="Shock resistance icon">
+                <img src="/assets/images/time.png" class="icon" alt="Longevity icon">
             </div>
 
-            <div class="satona-slide">
-                <img src="/assets/images/water.png" alt="Water resistance icon" />
-                <p>Fully resistant to water exposure and humidity.</p>
-            </div>
-
-            <div class="satona-slide">
-                <img src="/assets/images/oxy.png" alt="Oxidation resistance icon" />
-                <p>Resistant to oxidation and long-term corrosion.</p>
-            </div>
-
-            <div class="satona-slide">
-                <img src="/assets/images/choc.png" alt="Shock resistance icon" />
-                <p>Built to endure impacts and mechanical shocks.</p>
-            </div>
-
-            <div class="satona-slide">
-                <img src="/assets/images/time.png" alt="Longevity icon" />
-                <p>Designed to last for decades without degradation.</p>
+            <div class="satona-text">
+                <p class="text active">Withstands extreme heat and fire exposure.</p>
+                <p class="text">Fully resistant to water and humidity.</p>
+                <p class="text">Resistant to oxidation and corrosion.</p>
+                <p class="text">Built to endure impacts and shocks.</p>
+                <p class="text">Designed to last for decades.</p>
             </div>
         </div>
     </section>
@@ -390,43 +386,25 @@
     </script>
 
     <script>
-        const slides = document.querySelectorAll('.satona-slide');
+        const icons = document.querySelectorAll('.icon');
+        const texts = document.querySelectorAll('.text');
+
         let index = 0;
 
-        function resetSlides() {
-            slides.forEach(slide => {
-                slide.classList.remove('active', 'exit-left');
-                slide.style.transition = "none";
-                slide.style.transform = "translateX(100%)";
-                slide.style.opacity = "0";
-            });
+        function showNext() {
+            icons[index].classList.remove('active');
+            icons[index].classList.add('exit');
+            texts[index].classList.remove('active');
+
+            index = (index + 1) % icons.length;
+
+            icons.forEach(icon => icon.classList.remove('exit'));
+
+            icons[index].classList.add('active');
+            texts[index].classList.add('active');
         }
 
-        function showSlide(i) {
-            slides[i].style.transition = "all 0.8s ease";
-            slides[i].classList.add('active');
-        }
-
-        function nextSlide() {
-            const current = slides[index];
-            current.classList.remove('active');
-            current.classList.add('exit-left');
-
-            index++;
-
-            if (index >= slides.length) {
-                setTimeout(() => {
-                    resetSlides();
-                    index = 0;
-                    showSlide(index);
-                }, 800);
-            } else {
-                showSlide(index);
-            }
-        }
-
-        showSlide(index);
-        setInterval(nextSlide, 3000);
+        setInterval(showNext, 3000);
     </script>
 
     <script>
