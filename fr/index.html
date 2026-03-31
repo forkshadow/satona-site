@@ -163,54 +163,50 @@
     const burger = document.getElementById("burger");
     const mobileTab = document.getElementById("mobileTab");
     const mobileMenu = document.getElementById("mobileMenu");
-        function checkHeaderFit() {
-            const header = document.querySelector(".header");
-            const logo = document.querySelector(".logo");
-            const nav = document.querySelector(".nav");
-            const lang = document.querySelector(".lang-switch");
 
     function checkHeaderFit() {
         const header = document.querySelector(".header");
         const logo = document.querySelector(".logo");
         const nav = document.querySelector(".nav");
         const lang = document.querySelector(".lang-switch");
-            if (!header || !logo || !nav || !burger) return;
+        if (!header || !logo || !nav || !burger) return;
 
-            const forceBurger = window.matchMedia("(max-width: 1100px)").matches;
+        const forceBurger = window.matchMedia("(max-width: 1100px)").matches;
 
-            if (!forceBurger) {
-                header.classList.remove("burger-active");
-            }
-
-            const headerWidth = header.offsetWidth;
-            const totalWidth =
-                logo.offsetWidth +
-                nav.offsetWidth +
-                (lang ? lang.offsetWidth : 0) +
-                60;
-
-            const shouldUseBurger = forceBurger || totalWidth > headerWidth;
-
-            header.classList.toggle("burger-active", shouldUseBurger);
-
-            if (!shouldUseBurger && mobileMenu) {
-                mobileMenu.classList.remove("active");
-            }
-    }
-
-        let headerFitRafId = null;
-        function queueHeaderFitCheck() {
-            if (headerFitRafId !== null) {
-                cancelAnimationFrame(headerFitRafId);
-            }
-
-            headerFitRafId = requestAnimationFrame(() => {
-                checkHeaderFit();
-                headerFitRafId = null;
-            });
+        if (!forceBurger) {
+            header.classList.remove("burger-active");
         }
 
-        if (burger && mobileMenu) {
+        const headerWidth = header.offsetWidth;
+        const navContentWidth = Math.max(nav.offsetWidth, nav.scrollWidth);
+        const totalWidth =
+            logo.offsetWidth +
+            navContentWidth +
+            (lang ? lang.offsetWidth : 0) +
+            60;
+
+        const shouldUseBurger = forceBurger || totalWidth > headerWidth;
+
+        header.classList.toggle("burger-active", shouldUseBurger);
+
+        if (!shouldUseBurger && mobileMenu) {
+            mobileMenu.classList.remove("active");
+        }
+    }
+
+    let headerFitRafId = null;
+    function queueHeaderFitCheck() {
+        if (headerFitRafId !== null) {
+            cancelAnimationFrame(headerFitRafId);
+        }
+
+        headerFitRafId = requestAnimationFrame(() => {
+            checkHeaderFit();
+            headerFitRafId = null;
+        });
+    }
+
+    if (burger && mobileMenu) {
         burger.addEventListener("click", () => {
             mobileMenu.classList.toggle("active");
         });
