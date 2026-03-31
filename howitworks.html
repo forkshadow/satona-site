@@ -230,11 +230,12 @@
 
             const headerWidth = header.offsetWidth;
 
-            const logoWidth = logo.offsetWidth;
-            const navWidth = nav.scrollWidth;
-            const langWidth = lang ? lang.offsetWidth : 0;
+            const totalWidth =
+                logo.offsetWidth +
+                nav.offsetWidth +
+                (lang ? lang.offsetWidth : 0) +
+                60;
 
-            const totalWidth = logoWidth + navWidth + langWidth + 80;
             const shouldUseBurger = totalWidth > headerWidth;
 
             nav.style.display = previousNavDisplay;
