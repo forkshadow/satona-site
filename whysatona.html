@@ -327,36 +327,28 @@
         const burger = document.getElementById("burger");
         const mobileTab = document.getElementById("mobileTab");
         const mobileMenu = document.getElementById("mobileMenu");
-
         function checkHeaderFit() {
             const header = document.querySelector(".header");
             const logo = document.querySelector(".logo");
             const nav = document.querySelector(".nav");
             const lang = document.querySelector(".lang-switch");
 
-            if (!header || !logo || !nav || !burger) return;
+            if (!header || !logo || !nav) return;
 
-            const previousNavDisplay = nav.style.display;
-            const previousNavVisibility = nav.style.visibility;
+            const isMobileViewport = window.matchMedia("(max-width: 1100px)").matches;
 
-            nav.style.visibility = "hidden";
-            nav.style.display = "flex";
-
-            const headerWidth = header.offsetWidth;
+            const navLinks = nav.querySelector(".nav-links");
+            const navContentWidth = navLinks ? navLinks.scrollWidth : nav.scrollWidth;
 
             const totalWidth =
                 logo.offsetWidth +
-                nav.offsetWidth +
+                navContentWidth +
                 (lang ? lang.offsetWidth : 0) +
                 60;
 
-            const shouldUseBurger = totalWidth > headerWidth;
+            const shouldUseBurger = isMobileViewport || totalWidth > header.offsetWidth;
 
-            nav.style.display = previousNavDisplay;
-            nav.style.visibility = previousNavVisibility;
-
-            nav.style.display = shouldUseBurger ? "none" : "flex";
-            burger.style.display = shouldUseBurger ? "block" : "none";
+            header.classList.toggle("burger-active", shouldUseBurger);
 
             if (!shouldUseBurger && mobileMenu) {
                 mobileMenu.classList.remove("active");
