@@ -183,6 +183,16 @@ body {
     right: 0;
 }
 
+
+.header.burger-active .nav,
+.header.burger-active .lang-switch {
+    display: none;
+}
+
+.header.burger-active .burger {
+    display: block;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1100px) {
     .nav {
