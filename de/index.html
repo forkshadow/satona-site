@@ -165,6 +165,8 @@
     const mobileMenu = document.getElementById("mobileMenu");
 
     function checkHeaderFit() {
+        const MOBILE_BREAKPOINT = 1100;
+
         const header = document.querySelector(".header");
         const logo = document.querySelector(".logo");
         const nav = document.querySelector(".nav");
@@ -172,27 +174,42 @@
 
         if (!header || !logo || !nav || !burger) return;
 
+        const isMobileViewport = window.innerWidth <= MOBILE_BREAKPOINT;
+
         const previousNavDisplay = nav.style.display;
         const previousNavVisibility = nav.style.visibility;
+        const previousLangDisplay = lang ? lang.style.display : "";
 
         nav.style.visibility = "hidden";
         nav.style.display = "flex";
+        if (lang) lang.style.display = "flex";
 
-        const headerWidth = header.offsetWidth;
+        const navLinks = nav.querySelector(".nav-links");
+        const navRequiredWidth = navLinks ? navLinks.scrollWidth : nav.scrollWidth;
+
+        const navStyles = window.getComputedStyle(nav);
+        const navHorizontalMargins =
+            parseFloat(navStyles.marginLeft || "0") +
+            parseFloat(navStyles.marginRight || "0");
 
         const totalWidth =
             logo.offsetWidth +
-            nav.offsetWidth +
+            navRequiredWidth +
+            navHorizontalMargins +
             (lang ? lang.offsetWidth : 0) +
             60;
 
-        const shouldUseBurger = totalWidth > headerWidth;
+        const shouldUseBurger = isMobileViewport || totalWidth > header.offsetWidth;
 
         nav.style.display = previousNavDisplay;
         nav.style.visibility = previousNavVisibility;
+        if (lang) lang.style.display = previousLangDisplay;
 
         nav.style.display = shouldUseBurger ? "none" : "flex";
         burger.style.display = shouldUseBurger ? "block" : "none";
+        if (lang) {
+            lang.style.display = shouldUseBurger ? "none" : "flex";
+        }
 
         if (!shouldUseBurger && mobileMenu) {
             mobileMenu.classList.remove("active");
