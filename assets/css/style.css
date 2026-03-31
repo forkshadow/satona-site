@@ -39,12 +39,22 @@ body {
 /* NAV DESKTOP */
 .nav {
     position: absolute;
-    right: 120px;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: space-between;
+    width: calc(100% - 300px);
+    max-width: 700px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 30px;
 }
 
 .nav a {
@@ -90,6 +100,8 @@ body {
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
+    display: flex;
+    align-items: center;
 }
 
 /* BURGER */
