@@ -113,6 +113,11 @@
     const burger = document.getElementById("burger");
     const mobileTab = document.getElementById("mobileTab");
     const mobileMenu = document.getElementById("mobileMenu");
+        function checkHeaderFit() {
+            const header = document.querySelector(".header");
+            const logo = document.querySelector(".logo");
+            const nav = document.querySelector(".nav");
+            const lang = document.querySelector(".lang-switch");
 
     function checkHeaderFit() {
         const header = document.querySelector(".header");
@@ -143,19 +148,19 @@
             }
     }
 
-    let headerFitRafId = null;
-    function queueHeaderFitCheck() {
-        if (headerFitRafId !== null) {
-            cancelAnimationFrame(headerFitRafId);
+        let headerFitRafId = null;
+        function queueHeaderFitCheck() {
+            if (headerFitRafId !== null) {
+                cancelAnimationFrame(headerFitRafId);
+            }
+
+            headerFitRafId = requestAnimationFrame(() => {
+                checkHeaderFit();
+                headerFitRafId = null;
+            });
         }
 
-        headerFitRafId = requestAnimationFrame(() => {
-            checkHeaderFit();
-            headerFitRafId = null;
-        });
-    }
-
-    if (burger && mobileMenu) {
+        if (burger && mobileMenu) {
         burger.addEventListener("click", () => {
             mobileMenu.classList.toggle("active");
         });

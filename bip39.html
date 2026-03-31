@@ -129,7 +129,6 @@
         const burger = document.getElementById("burger");
         const mobileTab = document.getElementById("mobileTab");
         const mobileMenu = document.getElementById("mobileMenu");
-
         function checkHeaderFit() {
             const header = document.querySelector(".header");
             const logo = document.querySelector(".logo");
@@ -146,7 +145,7 @@
             const headerWidth = header.offsetWidth;
             const totalWidth =
                 logo.offsetWidth +
-                nav.offsetWidth +
+                navContentWidth +
                 (lang ? lang.offsetWidth : 0) +
                 60;
 
