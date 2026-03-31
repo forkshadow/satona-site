@@ -39,13 +39,14 @@ body {
 /* NAV DESKTOP */
 .nav {
     position: absolute;
-    left: 180px;
-    right: 140px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 60%;
+    max-width: 600px;
+    gap: clamp(10px, 2vw, 40px);
 }
 
 .nav-links {
@@ -57,8 +58,6 @@ body {
 }
 
 .nav a {
-    flex: 1;
-    text-align: center;
     font-size: clamp(12px, 1vw, 14px);
     color: white;
     opacity: 0.8;
@@ -72,8 +71,8 @@ body {
 .lang-switch {
     position: absolute;
     right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: auto;
+    transform: none;
     display: flex;
     gap: 6px;
     align-items: center;
