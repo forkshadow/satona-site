@@ -210,66 +210,68 @@
     </script>
 
     <script>
-        const burger = document.getElementById("burger");
-        const mobileTab = document.getElementById("mobileTab");
-        const mobileMenu = document.getElementById("mobileMenu");
-        function checkHeaderFit() {
-            const header = document.querySelector(".header");
-            const logo = document.querySelector(".logo");
-            const nav = document.querySelector(".nav");
-            const lang = document.querySelector(".lang-switch");
-            if (!header || !logo || !nav || !burger) return;
+    const burger = document.getElementById("burger");
+    const mobileTab = document.getElementById("mobileTab");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-            const forceBurger = window.matchMedia("(max-width: 1100px)").matches;
+    function checkHeaderFit() {
+        const header = document.querySelector(".header");
+        const logo = document.querySelector(".logo");
+        const nav = document.querySelector(".nav");
+        const lang = document.querySelector(".lang-switch");
+        if (!header || !logo || !nav || !burger) return;
 
-            if (!forceBurger) {
-                header.classList.remove("burger-active");
-            }
+        const forceBurger = window.matchMedia("(max-width: 1100px)").matches;
 
-            const headerWidth = header.offsetWidth;
-            const totalWidth =
-                logo.offsetWidth +
-                navContentWidth +
-                (lang ? lang.offsetWidth : 0) +
-                60;
-
-            const shouldUseBurger = forceBurger || totalWidth > headerWidth;
-
-            header.classList.toggle("burger-active", shouldUseBurger);
-
-            if (!shouldUseBurger && mobileMenu) {
-                mobileMenu.classList.remove("active");
-            }
+        if (!forceBurger) {
+            header.classList.remove("burger-active");
         }
 
-        let headerFitRafId = null;
-        function queueHeaderFitCheck() {
-            if (headerFitRafId !== null) {
-                cancelAnimationFrame(headerFitRafId);
-            }
+        const headerWidth = header.offsetWidth;
+        const navContentWidth = Math.max(nav.offsetWidth, nav.scrollWidth);
+        const totalWidth =
+            logo.offsetWidth +
+            navContentWidth +
+            (lang ? lang.offsetWidth : 0) +
+            60;
 
-            headerFitRafId = requestAnimationFrame(() => {
-                checkHeaderFit();
-                headerFitRafId = null;
-            });
+        const shouldUseBurger = forceBurger || totalWidth > headerWidth;
+
+        header.classList.toggle("burger-active", shouldUseBurger);
+
+        if (!shouldUseBurger && mobileMenu) {
+            mobileMenu.classList.remove("active");
+        }
+    }
+
+    let headerFitRafId = null;
+    function queueHeaderFitCheck() {
+        if (headerFitRafId !== null) {
+            cancelAnimationFrame(headerFitRafId);
         }
 
-        if (burger && mobileMenu) {
-            burger.addEventListener("click", () => {
-                mobileMenu.classList.toggle("active");
-            });
-        }
+        headerFitRafId = requestAnimationFrame(() => {
+            checkHeaderFit();
+            headerFitRafId = null;
+        });
+    }
 
-        if (mobileTab && mobileMenu) {
-            mobileTab.addEventListener("click", () => {
-                mobileMenu.classList.toggle("active");
-            });
-        }
+    if (burger && mobileMenu) {
+        burger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+    }
 
-        window.addEventListener("resize", queueHeaderFitCheck);
-        window.addEventListener("DOMContentLoaded", queueHeaderFitCheck);
-        window.addEventListener("load", queueHeaderFitCheck);
-    </script>
+    if (mobileTab && mobileMenu) {
+        mobileTab.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+    }
+
+    window.addEventListener("resize", queueHeaderFitCheck);
+    window.addEventListener("DOMContentLoaded", queueHeaderFitCheck);
+    window.addEventListener("load", queueHeaderFitCheck);
+</script>
 
     <script>
         (function () {
