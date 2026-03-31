@@ -98,7 +98,85 @@
 </footer>
 
 
-    <script src="/assets/js/header.js"></script>
+<script>
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header");
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+</script>
+
+<script>
+    const burger = document.getElementById("burger");
+    const mobileTab = document.getElementById("mobileTab");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    function checkHeaderFit() {
+        const header = document.querySelector(".header");
+        const logo = document.querySelector(".logo");
+        const nav = document.querySelector(".nav");
+        const lang = document.querySelector(".lang-switch");
+
+        if (!header || !logo || !nav || !burger) return;
+
+        const previousNavDisplay = nav.style.display;
+        const previousNavVisibility = nav.style.visibility;
+
+        nav.style.visibility = "hidden";
+        nav.style.display = "flex";
+
+        const headerWidth = header.offsetWidth;
+
+        const totalWidth =
+            logo.offsetWidth +
+            nav.offsetWidth +
+            (lang ? lang.offsetWidth : 0) +
+            60;
+
+        const shouldUseBurger = totalWidth > headerWidth;
+
+        nav.style.display = previousNavDisplay;
+        nav.style.visibility = previousNavVisibility;
+
+        nav.style.display = shouldUseBurger ? "none" : "flex";
+        burger.style.display = shouldUseBurger ? "block" : "none";
+
+        if (!shouldUseBurger && mobileMenu) {
+            mobileMenu.classList.remove("active");
+        }
+    }
+
+    let headerFitRafId = null;
+    function queueHeaderFitCheck() {
+        if (headerFitRafId !== null) {
+            cancelAnimationFrame(headerFitRafId);
+        }
+
+        headerFitRafId = requestAnimationFrame(() => {
+            checkHeaderFit();
+            headerFitRafId = null;
+        });
+    }
+
+    if (burger && mobileMenu) {
+        burger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+    }
+
+    if (mobileTab && mobileMenu) {
+        mobileTab.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+    }
+
+    window.addEventListener("resize", queueHeaderFitCheck);
+    window.addEventListener("DOMContentLoaded", queueHeaderFitCheck);
+    window.addEventListener("load", queueHeaderFitCheck);
+</script>
 
 </body>
 </html>
