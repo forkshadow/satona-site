@@ -528,3 +528,22 @@ a {
     opacity: 1;
     transform: translateY(-2px);
 }
+
+.glass-panel {
+    max-width: 880px;
+    margin: 40px auto;
+    padding: 28px 24px;
+    background: rgba(10, 10, 10, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .glass-panel {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+}
