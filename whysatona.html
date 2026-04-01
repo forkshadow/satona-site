@@ -32,17 +32,19 @@
 
         .why-hero {
             text-align: center;
-            padding: 120px 20px 60px;
+            padding: 92px 20px 36px;
         }
 
         .why-hero h1 {
             font-size: 42px;
             letter-spacing: 3px;
+            margin: 0;
         }
 
         .subtitle {
             color: #d6a85c;
-            margin-top: 10px;
+            margin-top: 18px;
+            font-size: 1.3em;
         }
 
         .why-block {
@@ -84,7 +86,7 @@
         .satona-slider {
             width: 100%;
             text-align: center;
-            margin-top: 80px;
+            margin-top: 14px;
         }
 
         .satona-icons {
@@ -136,6 +138,19 @@
         }
 
         @media (max-width: 700px) {
+            .why-hero {
+                padding: 84px 16px 28px;
+            }
+
+            .satona-slider {
+                margin-top: 10px;
+            }
+
+            .subtitle {
+                margin-top: 14px;
+                font-size: 1.22em;
+            }
+
             .comparison {
                 grid-template-columns: 1fr;
             }
@@ -193,28 +208,25 @@
     </div>
 
     <main class="why-container">
-        <section class="why-block">
-        <div class="satona-slider">
-            <div class="satona-icons">
-                <img src="/assets/images/fire.png" class="icon active" alt="Fire resistance icon">
-                <img src="/assets/images/water.png" class="icon" alt="Water resistance icon">
-                <img src="/assets/images/oxy.png" class="icon" alt="Oxidation resistance icon">
-                <img src="/assets/images/choc.png" class="icon" alt="Shock resistance icon">
-                <img src="/assets/images/time.png" class="icon" alt="Longevity icon">
-            </div>
-
-            <div class="satona-text">
-                <p class="text active">Withstands extreme heat and fire exposure.</p>
-                <p class="text">Fully resistant to water and humidity.</p>
-                <p class="text">Resistant to oxidation and corrosion.</p>
-                <p class="text">Built to endure impacts and shocks.</p>
-                <p class="text">Designed to last for decades.</p>
-            </div>
-        </div>
-        </section>
-
         <section class="why-hero">
             <h1>NOT JUST RESISTANT</h1>
+            <div class="satona-slider">
+                <div class="satona-icons">
+                    <img src="/assets/images/fire.png" class="icon active" alt="Fire resistance icon">
+                    <img src="/assets/images/water.png" class="icon" alt="Water resistance icon">
+                    <img src="/assets/images/oxy.png" class="icon" alt="Oxidation resistance icon">
+                    <img src="/assets/images/choc.png" class="icon" alt="Shock resistance icon">
+                    <img src="/assets/images/time.png" class="icon" alt="Longevity icon">
+                </div>
+
+                <div class="satona-text">
+                    <p class="text active">Withstands extreme heat and fire exposure.</p>
+                    <p class="text">Fully resistant to water and humidity.</p>
+                    <p class="text">Resistant to oxidation and corrosion.</p>
+                    <p class="text">Built to endure impacts and shocks.</p>
+                    <p class="text">Designed to last for decades.</p>
+                </div>
+            </div>
             <p class="subtitle">Designed to outlast everything that can fail.</p>
         </section>
 
