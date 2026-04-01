@@ -223,6 +223,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    box-sizing: border-box;
     height: 110px;
 
     display: flex;
