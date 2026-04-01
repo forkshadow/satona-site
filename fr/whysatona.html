@@ -73,6 +73,70 @@
             font-size: 20px;
             color: #d6a85c;
         }
+
+        .satona-slider {
+            width: 100%;
+            text-align: center;
+            margin-top: 14px;
+        }
+
+        .satona-icons {
+            position: relative;
+            height: 140px;
+            overflow: hidden;
+        }
+
+        .icon {
+            position: absolute;
+            left: 50%;
+            transform: translateX(100%);
+            opacity: 0;
+            transition: all 0.8s ease;
+            height: 120px;
+        }
+
+        .icon.active {
+            transform: translateX(-50%);
+            opacity: 1;
+        }
+
+        .icon.exit {
+            transform: translateX(-200%);
+            opacity: 0;
+        }
+
+        .satona-text {
+            margin-top: 25px;
+            height: 30px;
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.4s ease;
+            color: #d4a85c;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .text.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 700px) {
+            .satona-slider {
+                margin-top: 10px;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -102,6 +166,23 @@
 
 <section class="why-hero">
     <h1>BIEN PLUS QUE RÉSISTANT</h1>
+    <div class="satona-slider">
+        <div class="satona-icons">
+            <img src="/assets/images/fire.png" class="icon active" alt="Fire resistance icon">
+            <img src="/assets/images/water.png" class="icon" alt="Water resistance icon">
+            <img src="/assets/images/oxy.png" class="icon" alt="Oxidation resistance icon">
+            <img src="/assets/images/choc.png" class="icon" alt="Shock resistance icon">
+            <img src="/assets/images/time.png" class="icon" alt="Longevity icon">
+        </div>
+
+        <div class="satona-text">
+            <p class="text active">Résiste à des températures extrêmes, bien au-delà d’un incendie domestique.</p>
+            <p class="text">Insensible à l’eau et à l’humidité.</p>
+            <p class="text">Résistant à la corrosion.</p>
+            <p class="text">Supporte les chocs et impacts.</p>
+            <p class="text">Conçu pour durer des décennies.</p>
+        </div>
+    </div>
 
     <p class="subtitle">
         Conçu pour survivre à tout ce qui peut échouer.
@@ -205,6 +286,28 @@
 <footer class="footer">
     © SATONA
 </footer>
+
+<script>
+    const icons = document.querySelectorAll('.icon');
+    const texts = document.querySelectorAll('.text');
+
+    let index = 0;
+
+    function showNext() {
+        icons[index].classList.remove('active');
+        icons[index].classList.add('exit');
+        texts[index].classList.remove('active');
+
+        index = (index + 1) % icons.length;
+
+        icons.forEach(icon => icon.classList.remove('exit'));
+
+        icons[index].classList.add('active');
+        texts[index].classList.add('active');
+    }
+
+    setInterval(showNext, 3000);
+</script>
 
 </body>
 </html>
