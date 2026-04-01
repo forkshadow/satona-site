@@ -547,3 +547,16 @@ a {
         border-radius: 14px;
     }
 }
+
+/* BIP39 PAGE SPACING */
+.bip39-page .section {
+    padding-top: 28px; /* reduced from ~40px */
+}
+
+.bip39-page h1 {
+    margin-top: 0;
+}
+
+.bip39-page .container {
+    padding-top: 105px; /* ~30% less than 150px on BIP39 tool pages */
+}
