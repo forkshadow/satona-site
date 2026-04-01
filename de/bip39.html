@@ -173,5 +173,27 @@
     window.addEventListener("load", queueHeaderFitCheck);
 </script>
 
+<!-- BIP39-LISTE -->
+<script src="/assets/bip39-list.js"></script>
+
+<!-- HAUPTSKRIPT -->
+<script>
+    function getBinary() {
+        const word = document.getElementById('bipInput').value.trim().toLowerCase();
+        const result = document.getElementById('result');
+
+        if (typeof bip39List === "undefined") {
+            result.textContent = "Fehler: Liste nicht geladen.";
+            return;
+        }
+
+        if (bip39List[word] !== undefined) {
+            result.textContent = 'Binär: ' + bip39List[word];
+        } else {
+            result.textContent = 'Wort nicht gefunden.';
+        }
+    }
+</script>
+
 </body>
 </html>
