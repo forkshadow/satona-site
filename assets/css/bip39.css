@@ -93,3 +93,11 @@ button:hover {
         width: min(350px, calc(100vw - 40px));
     }
 }
+
+body.bip39-page {
+    background-image: url("/assets/images/fondbip39.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
