@@ -8,6 +8,17 @@ body {
     padding-top: 110px;
 }
 
+/* Keep editable fields fully interactive.
+   This protects inputs/textareas from inherited drag/selection/touch rules or
+   decorative overlays so users can place the caret and select text normally. */
+input,
+textarea {
+    pointer-events: auto;
+    user-select: text;
+    -webkit-user-select: text;
+    touch-action: auto;
+}
+
 /* HERO CTA */
 .hero-cta {
     display: inline-block;
