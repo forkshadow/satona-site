@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" role="img" aria-label="MetaMask logo">
+  <rect width="260" height="48" fill="none"/>
+  <g fill="#ffffff">
+    <path d="M16 34l6-20 8 8 8-8 6 20h-4l-4-13-6 6-6-6-4 13z"/>
+    <text x="52" y="31" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="1.5">METAMASK</text>
+  </g>
+</svg>
