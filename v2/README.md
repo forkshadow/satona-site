@@ -4,7 +4,7 @@ This directory is a static, isolated V2. It does **not** share CSS, JavaScript o
 
 ## Extraction-safe media policy
 
-To allow Codex-to-GitHub extraction, all binary media previously copied into `v2/` have been removed. The V2 now uses responsive HTML/CSS `.media-placeholder` components for product, resistance, macro and packaging slots. They are deliberately non-photorealistic and can be replaced later without changing the page structure.
+To allow Codex-to-GitHub extraction, all binary media previously copied into `v2/` have been removed. The V2 now uses responsive HTML/CSS media components for product, resistance, macro and packaging slots. They are deliberately non-photorealistic and can be replaced later without changing the page structure.
 
 The interactive plate remains available as `assets/images/plate-preview.svg`. It is plain XML text with no embedded image or base64 payload and keeps the `w{line}-b{bit}` identifiers consumed by `plate-preview.js`.
 
