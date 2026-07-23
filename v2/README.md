@@ -6,7 +6,7 @@ This directory is a static, isolated V2. It does **not** share CSS, JavaScript o
 
 To allow Codex-to-GitHub extraction, all binary media previously copied into `v2/` have been removed. The V2 now uses responsive HTML/CSS media components for product, resistance, macro and packaging slots. They are deliberately non-photorealistic and can be replaced later without changing the page structure.
 
-The interactive plate remains available as `assets/images/plate-preview.svg`. It is plain XML text with no embedded image or base64 payload and keeps the `w{line}-b{bit}` identifiers consumed by `plate-preview.js`.
+The interactive plate uses `assets/images/seedrectobip39.ai.svg`, which keeps the `w{line}-b{bit}` identifiers consumed by `plate-preview.js`.
 
 The offline BIP39 PDF is intentionally absent during this preview phase; each former download control is a localized disabled “coming soon” status.
 
@@ -18,13 +18,13 @@ The offline BIP39 PDF is intentionally absent during this preview phase; each fo
 ## Structure
 - `assets/css/`: tokens, base rules, layout, reusable components and page-specific sheets.
 - `assets/js/`: dependency-free feature scripts. `bip39-list.js` is a copied text source list; `plate-preview.js` fetches the text-only SVG.
-- `assets/images/plate-preview.svg`: the only visual asset retained for the interactive learning demonstration.
+- `assets/images/seedrectobip39.ai.svg`: the interactive SATONA pieces used for the learning demonstration.
 - `assets/media/`: reserved for documented future media; it is empty in this extraction-safe version.
 
 ## Editing safely
 1. Update all three corresponding HTML pages when changing copy or page structure.
 2. Keep language links pointing to the same filename in each locale.
-3. Do not change `plate-preview.svg` identifiers: `plate-preview.js` depends on them.
+3. Do not change `seedrectobip39.ai.svg` identifiers: `plate-preview.js` depends on them.
 4. Keep BIP39 conversion strictly one word at a time; do not add full-phrase submission.
 5. Keep asset URLs relative (`assets/` in English and `../assets/` in translated folders) so the V2 works under `/v2/`.
 6. Add future binary media only after the GitHub extraction preview phase, using `MEDIA-REQUIRED.md` as the contract.
