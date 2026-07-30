@@ -30,3 +30,11 @@
 .trust-copy p{margin:0}.trust-copy .trust-disclaimer{margin-top:.35rem;color:var(--c-muted);font-size:.75rem;line-height:1.4}
 
 .demo-dialog{width:min(92vw,64rem);padding:0;border:1px solid var(--c-line);border-radius:var(--radius-md);background:var(--c-ink);color:var(--c-text);box-shadow:0 1.5rem 5rem rgba(0,0,0,.55);opacity:0;transform:translateY(.75rem) scale(.985);transition:opacity var(--ease),transform var(--ease)}.demo-dialog[open]{opacity:1;transform:none}.demo-dialog::backdrop{background:rgba(0,0,0,.78);backdrop-filter:blur(4px)}.demo-dialog__inner{position:relative;padding:3.75rem 1rem 1rem}.demo-dialog__close{position:absolute;top:.8rem;right:.8rem;width:2.75rem;height:2.75rem;border:1px solid var(--c-line);border-radius:50%;background:rgba(255,255,255,.03);color:var(--c-text);font-size:1.4rem;line-height:1;cursor:pointer}.demo-dialog__video{display:block;width:100%;max-height:75vh;border-radius:var(--radius-sm);background:#050505}.demo-dialog__message{margin:0;padding:clamp(3rem,10vw,7rem) 1rem;text-align:center;color:var(--c-muted);font-size:clamp(1.05rem,3vw,1.35rem)}@media(prefers-reduced-motion:reduce){.demo-dialog{transition:none}}
+
+/* The concept: heading and details span the section; artwork and pitch share the middle row. */
+.product-intro{display:grid;grid-template-columns:1fr;gap:var(--s-5)}
+.concept-label,.concept-pitch,.concept-details{margin:0}
+.concept-pitch{align-self:center}
+.concept-details{width:100%}
+.concept-details .button-row{margin-top:var(--s-5)}
+@media(min-width:800px){.product-intro{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--s-7)}.concept-label,.concept-details{grid-column:1/-1}.concept-pitch{grid-column:2;grid-row:2}.product-image{grid-column:1;grid-row:2}}
