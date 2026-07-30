@@ -30,3 +30,40 @@
 .trust-copy p{margin:0}.trust-copy .trust-disclaimer{margin-top:.35rem;color:var(--c-muted);font-size:.75rem;line-height:1.4}
 
 .demo-dialog{width:min(92vw,64rem);padding:0;border:1px solid var(--c-line);border-radius:var(--radius-md);background:var(--c-ink);color:var(--c-text);box-shadow:0 1.5rem 5rem rgba(0,0,0,.55);opacity:0;transform:translateY(.75rem) scale(.985);transition:opacity var(--ease),transform var(--ease)}.demo-dialog[open]{opacity:1;transform:none}.demo-dialog::backdrop{background:rgba(0,0,0,.78);backdrop-filter:blur(4px)}.demo-dialog__inner{position:relative;padding:3.75rem 1rem 1rem}.demo-dialog__close{position:absolute;top:.8rem;right:.8rem;width:2.75rem;height:2.75rem;border:1px solid var(--c-line);border-radius:50%;background:rgba(255,255,255,.03);color:var(--c-text);font-size:1.4rem;line-height:1;cursor:pointer}.demo-dialog__video{display:block;width:100%;max-height:75vh;border-radius:var(--radius-sm);background:#050505}.demo-dialog__message{margin:0;padding:clamp(3rem,10vw,7rem) 1rem;text-align:center;color:var(--c-muted);font-size:clamp(1.05rem,3vw,1.35rem)}@media(prefers-reduced-motion:reduce){.demo-dialog{transition:none}}
+
+/* Concept: keep the mobile flow, then match the media and primary copy on wide screens. */
+.product-intro__main {
+  min-width: 0;
+}
+.product-intro__eyebrow {
+  text-align: left;
+}
+.product-intro__secondary {
+  margin-bottom: 0;
+}
+
+@media (min-width: 800px) {
+  .product-intro {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: stretch;
+  }
+  .product-intro__main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .product-intro__eyebrow {
+    margin-bottom: var(--s-3);
+    font-size: .8rem;
+  }
+  .product-intro__actions {
+    margin-top: auto;
+  }
+  .product-intro__secondary {
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+  .product-image {
+    height: 100%;
+  }
+}
