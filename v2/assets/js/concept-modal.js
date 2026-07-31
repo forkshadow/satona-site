@@ -10,6 +10,11 @@
         dialogSelector: '[data-bits-dialog]',
         triggerSelector: '[data-bits-trigger]',
         closeSelector: '[data-bits-close]'
+      },
+      {
+        dialogSelector: '[data-schema-dialog]',
+        triggerSelector: '[data-schema-trigger]',
+        closeSelector: '[data-schema-close]'
       }
     ];
 

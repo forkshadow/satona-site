@@ -1,7 +1,7 @@
 (() => {
   const dialog = document.querySelector('[data-demo-dialog]');
-  const trigger = document.querySelector('[data-demo-trigger]');
-  if (!dialog || !trigger) return;
+  const triggers = document.querySelectorAll('[data-demo-trigger]');
+  if (!dialog || !triggers.length) return;
 
   const closeButton = dialog.querySelector('[data-demo-close]');
   const video = dialog.querySelector('video');
@@ -12,7 +12,9 @@
     video.currentTime = 0;
   };
 
-  trigger.addEventListener('click', () => dialog.showModal());
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => dialog.showModal());
+  });
   closeButton.addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', event => {
     if (event.target === dialog) dialog.close();
