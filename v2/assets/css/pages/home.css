@@ -25,7 +25,16 @@
 .product-image{display:flex;align-items:center;justify-content:center}.media-image--intro{max-height:24rem;object-fit:contain}
 
 
-.resilience-summary{display:grid;gap:1.25rem;align-items:center;margin-bottom:1rem;overflow:hidden}.resilience-summary__image{width:100%;height:100%;min-height:13rem;max-height:20rem;object-fit:cover;object-position:center}.resilience-summary h3{margin-bottom:.5rem}.resilience-card{overflow:hidden;padding:0}.resilience-card h3{padding:0 1rem 1rem;margin:0}.resilience-image{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;margin-bottom:1rem}.v2-grid--4{grid-template-columns:repeat(auto-fit,minmax(12rem,1fr))}@media(min-width:750px){.resilience-summary{grid-template-columns:1fr 1fr}.resilience-summary>div{padding:1.25rem}}
+.resilience-heading{max-width:48rem;margin-bottom:clamp(1.75rem,4vw,3rem)}
+.resilience-heading>p:last-child{max-width:43rem}
+.resilience-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.65rem,2vw,1rem);align-items:stretch}
+.resilience-card{display:flex;min-width:0;height:100%;padding:0;overflow:hidden;flex-direction:column;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.018));box-shadow:0 1.25rem 3rem rgba(0,0,0,.16)}
+.resilience-image{display:block;width:100%;height:auto;aspect-ratio:4/3;margin:0;object-fit:cover;object-position:center}
+.resilience-card__body{display:flex;flex:1;min-width:0;padding:clamp(.8rem,2.5vw,1.25rem);flex-direction:column}
+.resilience-card__category{min-height:2.5em;margin:0 0 .6rem;color:var(--c-gold);font-family:var(--font-mono);font-size:clamp(.58rem,1.8vw,.72rem);font-weight:700;letter-spacing:.11em;line-height:1.25;overflow-wrap:anywhere}
+.resilience-card h3{margin:0 0 .65rem;padding:0;font-size:clamp(1.08rem,3.2vw,1.65rem);line-height:1.08;letter-spacing:-.025em}
+.resilience-card__description{margin:auto 0 0;color:var(--c-muted);font-size:clamp(.78rem,2vw,.94rem);line-height:1.5}
+@media(min-width:1050px){.resilience-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.resilience-card__category{min-height:0}}
 
 .trust-copy p{margin:0}.trust-copy .trust-disclaimer{margin-top:.35rem;color:var(--c-muted);font-size:.75rem;line-height:1.4}
 
