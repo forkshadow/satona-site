@@ -1,13 +1,28 @@
 (() => {
-  const dialog = document.querySelector('[data-bip39-dialog]');
-  const trigger = document.querySelector('[data-bip39-trigger]');
-  if (!dialog || !trigger) return;
+  const modalDefinitions = [
+    {
+      dialogSelector: '[data-bip39-dialog]',
+      triggerSelector: '[data-bip39-trigger]',
+      closeSelector: '[data-bip39-close]'
+    },
+    {
+      dialogSelector: '[data-bits-dialog]',
+      triggerSelector: '[data-bits-trigger]',
+      closeSelector: '[data-bits-close]'
+    }
+  ];
 
-  const closeButton = dialog.querySelector('[data-bip39-close]');
+  modalDefinitions.forEach(({ dialogSelector, triggerSelector, closeSelector }) => {
+    const dialog = document.querySelector(dialogSelector);
+    const trigger = document.querySelector(triggerSelector);
+    if (!dialog || !trigger) return;
 
-  trigger.addEventListener('click', () => dialog.showModal());
-  closeButton.addEventListener('click', () => dialog.close());
-  dialog.addEventListener('click', event => {
-    if (event.target === dialog) dialog.close();
+    const closeButton = dialog.querySelector(closeSelector);
+
+    trigger.addEventListener('click', () => dialog.showModal());
+    closeButton.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => {
+      if (event.target === dialog) dialog.close();
+    });
   });
 })();
