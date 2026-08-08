@@ -21,7 +21,7 @@
     }
 
     const found = window.SatonaBip39.lookup(input.value);
-    if (found.error) {
+    if (found.error || typeof found.bits !== 'string' || found.bits.length !== 11) {
       error.textContent = messages[found.error] || messages.unknown;
       result.hidden = true;
       bits.replaceChildren();
