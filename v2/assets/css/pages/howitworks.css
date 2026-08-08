@@ -8,3 +8,12 @@
 .faces{display:grid;gap:1rem}.face-labels{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}.face-label{padding:1rem;text-align:center;border:1px solid var(--c-line);border-radius:var(--radius-sm)}.face-label strong{display:block;color:var(--c-gold)}
 .useful-links{display:grid;grid-template-columns:1fr;gap:.55rem}.useful-links a{padding:.85rem;border:1px solid var(--c-line);border-radius:var(--radius-sm);text-decoration:none}.visualizer-wrap{padding:1.25rem}.word-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}.word-grid input{width:100%;min-height:2.8rem;padding:.6rem;background:var(--c-graphite);border:1px solid var(--c-line);border-radius:var(--radius-sm);color:var(--c-text)}.demo-controls{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem}.demo-message{min-height:1.5rem;color:var(--c-gold)}
 @media(min-width:700px){.guide-hero{padding:3.5rem 0 2rem}.guide-section{padding:2.25rem 0}.principle{grid-template-columns:1fr 1fr;align-items:center}.step-layout{grid-template-columns:minmax(0,1fr) minmax(20rem,.85fr);align-items:center}.marking-form{grid-template-columns:.6fr 1.4fr auto;align-items:end}.word-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.useful-links{grid-template-columns:repeat(5,1fr)}}
+.faces-image img{width:100%;height:auto;max-height:28rem;object-fit:contain;background:transparent}
+.assembly-dialog{width:min(calc(100% - 2rem),58rem);max-height:calc(100dvh - 2rem);padding:0;border:1px solid var(--c-line);border-radius:var(--radius-lg);background:var(--c-panel);color:var(--c-text);box-shadow:var(--shadow);overflow:auto}
+.assembly-dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(4px)}
+.assembly-dialog__inner{position:relative;display:grid;gap:1rem;padding:clamp(3.75rem,7vw,5rem) clamp(1rem,4vw,2rem) clamp(1rem,4vw,2rem)}
+.assembly-dialog__close{position:absolute;z-index:1;top:.75rem;right:.75rem;display:grid;place-items:center;width:3rem;height:3rem;padding:0;border:1px solid var(--c-gold);border-radius:50%;background:var(--c-ink);color:var(--c-text);font-size:2rem;line-height:1}
+.assembly-dialog__image{width:100%;max-height:calc(100dvh - 10rem);margin:auto;object-fit:contain}
+.assembly-dialog__close-action{justify-self:center;min-width:8rem}
+body.assembly-dialog-open{overflow:hidden}
+@media(max-width:699px){.assembly-dialog{width:calc(100% - 1rem);max-height:calc(100dvh - 1rem)}.assembly-dialog__inner{padding-inline:.75rem}.assembly-dialog__image{max-height:calc(100dvh - 11rem)}}
