@@ -119,3 +119,13 @@
     min-height: 2.75rem;
   }
 }
+
+.security-ecosystem{background:var(--c-surface)}
+.security-ecosystem__intro{max-width:52rem}
+.security-ecosystem__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s-4);margin-top:var(--s-6)}
+.security-role{padding:var(--s-5);border:1px solid var(--c-line);background:var(--c-bg)}
+.security-role h3{margin-top:0}
+.security-flow{display:flex;align-items:center;justify-content:center;gap:var(--s-4);margin-top:var(--s-7);padding:var(--s-5);border:1px solid var(--c-line);text-align:center;font-weight:700;letter-spacing:.06em}
+.security-flow small{display:block;color:var(--c-gold);margin-top:.3rem}
+.security-ecosystem__conclusion{max-width:52rem;margin:var(--s-5) auto 0;text-align:center}
+@media(max-width:699px){.security-ecosystem__grid{grid-template-columns:1fr}.security-flow{flex-direction:column}.security-flow__arrow{transform:rotate(90deg)}}
