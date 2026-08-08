@@ -2,3 +2,22 @@
 .button--disabled{opacity:.62;cursor:not-allowed;pointer-events:none}
 .brand-logo{display:block;width:8.5rem;height:auto}.footer-logo{width:7rem;height:auto;opacity:.9}.media-image{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}.wallet-logo{width:5.8rem;max-height:1.6rem;object-fit:contain;filter:grayscale(1);opacity:.72}.workflow-visual{padding-top:0}.media-image--workflow{max-height:30rem;border:1px solid var(--c-line);border-radius:var(--radius-md);background:#101112;object-fit:contain}
 .word-converter{display:grid;grid-template-columns:minmax(0,1fr) 2.75rem;gap:.5rem;margin:.8rem 0}.word-converter input{height:2.75rem;padding:.55rem .75rem}.word-converter button{border:1px solid var(--c-line);border-radius:var(--radius-sm);background:var(--c-panel);color:var(--c-gold)}.word-converter output{grid-column:1/-1;min-height:1.5rem;color:var(--c-gold-strong);font-family:var(--font-mono);font-weight:700;letter-spacing:.12em}.word-converter output.is-error,.marking-dialog__message.is-error{color:var(--c-danger);font-family:var(--font-sans);font-size:.85rem;letter-spacing:0}.procedure-link{color:var(--c-muted);font-size:.82rem}.marking-dialog{width:min(calc(100% - 2rem),62rem);max-height:calc(100dvh - 2rem);padding:0;border:1px solid var(--c-line);border-radius:var(--radius-lg);background:var(--c-panel);color:var(--c-text);box-shadow:var(--shadow);overflow:auto}.marking-dialog::backdrop{background:rgba(0,0,0,.78);backdrop-filter:blur(5px)}.marking-dialog__inner{position:relative;padding:clamp(1rem,4vw,2rem)}.marking-dialog__inner h2{padding-right:2.5rem;font-size:clamp(1.7rem,4vw,2.7rem)}.marking-dialog__close{position:absolute;top:1rem;right:1rem;width:2.75rem;height:2.75rem;border:1px solid var(--c-line);border-radius:50%;background:transparent;color:var(--c-text);font-size:1.5rem}.marking-form{display:grid;gap:var(--s-3);align-items:end}.marking-form label{display:grid;gap:.4rem;color:var(--c-muted);font-size:.85rem}.marking-form select,.marking-form input{width:100%;min-height:3rem;padding:.65rem .8rem;color:var(--c-text);background:var(--c-graphite);border:1px solid var(--c-line);border-radius:var(--radius-sm);font:inherit}.marking-dialog__message{min-height:1.5rem;margin:1rem 0;color:var(--c-gold-strong);font-family:var(--font-mono)}.marking-dialog__plate{width:100%;overflow:hidden}.marking-dialog__plate svg{width:100%;max-height:min(48vh,32rem);margin:auto}.marking-dialog-open{overflow:hidden}@media(min-width:700px){.marking-form{grid-template-columns:.6fr 1.4fr auto}}
+
+/* Compact offline-safety guidance on the localized home pages. */
+.offline-section{padding-block:clamp(3rem,6vw,5.5rem)}
+.offline-heading{max-width:52rem}
+.offline-heading>p:last-child{max-width:46rem;font-size:1.08rem}
+.offline-risks{display:grid;margin-top:var(--s-5);border-block:1px solid var(--c-line)}
+.offline-risk{padding:var(--s-4) 0}
+.offline-risk+.offline-risk{border-top:1px solid var(--c-line)}
+.offline-risk__label{margin-bottom:.65rem;color:var(--c-gold);font-family:var(--font-mono);font-size:.72rem;font-weight:700;letter-spacing:.12em}
+.offline-risk h3{margin-bottom:.65rem}
+.offline-risk p:last-child{margin-bottom:0}
+.offline-warning{display:grid;grid-template-columns:3px minmax(0,1fr);gap:var(--s-3);margin-top:var(--s-4);padding:var(--s-3);border:1px solid var(--c-line);border-radius:var(--radius-sm);background:rgba(255,255,255,.02)}
+.offline-warning__marker{display:block;border-radius:999px;background:var(--c-gold)}
+.offline-warning h3{margin-bottom:.45rem}
+.offline-warning p{max-width:58rem;margin-bottom:0}
+.offline-actions{display:flex;flex-direction:column;align-items:stretch;gap:1rem;margin-top:var(--s-3)}
+.offline-security-link{align-self:flex-start;padding:.55rem 0;color:var(--c-muted);font-weight:650;text-underline-offset:.25em}
+.offline-security-link:hover{color:var(--c-text)}
+@media(min-width:700px){.offline-risks{grid-template-columns:repeat(3,minmax(0,1fr))}.offline-risk{padding:var(--s-4)}.offline-risk:first-child{padding-left:0}.offline-risk:last-child{padding-right:0}.offline-risk+.offline-risk{border-top:0;border-left:1px solid var(--c-line)}.offline-actions{flex-direction:row;align-items:center}.offline-security-link{align-self:auto}}
