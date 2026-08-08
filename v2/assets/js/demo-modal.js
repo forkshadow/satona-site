@@ -19,6 +19,13 @@
     document.body.classList.add('demo-dialog-open');
     dialog.showModal();
     closeButton.focus();
+    video.currentTime = 0;
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Native controls remain available if the browser refuses playback.
+      });
+    }
   };
 
   const closeDialog = () => {
