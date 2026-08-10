@@ -15,6 +15,11 @@
         dialogSelector: '[data-schema-dialog]',
         triggerSelector: '[data-schema-trigger]',
         closeSelector: '[data-schema-close]'
+      },
+      {
+        dialogSelector: '[data-binary-dialog]',
+        triggerSelector: '[data-binary-trigger]',
+        closeSelector: '[data-binary-close]'
       }
     ];
 

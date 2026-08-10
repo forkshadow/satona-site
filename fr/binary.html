@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comment lire votre plaque SATONA — SATONA</title>
+<meta name="description" content="Aucun code propriétaire. Chaque ligne contient simplement la position d’un mot BIP39 écrite en binaire.">
+<link rel="canonical" href="https://satona.fr/fr/binary.html">
+<link rel="alternate" hreflang="en" href="https://satona.fr/binary.html">
+<link rel="alternate" hreflang="fr" href="https://satona.fr/fr/binary.html">
+<link rel="alternate" hreflang="de" href="https://satona.fr/de/binary.html">
+<link rel="alternate" hreflang="x-default" href="https://satona.fr/binary.html">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages/binary.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip</a>
+<header class="site-header">
+<div class="v2-container nav-shell">
+<a class="brand" href="index.html" aria-label="SATONA">
+<img class="brand-logo" src="../assets/images/satona-logo-horizontal.png" alt="SATONA">
+</a>
+<nav class="nav-links">
+<a href="bip39.html">BIP39</a>
+<a href="howitworks.html">Fonctionnement</a>
+<a href="security.html">Sécurité</a>
+<a href="product.html">Product</a>
+<a href="faq.html">FAQ</a>
+</nav>
+<nav class="language-links" aria-label="Language">
+<a href="/binary.html">EN</a>
+<a href="/fr/binary.html" aria-current="true">FR</a>
+<a href="/de/binary.html">DE</a>
+</nav>
+<button class="menu-button" type="button" data-menu-button aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+</div>
+</header>
+<aside id="mobile-menu" class="mobile-menu" data-mobile-menu>
+<nav>
+<a href="bip39.html">BIP39</a>
+<a href="howitworks.html">Fonctionnement</a>
+<a href="security.html">Sécurité</a>
+<a href="product.html">Product</a>
+<a href="faq.html">FAQ</a>
+</nav>
+<nav class="language-menu">
+<a href="/binary.html">EN</a>
+<a href="/fr/binary.html">FR</a>
+<a href="/de/binary.html">DE</a>
+</nav>
+</aside>
+<main id="main">
+<section class="binary-hero">
+<div class="v2-container">
+<p class="eyebrow">BIP39 • BINAIRE</p>
+<h1>Comment lire votre plaque SATONA</h1>
+<p>Aucun code propriétaire. Chaque ligne contient simplement la position d’un mot BIP39 écrite en binaire.</p>
+</div>
+</section>
+<section class="binary-section">
+<div class="v2-container binary-copy">
+<h2>Un mot → une position → 11 bits</h2>
+<p>La liste anglaise BIP39 contient 2 048 mots.</p>
+<p>Chaque mot possède une position fixe comprise entre 0 et 2 047.</p>
+<p>SATONA ne transforme pas arbitrairement le mot. SATONA prend simplement cette position et l’écrit en binaire sur 11 bits.</p>
+<div class="number-examples">
+<div>
+<span>0</span>
+<code>00000000000</code>
+</div>
+<div>
+<span>1</span>
+<code>00000000001</code>
+</div>
+<div>
+<span>2</span>
+<code>00000000010</code>
+</div>
+<div>
+<span>3</span>
+<code>00000000011</code>
+</div>
+<div>
+<span>4</span>
+<code>00000000100</code>
+</div>
+</div>
+<div class="word-example">
+<span>ABOUT</span>
+<b>↓</b>
+<span>position 3</span>
+<b>↓</b>
+<code>00000000011</code>
+</div>
+</div>
+</section>
+<section class="binary-section binary-section--muted">
+<div class="v2-container binary-copy">
+<h2>Pourquoi 11 cases ?</h2>
+<p>11 bits permettent de représenter 2 048 valeurs différentes. C’est exactement le nombre d’entrées de la liste BIP39.</p>
+<p class="power">2<sup>11</sup> = 2048</p>
+<div class="principle-flow word-example">
+<span>1 BIP39 word</span>
+<b>→</b>
+<span>1 position (0–2047)</span>
+<b>→</b>
+<span>11 bits</span>
+<b>→</b>
+<span>1 SATONA line</span>
+</div>
+</div>
+</section>
+<section class="binary-section">
+<div class="v2-container binary-copy">
+<h2>Retrouver un mot depuis votre plaque</h2>
+<div class="bit-values">
+<span>1024</span>
+<span>512</span>
+<span>256</span>
+<span>128</span>
+<span>64</span>
+<span>32</span>
+<span>16</span>
+<span>8</span>
+<span>4</span>
+<span>2</span>
+<span>1</span>
+</div>
+<p>Une case marquée représente 1. Une case vide représente 0.</p>
+<p>Pour retrouver la position du mot, additionnez simplement les valeurs des cases marquées.</p>
+<div class="bit-values bit-values--example">
+<span class="">0</span>
+<span class="">0</span>
+<span class="">0</span>
+<span class="">0</span>
+<span class="is-on">1</span>
+<span class="">0</span>
+<span class="is-on">1</span>
+<span class="">0</span>
+<span class="is-on">1</span>
+<span class="is-on">1</span>
+<span class="">0</span>
+</div>
+<p class="calculation">
+<code>64 + 16 + 4 + 2 = 86</code>
+</p>
+<p>Le nombre obtenu correspond à la position du mot dans la liste BIP39.</p>
+<div class="decode-chain">
+<span>11 squares</span>
+<b>↓</b>
+<span>binary number</span>
+<b>↓</b>
+<span>decimal number</span>
+<b>↓</b>
+<span>BIP39 position</span>
+<b>↓</b>
+<span>original word</span>
+</div>
+</div>
+</section>
+<section class="binary-section binary-section--muted">
+<div class="v2-container binary-copy">
+<h2>Et si SATONA n’existe plus dans 20 ans ?</h2>
+<p>Votre plaque ne dépend pas de SATONA pour être décodée.</p>
+<p>Le binaire est une notation mathématique universelle. Il n’existe aucune clé SATONA, aucun algorithme propriétaire et aucun serveur nécessaire pour interpréter les 11 cases.</p>
+<p>Avec la liste BIP39 et les valeurs ci-dessous, vous pouvez retrouver chaque position manuellement, puis le mot correspondant dans la liste BIP39.</p>
+<div class="bit-values">
+<span>1024</span>
+<span>512</span>
+<span>256</span>
+<span>128</span>
+<span>64</span>
+<span>32</span>
+<span>16</span>
+<span>8</span>
+<span>4</span>
+<span>2</span>
+<span>1</span>
+</div>
+<div class="decode-chain">
+<span>SATONA plate</span>
+<b>→</b>
+<span>word position</span>
+<b>→</b>
+<span>BIP39 list</span>
+<b>→</b>
+<span>recovery phrase</span>
+</div>
+</div>
+</section>
+<section class="binary-section">
+<div class="v2-container binary-copy">
+<h2>Essayez vous-même</h2>
+<p>Cet outil pédagogique local convertit uniquement un nombre ou une chaîne de 11 bits. Il ne demande jamais de phrase de récupération et n’effectue aucune requête réseau.</p>
+<div class="converter" data-binary-converter data-invalid-position="Saisissez un nombre entier de 0 à 2047." data-invalid-binary="Saisissez exactement 11 caractères composés uniquement de 0 et 1.">
+<div class="converter__row">
+<label>Position BIP39<input data-position-input type="number" min="0" max="2047" step="1" value="86" inputmode="numeric">
+</label>
+<span class="converter__arrow">→</span>
+<label>Binaire 11 bits<input data-binary-output value="00001010110" readonly>
+</label>
+</div>
+<div class="converter__row">
+<label>Binaire 11 bits<input data-binary-input value="00001010110" maxlength="11" inputmode="numeric">
+</label>
+<span class="converter__arrow">→</span>
+<label>Position BIP39<input data-position-output value="86" readonly>
+</label>
+</div>
+<p class="converter__message" data-converter-message aria-live="polite">
+</p>
+</div>
+</div>
+</section>
+<section class="binary-section binary-section--muted">
+<div class="v2-container">
+<h2>Pour aller plus loin</h2>
+<div class="binary-links">
+<a href="bip39.html">BIP39</a>
+<a href="howitworks.html">Fonctionnement</a>
+<a href="../assets/pdf/bip39binary.pdf" download>Télécharger la liste BIP39</a>
+<a href="security.html">Sécurité</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="v2-container footer-inner">
+<img class="footer-logo" src="../assets/images/satona-logo-horizontal.png" alt="SATONA">
+<span>Sauvegarde physique pour votre phrase de récupération BIP39.</span>
+</div>
+</footer>
+<script defer src="../assets/js/main.js">
+</script>
+<script defer src="../assets/js/navigation.js">
+</script>
+<script defer src="../assets/js/binary-converter.js">
+</script>
+</body>
+</html>
