@@ -1,6 +1,6 @@
 (() => {
-  const IMAGE_DURATION = 3000;
-  const FADE_DURATION = 1000;
+  const IMAGE_DURATION = 5000;
+  const FADE_DURATION = 1600;
   const visibilityThreshold = 0.4;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -34,6 +34,7 @@
 
     const showImage = (immediate = false) => {
       if (immediate) container.classList.add('is-resetting');
+      container.classList.remove('is-image-animating');
       container.classList.remove('is-video-visible');
       if (immediate) {
         // Force the reset state to render before transitions are enabled again.
@@ -45,17 +46,18 @@
     const scheduleVideo = () => {
       const id = cycleId;
       clearTimer();
+      if (!reduceMotion.matches) container.classList.add('is-image-animating');
       timer = window.setTimeout(() => prepareVideo(id), IMAGE_DURATION);
     };
 
     const revealPlayingVideo = (id) => {
-      if (id !== cycleId || !visible || reduceMotion.matches || video.paused) return;
+      if (id !== cycleId || !visible || video.paused) return;
       removePendingListeners();
       container.classList.add('is-video-visible');
     };
 
     const attemptPlay = async (id) => {
-      if (id !== cycleId || !visible || reduceMotion.matches) return;
+      if (id !== cycleId || !visible) return;
 
       removePendingListeners();
       video.muted = true;
@@ -82,7 +84,7 @@
     };
 
     function prepareVideo(id) {
-      if (id !== cycleId || !visible || reduceMotion.matches) return;
+      if (id !== cycleId || !visible) return;
 
       // loadeddata may already have fired in Chrome, so inspect readyState first.
       if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
@@ -98,7 +100,7 @@
     }
 
     video.addEventListener('ended', () => {
-      if (!visible || reduceMotion.matches) return;
+      if (!visible) return;
       showImage();
       timer = window.setTimeout(scheduleVideo, FADE_DURATION);
     });
@@ -110,7 +112,7 @@
       video.pause();
       video.currentTime = 0;
       showImage(true);
-      if (startAgain && !reduceMotion.matches) scheduleVideo();
+      if (startAgain) scheduleVideo();
     };
 
     const observer = new IntersectionObserver(([entry]) => {
