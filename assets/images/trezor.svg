@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" role="img" aria-label="Trezor logo">
+  <rect width="220" height="48" fill="none"/>
+  <g fill="#ffffff">
+    <path d="M16 12h20v4h-8v20h-4V16h-8z"/>
+    <text x="44" y="31" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="2">TREZOR</text>
+  </g>
+</svg>
