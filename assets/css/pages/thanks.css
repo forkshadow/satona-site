@@ -1,0 +1,15 @@
+.thanks-page{padding:clamp(2.5rem,7vw,6rem) 0}
+.thanks-layout{display:grid;gap:var(--s-5);align-items:center}
+.thanks-copy h1{max-width:11ch;margin-bottom:var(--s-4);font-size:clamp(2.65rem,6vw,5rem)}
+.thanks-lead{max-width:36rem;margin-bottom:var(--s-3);color:var(--c-text);font-size:clamp(1.15rem,2vw,1.4rem)}
+.thanks-body{max-width:39rem}
+.thanks-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:var(--s-5) 0}
+.thanks-media{min-height:22rem;overflow:hidden}
+.thanks-media img{width:100%;height:100%;min-height:22rem;object-fit:cover;object-position:center}
+.thanks-kit{padding:var(--s-4);background:rgba(255,255,255,.025);border:1px solid var(--c-line);border-radius:var(--radius-md)}
+.thanks-kit h2{margin-bottom:var(--s-3);font-size:1.1rem;letter-spacing:0}
+.thanks-kit ul{display:grid;gap:.45rem;margin:0;padding-left:1.15rem;color:var(--c-muted)}
+.thanks-reminder{margin-top:var(--s-6);padding-top:var(--s-4);border-top:1px solid var(--c-line)}
+.thanks-reminder p{max-width:52rem;margin-bottom:.4rem;font-size:.95rem}
+.thanks-reminder a{display:inline-block;margin-top:.35rem;color:var(--c-gold-strong);font-weight:700}
+@media(min-width:850px){.thanks-layout{grid-template-columns:minmax(0,1fr) minmax(22rem,.9fr);gap:clamp(2.5rem,6vw,5.5rem)}.thanks-media,.thanks-media img{min-height:38rem}.thanks-kit{max-width:39rem}}
