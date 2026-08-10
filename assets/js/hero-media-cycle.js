@@ -8,18 +8,28 @@
     const video = container.querySelector('video');
     let timer;
     let visible = false;
-    let waitingForVideo = false;
+    let cycleId = 0;
+    let loadedDataHandler;
+    let playingHandler;
 
     if (!video) return;
 
-    // Set both media properties before any playback attempt. The markup mirrors
-    // these settings, but Chrome's autoplay policy evaluates the live element.
+    // Chrome evaluates autoplay against the live properties, not only attributes.
+    // Set every required property before any call to play().
     video.muted = true;
     video.defaultMuted = true;
+    video.playsInline = true;
 
     const clearTimer = () => {
       window.clearTimeout(timer);
       timer = undefined;
+    };
+
+    const removePendingListeners = () => {
+      if (loadedDataHandler) video.removeEventListener('loadeddata', loadedDataHandler);
+      if (playingHandler) video.removeEventListener('playing', playingHandler);
+      loadedDataHandler = undefined;
+      playingHandler = undefined;
     };
 
     const showImage = (immediate = false) => {
@@ -33,52 +43,59 @@
     };
 
     const scheduleVideo = () => {
+      const id = cycleId;
       clearTimer();
-      timer = window.setTimeout(playVideo, IMAGE_DURATION);
+      timer = window.setTimeout(() => prepareVideo(id), IMAGE_DURATION);
     };
 
-    const stopWaitingForVideo = () => {
-      if (!waitingForVideo) return;
-      video.removeEventListener('loadeddata', playVideo);
-      video.removeEventListener('canplay', playVideo);
-      waitingForVideo = false;
+    const revealPlayingVideo = (id) => {
+      if (id !== cycleId || !visible || reduceMotion.matches || video.paused) return;
+      removePendingListeners();
+      container.classList.add('is-video-visible');
     };
 
-    const waitForVideo = () => {
-      if (waitingForVideo) return;
-      waitingForVideo = true;
-      video.addEventListener('loadeddata', playVideo);
-      video.addEventListener('canplay', playVideo);
+    const attemptPlay = async (id) => {
+      if (id !== cycleId || !visible || reduceMotion.matches) return;
+
+      removePendingListeners();
+      video.muted = true;
+      video.defaultMuted = true;
+      video.playsInline = true;
+      video.currentTime = 0;
+
+      // The promise normally confirms playback in Chrome. The playing listener
+      // also covers engines that resolve play() just before frames start advancing.
+      playingHandler = () => revealPlayingVideo(id);
+      video.addEventListener('playing', playingHandler, { once: true });
+
+      try {
+        await video.play();
+        revealPlayingVideo(id);
+      } catch (error) {
+        if (id !== cycleId) return;
+        removePendingListeners();
+        console.warn('Homepage video autoplay failed:', error);
+        // Never hide the product image when autoplay is unavailable.
+        showImage();
+        scheduleVideo();
+      }
     };
 
-    const playVideo = () => {
-      if (!visible || reduceMotion.matches) return;
+    function prepareVideo(id) {
+      if (id !== cycleId || !visible || reduceMotion.matches) return;
 
-      if (video.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) {
-        waitForVideo();
+      // loadeddata may already have fired in Chrome, so inspect readyState first.
+      if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+        attemptPlay(id);
         return;
       }
 
-      stopWaitingForVideo();
-      video.currentTime = 0;
-      const playPromise = video.play();
-
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
-          if (!visible) {
-            video.pause();
-            return;
-          }
-          container.classList.add('is-video-visible');
-        }).catch((error) => {
-          console.warn('Homepage media autoplay blocked:', error);
-          // Keep the product image visible when playback is not available.
-          scheduleVideo();
-        });
-      } else if (visible) {
-        container.classList.add('is-video-visible');
-      }
-    };
+      loadedDataHandler = () => {
+        loadedDataHandler = undefined;
+        attemptPlay(id);
+      };
+      video.addEventListener('loadeddata', loadedDataHandler, { once: true });
+    }
 
     video.addEventListener('ended', () => {
       if (!visible || reduceMotion.matches) return;
@@ -87,8 +104,9 @@
     });
 
     const reset = (startAgain) => {
+      cycleId += 1;
       clearTimer();
-      stopWaitingForVideo();
+      removePendingListeners();
       video.pause();
       video.currentTime = 0;
       showImage(true);
