@@ -16,3 +16,5 @@
 .assembly-dialog__close-action{justify-self:center;min-width:8rem}
 body.assembly-dialog-open{overflow:hidden}
 @media(max-width:699px){.assembly-dialog{width:calc(100% - 1rem);max-height:calc(100dvh - 1rem)}.assembly-dialog__inner{padding-inline:.75rem}.assembly-dialog__image{max-height:calc(100dvh - 11rem)}}
+
+.guide-section--binary{padding:.35rem 0 .75rem}.binary-bridge{display:grid;gap:.75rem;padding:1rem;border:1px solid var(--c-line);border-left:3px solid var(--c-gold);border-radius:var(--radius-sm);background:rgba(255,255,255,.025)}.binary-bridge h2{margin:0 0 .25rem;font-size:clamp(1.15rem,2.5vw,1.45rem)}.binary-bridge p{margin:0;color:var(--c-muted);font-size:.94rem}.binary-bridge .button{align-self:center;white-space:nowrap}@media(min-width:700px){.binary-bridge{grid-template-columns:1fr auto;align-items:center}}
