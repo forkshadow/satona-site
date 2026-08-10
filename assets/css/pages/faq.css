@@ -1,0 +1,16 @@
+.faq-page .page-hero{padding-block:clamp(3.5rem,8vw,6rem)}
+.faq-page .page-hero h1{max-width:20ch}
+.faq-page .page-hero p:last-child{max-width:68ch}
+.faq-page__intro{max-width:48rem}
+.faq-groups{display:grid;gap:clamp(3rem,7vw,5.5rem);padding-bottom:var(--s-9)}
+.faq-group{display:grid;grid-template-columns:minmax(12rem,0.36fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,5rem);align-items:start}
+.faq-group__heading{position:sticky;top:calc(var(--header-height,5rem) + 2rem)}
+.faq-group__heading h2{margin:0;font-size:clamp(1.45rem,3vw,2.1rem)}
+.faq-group .faq{width:100%;max-width:none}
+.faq-group details{scroll-margin-top:7rem}
+.faq-group summary{min-height:3.5rem;display:flex;align-items:center;padding-block:1rem}
+.faq-group details p,.faq-group details ul{max-width:52rem}
+.faq-group details ul{padding-left:1.25rem}
+.faq-links{padding:var(--s-7) 0;border-top:1px solid var(--c-line)}
+.faq-links .button-row{margin-top:var(--s-4)}
+@media(max-width:699px){.faq-group{grid-template-columns:1fr;gap:var(--s-4)}.faq-group__heading{position:static}.faq-group summary{min-height:3.75rem}.faq-links .button-row{align-items:stretch}.faq-links .button{width:100%}}
