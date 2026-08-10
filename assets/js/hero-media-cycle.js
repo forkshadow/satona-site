@@ -1,126 +1,106 @@
 (() => {
-  const IMAGE_DURATION = 5000;
-  const FADE_DURATION = 1600;
-  const VISIBILITY_THRESHOLD = 0.25;
+  const IMAGE_DURATION = 3000;
+  const FADE_DURATION = 1000;
+  const visibilityThreshold = 0.4;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   document.querySelectorAll('[data-home-media-cycle]').forEach((container) => {
     const video = container.querySelector('video');
     let timer;
     let visible = false;
-    let state = 'image';
-    let cycleId = 0;
-    let canPlayHandler;
-    let playingHandler;
+    let waitingForVideo = false;
 
     if (!video) return;
 
-    // Chrome evaluates autoplay against the live properties, not only attributes.
+    // Set both media properties before any playback attempt. The markup mirrors
+    // these settings, but Chrome's autoplay policy evaluates the live element.
     video.muted = true;
     video.defaultMuted = true;
-    video.playsInline = true;
 
     const clearTimer = () => {
       window.clearTimeout(timer);
       timer = undefined;
     };
 
-    const removePendingListeners = () => {
-      if (canPlayHandler) video.removeEventListener('canplay', canPlayHandler);
-      if (playingHandler) video.removeEventListener('playing', playingHandler);
-      canPlayHandler = undefined;
-      playingHandler = undefined;
+    const showImage = (immediate = false) => {
+      if (immediate) container.classList.add('is-resetting');
+      container.classList.remove('is-video-visible');
+      if (immediate) {
+        // Force the reset state to render before transitions are enabled again.
+        void container.offsetWidth;
+        container.classList.remove('is-resetting');
+      }
     };
 
-    const animateImage = () => {
-      container.classList.add('is-resetting');
-      container.classList.remove('is-video-visible', 'is-image-animating');
-      void container.offsetWidth;
-      container.classList.remove('is-resetting');
-      if (!reduceMotion.matches) container.classList.add('is-image-animating');
-    };
-
-    const scheduleVideo = (id) => {
+    const scheduleVideo = () => {
       clearTimer();
-      timer = window.setTimeout(() => prepareVideo(id), IMAGE_DURATION);
+      timer = window.setTimeout(playVideo, IMAGE_DURATION);
     };
 
-    const showPlayingVideo = (id) => {
-      if (id !== cycleId || !visible || state !== 'preparingVideo') return;
-      if (video.paused) return;
-      removePendingListeners();
-      state = 'video';
-      container.classList.add('is-video-visible');
+    const stopWaitingForVideo = () => {
+      if (!waitingForVideo) return;
+      video.removeEventListener('loadeddata', playVideo);
+      video.removeEventListener('canplay', playVideo);
+      waitingForVideo = false;
     };
 
-    const startVideo = (id) => {
-      if (id !== cycleId || !visible || state !== 'preparingVideo') return;
+    const waitForVideo = () => {
+      if (waitingForVideo) return;
+      waitingForVideo = true;
+      video.addEventListener('loadeddata', playVideo);
+      video.addEventListener('canplay', playVideo);
+    };
 
-      playingHandler = () => showPlayingVideo(id);
-      video.addEventListener('playing', playingHandler, { once: true });
+    const playVideo = () => {
+      if (!visible || reduceMotion.matches) return;
+
+      if (video.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) {
+        waitForVideo();
+        return;
+      }
+
+      stopWaitingForVideo();
       video.currentTime = 0;
       const playPromise = video.play();
 
-      if (playPromise && typeof playPromise.then === 'function') {
-        playPromise
-          .then(() => showPlayingVideo(id))
-          .catch((error) => {
-            if (id !== cycleId) return;
-            removePendingListeners();
-            state = 'image';
-            console.warn('Homepage autoplay blocked:', error);
-            scheduleVideo(id);
-          });
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          if (!visible) {
+            video.pause();
+            return;
+          }
+          container.classList.add('is-video-visible');
+        }).catch((error) => {
+          console.warn('Homepage media autoplay blocked:', error);
+          // Keep the product image visible when playback is not available.
+          scheduleVideo();
+        });
+      } else if (visible) {
+        container.classList.add('is-video-visible');
       }
-    };
-
-    function prepareVideo(id) {
-      if (id !== cycleId || !visible || reduceMotion.matches || state !== 'image') return;
-      state = 'preparingVideo';
-
-      if (video.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
-        startVideo(id);
-      } else {
-        canPlayHandler = () => {
-          canPlayHandler = undefined;
-          startVideo(id);
-        };
-        video.addEventListener('canplay', canPlayHandler, { once: true });
-        video.load();
-      }
-    }
-
-    const reset = (startAgain) => {
-      cycleId += 1;
-      clearTimer();
-      removePendingListeners();
-      video.pause();
-      video.currentTime = 0;
-      state = 'image';
-      animateImage();
-      if (startAgain && !reduceMotion.matches) scheduleVideo(cycleId);
     };
 
     video.addEventListener('ended', () => {
-      if (!visible || reduceMotion.matches || state !== 'video') return;
-      const id = cycleId;
-      state = 'returningToImage';
-      container.classList.remove('is-video-visible');
-      clearTimer();
-      timer = window.setTimeout(() => {
-        if (id !== cycleId || !visible || state !== 'returningToImage') return;
-        state = 'image';
-        animateImage();
-        scheduleVideo(id);
-      }, FADE_DURATION);
+      if (!visible || reduceMotion.matches) return;
+      showImage();
+      timer = window.setTimeout(scheduleVideo, FADE_DURATION);
     });
 
+    const reset = (startAgain) => {
+      clearTimer();
+      stopWaitingForVideo();
+      video.pause();
+      video.currentTime = 0;
+      showImage(true);
+      if (startAgain && !reduceMotion.matches) scheduleVideo();
+    };
+
     const observer = new IntersectionObserver(([entry]) => {
-      const isVisible = entry.isIntersecting && entry.intersectionRatio >= VISIBILITY_THRESHOLD;
+      const isVisible = entry.isIntersecting && entry.intersectionRatio >= visibilityThreshold;
       if (isVisible === visible) return;
       visible = isVisible;
       reset(visible);
-    }, { threshold: [0, VISIBILITY_THRESHOLD] });
+    }, { threshold: [0, visibilityThreshold] });
 
     observer.observe(container);
     reduceMotion.addEventListener('change', () => reset(visible));
