@@ -7,7 +7,7 @@
   document.querySelectorAll('[data-home-media-cycle]').forEach((container) => {
     const video = container.querySelector('video');
     let timer;
-    let visible = false;
+    let hasStarted = false;
     let cycleId = 0;
     let loadedDataHandler;
     let playingHandler;
@@ -51,13 +51,13 @@
     };
 
     const revealPlayingVideo = (id) => {
-      if (id !== cycleId || !visible || video.paused) return;
+      if (id !== cycleId || video.paused) return;
       removePendingListeners();
       container.classList.add('is-video-visible');
     };
 
     const attemptPlay = async (id) => {
-      if (id !== cycleId || !visible) return;
+      if (id !== cycleId) return;
 
       removePendingListeners();
       video.muted = true;
@@ -84,7 +84,7 @@
     };
 
     function prepareVideo(id) {
-      if (id !== cycleId || !visible) return;
+      if (id !== cycleId) return;
 
       // loadeddata may already have fired in Chrome, so inspect readyState first.
       if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
@@ -100,7 +100,7 @@
     }
 
     video.addEventListener('ended', () => {
-      if (!visible) return;
+      if (!hasStarted) return;
       showImage();
       timer = window.setTimeout(scheduleVideo, FADE_DURATION);
     });
@@ -115,15 +115,18 @@
       if (startAgain) scheduleVideo();
     };
 
+    const startCycle = () => scheduleVideo();
+
     const observer = new IntersectionObserver(([entry]) => {
       const isVisible = entry.isIntersecting && entry.intersectionRatio >= visibilityThreshold;
-      if (isVisible === visible) return;
-      visible = isVisible;
-      reset(visible);
+      if (hasStarted || !isVisible) return;
+      hasStarted = true;
+      observer.unobserve(container);
+      startCycle();
     }, { threshold: [0, visibilityThreshold] });
 
     observer.observe(container);
-    reduceMotion.addEventListener('change', () => reset(visible));
+    reduceMotion.addEventListener('change', () => reset(hasStarted));
     reset(false);
   });
 })();
