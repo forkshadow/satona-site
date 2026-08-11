@@ -23,6 +23,8 @@
   const text = copy[language] || copy.en;
   let banner;
   let analyticsLoaded = false;
+  let analyticsAllowed = false;
+  let pageViewTracked = false;
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function gtag() { window.dataLayer.push(arguments); };
@@ -51,9 +53,61 @@
     }
   };
 
+  const sendEvent = (name, parameters) => {
+    if (!analyticsAllowed || typeof window.gtag !== 'function') return;
+    try {
+      window.gtag('event', name, parameters);
+    } catch {
+      // Analytics blockers must never affect navigation or downloads.
+    }
+  };
+
+  const trackCurrentPage = () => {
+    if (pageViewTracked) return;
+    const path = window.location.pathname.replace(/\/+$/, '');
+    let eventName;
+    if (path.endsWith('/howitworks.html')) eventName = 'instructions_view';
+    if (path.endsWith('/security.html')) eventName = 'security_view';
+    if (!eventName) return;
+    pageViewTracked = true;
+    sendEvent(eventName, {page_location: window.location.href});
+  };
+
+  const trackClicks = () => {
+    document.addEventListener('click', event => {
+      const link = event.target.closest('a[href]');
+      if (!link) return;
+
+      let url;
+      try {
+        url = new URL(link.href, window.location.href);
+      } catch {
+        return;
+      }
+
+      const parameters = {
+        page_location: window.location.href,
+        link_url: url.href
+      };
+      const linkText = link.textContent.trim().replace(/\s+/g, ' ').slice(0, 100);
+      if (linkText) parameters.link_text = linkText;
+
+      if (/(^|\.)amazon\.[a-z.]+$/i.test(url.hostname) || /(^|\.)amzn\.to$/i.test(url.hostname)) {
+        sendEvent('amazon_click', parameters);
+      }
+      if (/\/bip39\.html$/i.test(url.pathname)) {
+        sendEvent('bip39_tool_open', parameters);
+      }
+      if (/\/bip39binary\.pdf$/i.test(url.pathname)) {
+        sendEvent('bip39_list_download', parameters);
+      }
+    });
+  };
+
   const loadAnalytics = () => {
     if (analyticsLoaded) return;
     analyticsLoaded = true;
+    analyticsAllowed = true;
     window.gtag('consent', 'update', {analytics_storage: 'granted'});
     window.gtag('js', new Date());
     window.gtag('config', MEASUREMENT_ID, {
@@ -65,6 +119,7 @@
     script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
     script.dataset.satonaAnalytics = '';
     document.head.append(script);
+    trackCurrentPage();
   };
 
   const hideBanner = () => {
@@ -76,6 +131,7 @@
     if (choice === 'accepted') {
       loadAnalytics();
     } else {
+      analyticsAllowed = false;
       window.gtag('consent', 'update', {analytics_storage: 'denied'});
     }
     hideBanner();
@@ -117,6 +173,7 @@
   };
 
   const initialise = () => {
+    trackClicks();
     createBanner();
     createPreferencesButton();
     const choice = readChoice();
