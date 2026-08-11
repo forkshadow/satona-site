@@ -8,7 +8,6 @@
     const bits = [...root.querySelectorAll('[data-primer-bit]')];
     const previous = root.querySelector('[data-primer-previous]');
     const next = root.querySelector('[data-primer-next]');
-    const input = root.querySelector('[data-primer-input]');
     const size = window.SatonaBip39.size;
     let index = 0;
 
@@ -22,15 +21,10 @@
       bits.forEach((bit, bitIndex) => bit.classList.toggle('is-marked', binary[bitIndex] === '1'));
       previous.disabled = index === 0;
       next.disabled = index === size - 1;
-      input.value = index;
     };
 
-    previous.addEventListener('click', () => render(index - 1));
-    next.addEventListener('click', () => render(index + 1));
-    input.addEventListener('input', () => {
-      const value = Number(input.value);
-      if (input.value !== '' && Number.isInteger(value) && value >= 0 && value < size) render(value);
-    });
+    previous.addEventListener('click', () => render(Math.max(0, index - 1)));
+    next.addEventListener('click', () => render(Math.min(size - 1, index + 1)));
     render(0);
   });
   document.querySelectorAll('[data-guide-converter]').forEach((form) => {
