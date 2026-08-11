@@ -2048,3 +2048,4 @@ const bip39List = {
   "zone": "11111111110",
   "zoo": "11111111111"
 };
+window.SatonaBip39Words=Object.keys(bip39List);
