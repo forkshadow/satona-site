@@ -47,12 +47,12 @@
         <article class="shipping-option">
           <h3>${text.france}</h3><p class="shipping-option__badge">${text.free}</p>
           <dl><div><dt>${text.kit}</dt><dd>${text.price}</dd></div><div aria-hidden="true"><dt>&nbsp;</dt><dd>&nbsp;</dd></div></dl>
-          <a class="button button--gold" href="https://buy.stripe.com/5kQaEX87h0m063F4dL0oM01">${text.franceAction}</a>
+          <a class="button button--gold" data-checkout-zone="france" href="https://buy.stripe.com/5kQaEX87h0m063F4dL0oM01">${text.franceAction}</a>
         </article>
         <article class="shipping-option">
           <h3>${text.europe}</h3><p class="shipping-option__badge">${text.shippingPrice} ${text.shipping}</p>
           <dl><div><dt>${text.kit}</dt><dd>${text.price}</dd></div><div><dt>${text.shipping}</dt><dd>${text.shippingPrice}</dd></div></dl>
-          <a class="button button--gold" href="https://buy.stripe.com/fZuaEX5Z9b0EbnZaC90oM02">${text.europeAction}</a>
+          <a class="button button--gold" data-checkout-zone="europe" href="https://buy.stripe.com/fZuaEX5Z9b0EbnZaC90oM02">${text.europeAction}</a>
         </article>
       </div>
       <p class="shipping-dialog__note">${text.note}</p>
