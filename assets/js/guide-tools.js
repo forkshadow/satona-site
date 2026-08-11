@@ -1,5 +1,38 @@
 (() => {
   const lookup = (value) => /\s/.test(String(value).trim()) ? { error: 'unknown' } : window.SatonaBip39.lookup(value);
+  document.querySelectorAll('[data-bip39-primer]').forEach((root) => {
+    const word = root.querySelector('[data-primer-word]');
+    const count = root.querySelector('[data-primer-count]');
+    const position = root.querySelector('[data-primer-position]');
+    const conversion = root.querySelector('[data-primer-conversion]');
+    const bits = [...root.querySelectorAll('[data-primer-bit]')];
+    const previous = root.querySelector('[data-primer-previous]');
+    const next = root.querySelector('[data-primer-next]');
+    const input = root.querySelector('[data-primer-input]');
+    const size = window.SatonaBip39.size;
+    let index = 0;
+
+    const render = (nextIndex) => {
+      index = nextIndex;
+      const binary = index.toString(2).padStart(11, '0');
+      word.textContent = window.SatonaBip39.wordAt(index).toUpperCase();
+      count.textContent = `${index + 1} / ${size}`;
+      position.textContent = index;
+      conversion.textContent = `${index} → ${binary}`;
+      bits.forEach((bit, bitIndex) => bit.classList.toggle('is-marked', binary[bitIndex] === '1'));
+      previous.disabled = index === 0;
+      next.disabled = index === size - 1;
+      input.value = index;
+    };
+
+    previous.addEventListener('click', () => render(index - 1));
+    next.addEventListener('click', () => render(index + 1));
+    input.addEventListener('input', () => {
+      const value = Number(input.value);
+      if (input.value !== '' && Number.isInteger(value) && value >= 0 && value < size) render(value);
+    });
+    render(0);
+  });
   document.querySelectorAll('[data-guide-converter]').forEach((form) => {
     const output = form.querySelector('[data-converter-output]');
     const render = () => { const found = lookup(form.elements.word.value); output.textContent = found.error ? form.dataset.unknown : found.bits; output.classList.toggle('is-error', Boolean(found.error)); };
