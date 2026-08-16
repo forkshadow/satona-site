@@ -85,4 +85,12 @@
 .binary-dialog .button{display:flex;width:max-content;max-width:100%;margin:1rem auto 0}
 @media(min-width:700px){.binary-dialog__steps{grid-template-columns:repeat(3,1fr)}.binary-dialog__step{padding:1rem}}
 /* Premium entry point into the learning platform. */
-.academy-entry{width:min(1180px,calc(100% - 40px));margin:70px auto;padding:32px;border:1px solid #c8a96b77;border-radius:32px;display:grid;grid-template-columns:180px 1fr auto;align-items:center;gap:30px;color:inherit;text-decoration:none;background:linear-gradient(120deg,#c8a96b12,transparent)}.academy-entry:hover,.academy-entry:focus-visible{border-color:#c8a96b}.academy-entry__visual{aspect-ratio:3/2;border:1px solid #c8a96b55;border-radius:18px;display:grid;place-items:center;overflow:hidden;text-align:center;color:#c8a96b;font-size:.63rem;letter-spacing:.08em;padding:12px}.academy-entry__visual img{display:block;width:min(100%,150px);height:100%;object-fit:contain}.academy-entry h2{font-size:clamp(1.8rem,4vw,3.2rem);margin:0}.academy-entry p{margin:.5rem 0 0}.academy-entry__arrow{font-size:2rem;color:#c8a96b}@media(max-width:700px){.academy-entry{grid-template-columns:1fr;margin:45px auto;padding:22px}.academy-entry__visual{max-width:180px}.academy-entry__arrow{display:none}}
+.academy-entry{width:min(1180px,calc(100% - 40px));margin:44px auto 24px;padding:22px 28px;border:1px solid #c8a96b77;border-radius:28px;display:grid;grid-template-columns:140px 1fr auto;align-items:center;gap:26px;color:inherit;text-decoration:none;background:linear-gradient(120deg,#c8a96b12,transparent)}
+.academy-entry:hover,.academy-entry:focus-visible{border-color:#c8a96b}
+.academy-entry__visual{display:flex;align-items:center;justify-content:flex-start;min-width:0}
+.academy-entry__visual img{display:block;width:132px;max-width:100%;height:auto;object-fit:contain}
+.academy-entry h2{font-size:clamp(1.8rem,4vw,3.2rem);margin:0}
+.academy-entry p{margin:.5rem 0 0}
+.academy-entry__cta{display:inline-flex;align-items:center;gap:.4rem;color:#c8a96b;font-size:.95rem;font-weight:650;white-space:nowrap;transition:color var(--ease),transform var(--ease)}
+.academy-entry:hover .academy-entry__cta,.academy-entry:focus-visible .academy-entry__cta{color:var(--c-gold-strong);transform:translateX(3px)}
+@media(max-width:700px){.academy-entry{grid-template-columns:1fr;margin:32px auto 18px;padding:18px;gap:14px}.academy-entry__visual{width:112px}.academy-entry__cta{margin-top:.25rem;white-space:normal}}
