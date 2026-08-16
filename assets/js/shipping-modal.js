@@ -26,6 +26,22 @@
       france: 'FRANKREICH', free: 'Kostenloser Versand', kit: 'SATONA-Kit', price: '49,90 €',
       franceAction: 'In Frankreich bestellen', europe: 'EUROPA', shipping: 'Versand', shippingPrice: '12,90 €',
       europeAction: 'In Europa bestellen', note: 'Lieferland und Lieferadresse werden beim sicheren Stripe-Checkout bestätigt.'
+    },
+    it: {
+      title: 'Dove desideri ricevere il tuo kit SATONA?',
+      subtitle: 'Scegli la zona di consegna prima di procedere al pagamento sicuro.',
+      close: 'Chiudi la selezione della consegna',
+      france: 'FRANCIA', free: 'Spedizione gratuita', kit: 'Kit SATONA', price: '49,90 €',
+      franceAction: 'Ordina in Francia', europe: 'EUROPA', shipping: 'Spedizione', shippingPrice: '12,90 €',
+      europeAction: 'Ordina in Europa', note: 'Il paese e l’indirizzo di consegna saranno confermati durante il pagamento sicuro con Stripe.'
+    },
+    es: {
+      title: '¿Dónde quieres recibir tu kit SATONA?',
+      subtitle: 'Elige la zona de entrega antes de continuar con el pago seguro.',
+      close: 'Cerrar la selección de entrega',
+      france: 'FRANCIA', free: 'Envío gratuito', kit: 'Kit SATONA', price: '49,90 €',
+      franceAction: 'Comprar en Francia', europe: 'EUROPA', shipping: 'Envío', shippingPrice: '12,90 €',
+      europeAction: 'Comprar en Europa', note: 'El país y la dirección de entrega se confirmarán durante el pago seguro con Stripe.'
     }
   };
   const language = document.documentElement.lang.split('-')[0];
