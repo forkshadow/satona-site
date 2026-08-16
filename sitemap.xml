@@ -1,283 +1,1933 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://satona.fr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/" />
   </url>
   <url>
-    <loc>https://satona.fr/bip39.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/bip39.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/bip39.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/bip39.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/bip39.html" />
+    <loc>https://satona.fr/academy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/academy/" />
   </url>
   <url>
-    <loc>https://satona.fr/howitworks.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/howitworks.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/howitworks.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/howitworks.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/howitworks.html" />
+    <loc>https://satona.fr/academy/advanced/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/" />
   </url>
   <url>
-    <loc>https://satona.fr/security.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/security.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/security.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/security.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/security.html" />
+    <loc>https://satona.fr/academy/advanced/bip32-hierarchical-derivation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip32-hierarchical-derivation.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip32-hierarchische-ableitung.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip32-derivation-hierarchique.html" />
   </url>
   <url>
-    <loc>https://satona.fr/product.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/product.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/product.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/product.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/product.html" />
+    <loc>https://satona.fr/academy/advanced/bip39-passphrase.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/passphrase-bip39.html" />
   </url>
   <url>
-    <loc>https://satona.fr/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/faq.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/faq.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/faq.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/faq.html" />
+    <loc>https://satona.fr/academy/advanced/bip44.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip44.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/advanced/inheritance.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/inheritance.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/vererbung-weitergabe.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/heritage-transmission.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/advanced/multisig.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/multisig.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/advanced/threat-model.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/threat-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bedrohungsmodell.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/modele-de-menace.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/bitcoin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/bitcoin/how-a-transaction-works.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/how-a-transaction-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wie-funktioniert-eine-transaktion.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/bitcoin/private-public-key-address.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/private-public-key-address.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/privater-oeffentlicher-schluessel-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/bitcoin/what-is-a-blockchain.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-a-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-eine-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-quune-blockchain.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/bitcoin/what-is-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-que-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/bitcoin/what-owning-bitcoin-means.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-owning-bitcoin-means.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-bitcoin-besitzen-bedeutet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/bitcoin/who-runs-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/who-runs-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wer-betreibt-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/protection/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/protection/fire-water-corrosion-time.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/fire-water-corrosion-time.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/feuer-wasser-korrosion-zeit.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/feu-eau-corrosion-temps.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/protection/mistakes-never-to-make.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/mistakes-never-to-make.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/fehler-die-nie-passieren-duerfen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/protection/one-copy-or-more.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/one-copy-or-more.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/eine-oder-mehrere-kopien.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/une-copie-ou-plusieurs.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/protection/paper-vs-metal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/paper-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/papier-vs-metall.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/papier-vs-metal.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/protection/where-to-store-backup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/where-to-store-backup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/wo-backup-aufbewahren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/ou-stocker-sa-sauvegarde.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/protection/why-back-up-your-seed.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/why-back-up-your-seed.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/warum-seed-sichern.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/seed/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/seed/create-seed-offline.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/create-seed-offline.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/seed-offline-erstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/creer-seed-hors-ligne.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/seed/restore-a-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/restore-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/wallet-wiederherstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/restaurer-un-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/seed/the-2048-bip39-words.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/the-2048-bip39-words.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/die-2048-bip39-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/les-2048-mots-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/seed/understanding-11-bits.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/11-bits-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-les-11-bits.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/seed/understanding-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/bip39-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/seed/understanding-checksum.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-checksum.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/pruefsumme-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/checksum-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/seed/what-is-a-seed-phrase.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/what-is-a-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/was-ist-eine-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/quest-ce-quune-seed-phrase.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/seed/where-12-or-24-words-come-from.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/where-12-or-24-words-come-from.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/woher-kommen-12-oder-24-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/origine-12-24-mots.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/wallet/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/wallet/exchange-vs-personal-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/exchange-vs-personal-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/boerse-vs-eigenes-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/exchange-vs-wallet-personnel.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/wallet/hardware-wallet-lost.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/hardware-wallet-lost.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/hardware-wallet-verloren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/hardware-wallet-disparait.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/wallet/how-hardware-wallets-work.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-hardware-wallets-work.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ein-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/wallet/how-ledger-works.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-ledger-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-ledger.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/wallet/what-is-a-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/what-is-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/was-ist-ein-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/quest-ce-quun-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/academy/wallet/where-crypto-really-is.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/where-crypto-really-is.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wo-sind-kryptowerte-wirklich.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
   </url>
   <url>
     <loc>https://satona.fr/binary.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/binary.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/binary.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/binary.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/binary.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/binary.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/binary.html" />
   </url>
   <url>
-    <loc>https://satona.fr/visualizer.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/visualizer.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/visualizer.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/visualizer.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/visualizer.html" />
-  </url>
-  <url>
-    <loc>https://satona.fr/fr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/" />
-  </url>
-  <url>
-    <loc>https://satona.fr/fr/bip39.html</loc>
+    <loc>https://satona.fr/bip39.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/bip39.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/bip39.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/bip39.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/bip39.html" />
-  </url>
-  <url>
-    <loc>https://satona.fr/fr/howitworks.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/howitworks.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/howitworks.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/howitworks.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/howitworks.html" />
-  </url>
-  <url>
-    <loc>https://satona.fr/fr/security.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/security.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/security.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/security.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/security.html" />
-  </url>
-  <url>
-    <loc>https://satona.fr/fr/product.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/product.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/product.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/product.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/product.html" />
-  </url>
-  <url>
-    <loc>https://satona.fr/fr/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/faq.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/faq.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/faq.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/faq.html" />
-  </url>
-  <url>
-    <loc>https://satona.fr/fr/binary.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/binary.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/binary.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/binary.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/binary.html" />
-  </url>
-  <url>
-    <loc>https://satona.fr/fr/visualizer.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/visualizer.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/visualizer.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/visualizer.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/visualizer.html" />
   </url>
   <url>
     <loc>https://satona.fr/de/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/" />
   </url>
   <url>
-    <loc>https://satona.fr/de/bip39.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/bip39.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/bip39.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/bip39.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/bip39.html" />
+    <loc>https://satona.fr/de/academy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/academy/" />
   </url>
   <url>
-    <loc>https://satona.fr/de/howitworks.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/howitworks.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/howitworks.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/howitworks.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/howitworks.html" />
+    <loc>https://satona.fr/de/academy/advanced/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/" />
   </url>
   <url>
-    <loc>https://satona.fr/de/security.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/security.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/security.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/security.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/security.html" />
+    <loc>https://satona.fr/de/academy/advanced/bedrohungsmodell.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/threat-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bedrohungsmodell.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/modele-de-menace.html" />
   </url>
   <url>
-    <loc>https://satona.fr/de/product.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/product.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/product.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/product.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/product.html" />
+    <loc>https://satona.fr/de/academy/advanced/bip32-hierarchische-ableitung.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip32-hierarchical-derivation.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip32-hierarchische-ableitung.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip32-derivation-hierarchique.html" />
   </url>
   <url>
-    <loc>https://satona.fr/de/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/faq.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/faq.html" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/faq.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/faq.html" />
+    <loc>https://satona.fr/de/academy/advanced/bip39-passphrase.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/passphrase-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/advanced/bip44.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip44.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/advanced/multisig.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/multisig.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/advanced/vererbung-weitergabe.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/inheritance.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/vererbung-weitergabe.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/heritage-transmission.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/bitcoin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/bitcoin/privater-oeffentlicher-schluessel-adresse.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/private-public-key-address.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/privater-oeffentlicher-schluessel-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/bitcoin/was-bitcoin-besitzen-bedeutet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-owning-bitcoin-means.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-bitcoin-besitzen-bedeutet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/bitcoin/was-ist-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-que-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/bitcoin/was-ist-eine-blockchain.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-a-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-eine-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-quune-blockchain.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/bitcoin/wer-betreibt-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/who-runs-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wer-betreibt-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/bitcoin/wie-funktioniert-eine-transaktion.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/how-a-transaction-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wie-funktioniert-eine-transaktion.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/protection/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/protection/eine-oder-mehrere-kopien.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/one-copy-or-more.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/eine-oder-mehrere-kopien.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/une-copie-ou-plusieurs.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/protection/fehler-die-nie-passieren-duerfen.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/mistakes-never-to-make.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/fehler-die-nie-passieren-duerfen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/protection/feuer-wasser-korrosion-zeit.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/fire-water-corrosion-time.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/feuer-wasser-korrosion-zeit.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/feu-eau-corrosion-temps.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/protection/papier-vs-metall.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/paper-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/papier-vs-metall.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/papier-vs-metal.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/protection/warum-seed-sichern.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/why-back-up-your-seed.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/warum-seed-sichern.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/protection/wo-backup-aufbewahren.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/where-to-store-backup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/wo-backup-aufbewahren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/ou-stocker-sa-sauvegarde.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/seed/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/seed/11-bits-verstehen.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/11-bits-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-les-11-bits.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/seed/bip39-verstehen.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/bip39-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/seed/die-2048-bip39-woerter.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/the-2048-bip39-words.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/die-2048-bip39-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/les-2048-mots-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/seed/pruefsumme-verstehen.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-checksum.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/pruefsumme-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/checksum-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/seed/seed-offline-erstellen.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/create-seed-offline.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/seed-offline-erstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/creer-seed-hors-ligne.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/seed/wallet-wiederherstellen.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/restore-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/wallet-wiederherstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/restaurer-un-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/seed/was-ist-eine-seed-phrase.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/what-is-a-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/was-ist-eine-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/quest-ce-quune-seed-phrase.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/seed/woher-kommen-12-oder-24-woerter.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/where-12-or-24-words-come-from.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/woher-kommen-12-oder-24-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/origine-12-24-mots.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/wallet/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/wallet/boerse-vs-eigenes-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/exchange-vs-personal-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/boerse-vs-eigenes-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/exchange-vs-wallet-personnel.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/wallet/hardware-wallet-verloren.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/hardware-wallet-lost.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/hardware-wallet-verloren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/hardware-wallet-disparait.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/wallet/was-ist-ein-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/what-is-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/was-ist-ein-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/quest-ce-quun-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/wallet/wie-funktioniert-ein-hardware-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-hardware-wallets-work.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ein-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/wallet/wie-funktioniert-ledger.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-ledger-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-ledger.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/academy/wallet/wo-sind-kryptowerte-wirklich.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/where-crypto-really-is.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wo-sind-kryptowerte-wirklich.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
   </url>
   <url>
     <loc>https://satona.fr/de/binary.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/binary.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/binary.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/binary.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/binary.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/binary.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/binary.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/faq.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/howitworks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/howitworks.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/product.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/product.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/product.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/product.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/product.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/de/security.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/security.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/security.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/security.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/security.html" />
   </url>
   <url>
     <loc>https://satona.fr/de/visualizer.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/visualizer.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/visualizer.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/visualizer.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/visualizer.html" />
   </url>
-  <url><loc>https://satona.fr/academy/advanced/bip32-hierarchical-derivation.html</loc></url>
-  <url><loc>https://satona.fr/academy/advanced/bip39-passphrase.html</loc></url>
-  <url><loc>https://satona.fr/academy/advanced/bip44.html</loc></url>
-  <url><loc>https://satona.fr/academy/advanced/</loc></url>
-  <url><loc>https://satona.fr/academy/advanced/inheritance.html</loc></url>
-  <url><loc>https://satona.fr/academy/advanced/multisig.html</loc></url>
-  <url><loc>https://satona.fr/academy/advanced/threat-model.html</loc></url>
-  <url><loc>https://satona.fr/academy/bitcoin/how-a-transaction-works.html</loc></url>
-  <url><loc>https://satona.fr/academy/bitcoin/</loc></url>
-  <url><loc>https://satona.fr/academy/bitcoin/private-public-key-address.html</loc></url>
-  <url><loc>https://satona.fr/academy/bitcoin/what-is-a-blockchain.html</loc></url>
-  <url><loc>https://satona.fr/academy/bitcoin/what-is-bitcoin.html</loc></url>
-  <url><loc>https://satona.fr/academy/bitcoin/what-owning-bitcoin-means.html</loc></url>
-  <url><loc>https://satona.fr/academy/</loc></url>
-  <url><loc>https://satona.fr/academy/protection/fire-water-corrosion-time.html</loc></url>
-  <url><loc>https://satona.fr/academy/protection/</loc></url>
-  <url><loc>https://satona.fr/academy/protection/mistakes-never-to-make.html</loc></url>
-  <url><loc>https://satona.fr/academy/protection/one-copy-or-more.html</loc></url>
-  <url><loc>https://satona.fr/academy/protection/paper-vs-metal.html</loc></url>
-  <url><loc>https://satona.fr/academy/protection/where-to-store-backup.html</loc></url>
-  <url><loc>https://satona.fr/academy/protection/why-back-up-your-seed.html</loc></url>
-  <url><loc>https://satona.fr/academy/seed/create-seed-offline.html</loc></url>
-  <url><loc>https://satona.fr/academy/seed/</loc></url>
-  <url><loc>https://satona.fr/academy/seed/restore-a-wallet.html</loc></url>
-  <url><loc>https://satona.fr/academy/seed/the-2048-bip39-words.html</loc></url>
-  <url><loc>https://satona.fr/academy/seed/understanding-11-bits.html</loc></url>
-  <url><loc>https://satona.fr/academy/seed/understanding-bip39.html</loc></url>
-  <url><loc>https://satona.fr/academy/seed/understanding-checksum.html</loc></url>
-  <url><loc>https://satona.fr/academy/seed/what-is-a-seed-phrase.html</loc></url>
-  <url><loc>https://satona.fr/academy/seed/where-12-or-24-words-come-from.html</loc></url>
-  <url><loc>https://satona.fr/academy/wallet/exchange-vs-personal-wallet.html</loc></url>
-  <url><loc>https://satona.fr/academy/wallet/hardware-wallet-lost.html</loc></url>
-  <url><loc>https://satona.fr/academy/wallet/how-hardware-wallets-work.html</loc></url>
-  <url><loc>https://satona.fr/academy/wallet/how-ledger-works.html</loc></url>
-  <url><loc>https://satona.fr/academy/wallet/</loc></url>
-  <url><loc>https://satona.fr/academy/wallet/what-is-a-wallet.html</loc></url>
-  <url><loc>https://satona.fr/academy/wallet/where-crypto-really-is.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/advanced/bip32-derivation-hierarchique.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/advanced/bip44.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/advanced/heritage-transmission.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/advanced/</loc></url>
-  <url><loc>https://satona.fr/fr/academy/advanced/modele-de-menace.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/advanced/multisig.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/advanced/passphrase-bip39.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/bitcoin/cle-privee-cle-publique-adresse.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/bitcoin/comment-fonctionne-une-transaction.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/bitcoin/</loc></url>
-  <url><loc>https://satona.fr/fr/academy/bitcoin/que-signifie-posseder-bitcoin.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/bitcoin/quest-ce-que-bitcoin.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/bitcoin/quest-ce-quune-blockchain.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/</loc></url>
-  <url><loc>https://satona.fr/fr/academy/protection/erreurs-a-ne-jamais-commettre.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/protection/feu-eau-corrosion-temps.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/protection/</loc></url>
-  <url><loc>https://satona.fr/fr/academy/protection/ou-stocker-sa-sauvegarde.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/protection/papier-vs-metal.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/protection/pourquoi-sauvegarder-sa-seed.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/protection/une-copie-ou-plusieurs.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/seed/checksum-bip39.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/seed/comprendre-bip39.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/seed/comprendre-les-11-bits.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/seed/creer-seed-hors-ligne.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/seed/</loc></url>
-  <url><loc>https://satona.fr/fr/academy/seed/les-2048-mots-bip39.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/seed/origine-12-24-mots.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/seed/quest-ce-quune-seed-phrase.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/seed/restaurer-un-wallet.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/wallet/comment-fonctionne-un-hardware-wallet.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/wallet/comment-fonctionne-un-ledger.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/wallet/exchange-vs-wallet-personnel.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/wallet/hardware-wallet-disparait.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/wallet/</loc></url>
-  <url><loc>https://satona.fr/fr/academy/wallet/ou-sont-reellement-vos-cryptos.html</loc></url>
-  <url><loc>https://satona.fr/fr/academy/wallet/quest-ce-quun-wallet.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/advanced/bedrohungsmodell.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/advanced/bip32-hierarchische-ableitung.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/advanced/bip39-passphrase.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/advanced/bip44.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/advanced/</loc></url>
-  <url><loc>https://satona.fr/de/academy/advanced/multisig.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/advanced/vererbung-weitergabe.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/bitcoin/</loc></url>
-  <url><loc>https://satona.fr/de/academy/bitcoin/privater-oeffentlicher-schluessel-adresse.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/bitcoin/was-bitcoin-besitzen-bedeutet.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/bitcoin/was-ist-bitcoin.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/bitcoin/was-ist-eine-blockchain.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/bitcoin/wie-funktioniert-eine-transaktion.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/</loc></url>
-  <url><loc>https://satona.fr/de/academy/protection/eine-oder-mehrere-kopien.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/protection/fehler-die-nie-passieren-duerfen.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/protection/feuer-wasser-korrosion-zeit.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/protection/</loc></url>
-  <url><loc>https://satona.fr/de/academy/protection/papier-vs-metall.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/protection/warum-seed-sichern.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/protection/wo-backup-aufbewahren.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/seed/11-bits-verstehen.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/seed/bip39-verstehen.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/seed/die-2048-bip39-woerter.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/seed/</loc></url>
-  <url><loc>https://satona.fr/de/academy/seed/pruefsumme-verstehen.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/seed/seed-offline-erstellen.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/seed/wallet-wiederherstellen.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/seed/was-ist-eine-seed-phrase.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/seed/woher-kommen-12-oder-24-woerter.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/wallet/boerse-vs-eigenes-wallet.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/wallet/hardware-wallet-verloren.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/wallet/</loc></url>
-  <url><loc>https://satona.fr/de/academy/wallet/was-ist-ein-wallet.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/wallet/wie-funktioniert-ein-hardware-wallet.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/wallet/wie-funktioniert-ledger.html</loc></url>
-  <url><loc>https://satona.fr/de/academy/wallet/wo-sind-kryptowerte-wirklich.html</loc></url>
+  <url>
+    <loc>https://satona.fr/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/advanced/bip32-derivation-hierarchique.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip32-hierarchical-derivation.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip32-hierarchische-ableitung.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip32-derivation-hierarchique.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/advanced/bip44.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip44.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/advanced/heritage-transmission.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/inheritance.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/vererbung-weitergabe.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/heritage-transmission.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/advanced/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/advanced/modele-de-menace.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/threat-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bedrohungsmodell.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/modele-de-menace.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/advanced/multisig.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/multisig.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/advanced/passphrase-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/passphrase-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/bitcoin/cle-privee-cle-publique-adresse.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/private-public-key-address.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/privater-oeffentlicher-schluessel-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/bitcoin/comment-fonctionne-une-transaction.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/how-a-transaction-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wie-funktioniert-eine-transaktion.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/bitcoin/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/bitcoin/que-signifie-posseder-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-owning-bitcoin-means.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-bitcoin-besitzen-bedeutet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/bitcoin/quest-ce-que-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-que-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/bitcoin/quest-ce-quune-blockchain.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-a-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-eine-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-quune-blockchain.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/bitcoin/qui-fait-fonctionner-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/who-runs-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wer-betreibt-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/academy/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/protection/erreurs-a-ne-jamais-commettre.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/mistakes-never-to-make.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/fehler-die-nie-passieren-duerfen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/protection/feu-eau-corrosion-temps.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/fire-water-corrosion-time.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/feuer-wasser-korrosion-zeit.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/feu-eau-corrosion-temps.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/protection/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/protection/ou-stocker-sa-sauvegarde.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/where-to-store-backup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/wo-backup-aufbewahren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/ou-stocker-sa-sauvegarde.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/protection/papier-vs-metal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/paper-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/papier-vs-metall.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/papier-vs-metal.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/protection/pourquoi-sauvegarder-sa-seed.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/why-back-up-your-seed.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/warum-seed-sichern.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/protection/une-copie-ou-plusieurs.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/one-copy-or-more.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/eine-oder-mehrere-kopien.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/une-copie-ou-plusieurs.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/seed/checksum-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-checksum.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/pruefsumme-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/checksum-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/seed/comprendre-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/bip39-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/seed/comprendre-les-11-bits.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/11-bits-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-les-11-bits.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/seed/creer-seed-hors-ligne.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/create-seed-offline.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/seed-offline-erstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/creer-seed-hors-ligne.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/seed/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/seed/les-2048-mots-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/the-2048-bip39-words.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/die-2048-bip39-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/les-2048-mots-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/seed/origine-12-24-mots.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/where-12-or-24-words-come-from.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/woher-kommen-12-oder-24-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/origine-12-24-mots.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/seed/quest-ce-quune-seed-phrase.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/what-is-a-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/was-ist-eine-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/quest-ce-quune-seed-phrase.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/seed/restaurer-un-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/restore-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/wallet-wiederherstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/restaurer-un-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/wallet/comment-fonctionne-un-hardware-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-hardware-wallets-work.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ein-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/wallet/comment-fonctionne-un-ledger.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-ledger-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-ledger.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/wallet/exchange-vs-wallet-personnel.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/exchange-vs-personal-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/boerse-vs-eigenes-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/exchange-vs-wallet-personnel.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/wallet/hardware-wallet-disparait.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/hardware-wallet-lost.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/hardware-wallet-verloren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/hardware-wallet-disparait.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/wallet/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/wallet/ou-sont-reellement-vos-cryptos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/where-crypto-really-is.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wo-sind-kryptowerte-wirklich.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/academy/wallet/quest-ce-quun-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/what-is-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/was-ist-ein-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/quest-ce-quun-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/binary.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/binary.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/binary.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/binary.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/binary.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/binary.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/binary.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/faq.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/howitworks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/howitworks.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/merci.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.satona.fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.satona.fr/de/merci.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.satona.fr/merci.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/product.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/product.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/product.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/product.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/product.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/security.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/security.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/security.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/security.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/security.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/es/visualizer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/visualizer.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/faq.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/academy/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/advanced/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/advanced/bip32-derivation-hierarchique.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip32-hierarchical-derivation.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip32-hierarchische-ableitung.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip32-derivation-hierarchique.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/advanced/bip44.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip44.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/advanced/heritage-transmission.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/inheritance.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/vererbung-weitergabe.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/heritage-transmission.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/advanced/modele-de-menace.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/threat-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bedrohungsmodell.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/modele-de-menace.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/advanced/multisig.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/multisig.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/advanced/passphrase-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/passphrase-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/bitcoin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/bitcoin/cle-privee-cle-publique-adresse.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/private-public-key-address.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/privater-oeffentlicher-schluessel-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/bitcoin/comment-fonctionne-une-transaction.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/how-a-transaction-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wie-funktioniert-eine-transaktion.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/bitcoin/que-signifie-posseder-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-owning-bitcoin-means.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-bitcoin-besitzen-bedeutet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/bitcoin/quest-ce-que-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-que-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/bitcoin/quest-ce-quune-blockchain.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-a-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-eine-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-quune-blockchain.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/bitcoin/qui-fait-fonctionner-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/who-runs-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wer-betreibt-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/protection/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/protection/erreurs-a-ne-jamais-commettre.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/mistakes-never-to-make.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/fehler-die-nie-passieren-duerfen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/protection/feu-eau-corrosion-temps.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/fire-water-corrosion-time.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/feuer-wasser-korrosion-zeit.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/feu-eau-corrosion-temps.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/protection/ou-stocker-sa-sauvegarde.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/where-to-store-backup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/wo-backup-aufbewahren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/ou-stocker-sa-sauvegarde.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/protection/papier-vs-metal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/paper-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/papier-vs-metall.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/papier-vs-metal.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/protection/pourquoi-sauvegarder-sa-seed.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/why-back-up-your-seed.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/warum-seed-sichern.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/protection/une-copie-ou-plusieurs.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/one-copy-or-more.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/eine-oder-mehrere-kopien.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/une-copie-ou-plusieurs.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/seed/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/seed/checksum-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-checksum.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/pruefsumme-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/checksum-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/seed/comprendre-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/bip39-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/seed/comprendre-les-11-bits.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/11-bits-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-les-11-bits.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/seed/creer-seed-hors-ligne.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/create-seed-offline.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/seed-offline-erstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/creer-seed-hors-ligne.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/seed/les-2048-mots-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/the-2048-bip39-words.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/die-2048-bip39-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/les-2048-mots-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/seed/origine-12-24-mots.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/where-12-or-24-words-come-from.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/woher-kommen-12-oder-24-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/origine-12-24-mots.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/seed/quest-ce-quune-seed-phrase.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/what-is-a-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/was-ist-eine-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/quest-ce-quune-seed-phrase.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/seed/restaurer-un-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/restore-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/wallet-wiederherstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/restaurer-un-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/wallet/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/wallet/comment-fonctionne-un-hardware-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-hardware-wallets-work.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ein-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/wallet/comment-fonctionne-un-ledger.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-ledger-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-ledger.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/wallet/exchange-vs-wallet-personnel.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/exchange-vs-personal-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/boerse-vs-eigenes-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/exchange-vs-wallet-personnel.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/wallet/hardware-wallet-disparait.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/hardware-wallet-lost.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/hardware-wallet-verloren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/hardware-wallet-disparait.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/wallet/ou-sont-reellement-vos-cryptos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/where-crypto-really-is.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wo-sind-kryptowerte-wirklich.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/academy/wallet/quest-ce-quun-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/what-is-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/was-ist-ein-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/quest-ce-quun-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/binary.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/binary.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/binary.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/binary.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/binary.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/binary.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/binary.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/faq.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/howitworks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/howitworks.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/product.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/product.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/product.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/product.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/product.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/security.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/security.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/security.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/security.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/security.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/fr/visualizer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/visualizer.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/howitworks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/howitworks.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/advanced/bip32-derivation-hierarchique.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip32-hierarchical-derivation.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip32-hierarchische-ableitung.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip32-derivation-hierarchique.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip32-derivation-hierarchique.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/advanced/bip44.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/bip44.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/bip44.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/advanced/heritage-transmission.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/inheritance.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/vererbung-weitergabe.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/heritage-transmission.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/heritage-transmission.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/advanced/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/advanced/modele-de-menace.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/threat-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bedrohungsmodell.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/modele-de-menace.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/modele-de-menace.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/advanced/multisig.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/multisig.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/multisig.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/advanced/passphrase-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/advanced/bip39-passphrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/advanced/passphrase-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/advanced/passphrase-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/bitcoin/cle-privee-cle-publique-adresse.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/private-public-key-address.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/privater-oeffentlicher-schluessel-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/cle-privee-cle-publique-adresse.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/bitcoin/comment-fonctionne-une-transaction.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/how-a-transaction-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wie-funktioniert-eine-transaktion.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/comment-fonctionne-une-transaction.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/bitcoin/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/bitcoin/que-signifie-posseder-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-owning-bitcoin-means.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-bitcoin-besitzen-bedeutet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/que-signifie-posseder-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/bitcoin/quest-ce-que-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-que-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-que-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/bitcoin/quest-ce-quune-blockchain.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/what-is-a-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/was-ist-eine-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/quest-ce-quune-blockchain.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/quest-ce-quune-blockchain.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/bitcoin/qui-fait-fonctionner-bitcoin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/bitcoin/who-runs-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/bitcoin/wer-betreibt-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/bitcoin/qui-fait-fonctionner-bitcoin.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/academy/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/protection/erreurs-a-ne-jamais-commettre.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/mistakes-never-to-make.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/fehler-die-nie-passieren-duerfen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/erreurs-a-ne-jamais-commettre.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/protection/feu-eau-corrosion-temps.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/fire-water-corrosion-time.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/feuer-wasser-korrosion-zeit.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/feu-eau-corrosion-temps.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/feu-eau-corrosion-temps.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/protection/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/protection/ou-stocker-sa-sauvegarde.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/where-to-store-backup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/wo-backup-aufbewahren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/ou-stocker-sa-sauvegarde.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/ou-stocker-sa-sauvegarde.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/protection/papier-vs-metal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/paper-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/papier-vs-metall.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/papier-vs-metal.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/papier-vs-metal.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/protection/pourquoi-sauvegarder-sa-seed.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/why-back-up-your-seed.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/warum-seed-sichern.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/pourquoi-sauvegarder-sa-seed.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/protection/une-copie-ou-plusieurs.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/protection/one-copy-or-more.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/protection/eine-oder-mehrere-kopien.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/protection/une-copie-ou-plusieurs.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/protection/une-copie-ou-plusieurs.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/seed/checksum-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-checksum.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/pruefsumme-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/checksum-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/checksum-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/seed/comprendre-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/bip39-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/seed/comprendre-les-11-bits.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/understanding-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/11-bits-verstehen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/comprendre-les-11-bits.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/comprendre-les-11-bits.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/seed/creer-seed-hors-ligne.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/create-seed-offline.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/seed-offline-erstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/creer-seed-hors-ligne.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/creer-seed-hors-ligne.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/seed/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/seed/les-2048-mots-bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/the-2048-bip39-words.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/die-2048-bip39-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/les-2048-mots-bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/les-2048-mots-bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/seed/origine-12-24-mots.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/where-12-or-24-words-come-from.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/woher-kommen-12-oder-24-woerter.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/origine-12-24-mots.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/origine-12-24-mots.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/seed/quest-ce-quune-seed-phrase.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/what-is-a-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/was-ist-eine-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/quest-ce-quune-seed-phrase.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/quest-ce-quune-seed-phrase.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/seed/restaurer-un-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/seed/restore-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/seed/wallet-wiederherstellen.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/seed/restaurer-un-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/seed/restaurer-un-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/wallet/comment-fonctionne-un-hardware-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-hardware-wallets-work.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ein-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-hardware-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/wallet/comment-fonctionne-un-ledger.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/how-ledger-works.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wie-funktioniert-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/comment-fonctionne-un-ledger.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/comment-fonctionne-un-ledger.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/wallet/exchange-vs-wallet-personnel.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/exchange-vs-personal-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/boerse-vs-eigenes-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/exchange-vs-wallet-personnel.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/exchange-vs-wallet-personnel.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/wallet/hardware-wallet-disparait.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/hardware-wallet-lost.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/hardware-wallet-verloren.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/hardware-wallet-disparait.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/hardware-wallet-disparait.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/wallet/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/wallet/ou-sont-reellement-vos-cryptos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/where-crypto-really-is.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/wo-sind-kryptowerte-wirklich.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/ou-sont-reellement-vos-cryptos.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/academy/wallet/quest-ce-quun-wallet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/academy/wallet/what-is-a-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/academy/wallet/was-ist-ein-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/academy/wallet/quest-ce-quun-wallet.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/academy/wallet/quest-ce-quun-wallet.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/binary.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/binary.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/binary.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/binary.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/binary.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/binary.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/binary.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/bip39.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/bip39.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/bip39.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/faq.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/faq.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/faq.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/faq.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/faq.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/howitworks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/howitworks.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/howitworks.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/merci.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.satona.fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.satona.fr/de/merci.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.satona.fr/merci.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/product.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/product.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/product.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/product.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/product.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/security.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/security.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/security.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/security.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/security.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/it/visualizer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/visualizer.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/product.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/product.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/product.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/product.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/product.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/product.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/security.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/security.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/security.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/security.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/security.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/security.html" />
+  </url>
+  <url>
+    <loc>https://satona.fr/visualizer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://satona.fr/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://satona.fr/fr/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://satona.fr/de/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://satona.fr/it/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://satona.fr/es/visualizer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://satona.fr/visualizer.html" />
+  </url>
+  <url>
+    <loc>https://www.satona.fr/de/merci.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.satona.fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.satona.fr/de/merci.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.satona.fr/merci.html" />
+  </url>
+  <url>
+    <loc>https://www.satona.fr/fr/merci.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.satona.fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.satona.fr/de/merci.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.satona.fr/merci.html" />
+  </url>
+  <url>
+    <loc>https://www.satona.fr/merci.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.satona.fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.satona.fr/de/merci.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.satona.fr/fr/merci.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.satona.fr/merci.html" />
+  </url>
 </urlset>
