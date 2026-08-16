@@ -5,7 +5,7 @@
 /* Academy portal — editorial homepage */
 .academy-hero{min-height:min(820px,calc(100vh - 89px));padding:72px 0 82px;background-image:linear-gradient(90deg,rgba(5,5,5,.94) 0%,rgba(5,5,5,.74) 40%,rgba(5,5,5,.2) 75%,rgba(5,5,5,.05) 100%),url('/assets/images/bg_satonaacademy_hero.png')}
 .academy-hero__content{max-width:720px}
-.academy-hero__logo{width:clamp(240px,25vw,380px);margin:0 0 48px}
+.academy-hero__logo{width:clamp(360px,38vw,600px);margin:0 0 48px}
 .academy-hero__motto{font-size:clamp(44px,4.5vw,72px);font-weight:750;line-height:.98;max-width:700px;margin:0 0 28px}
 .academy-section--story{position:relative;border-top:1px solid #c8a96b18}
 .academy-section--story:nth-of-type(even){background:linear-gradient(110deg,#c8a96b05,transparent 45%)}
@@ -40,7 +40,7 @@
 @media(max-width:760px){
  .academy-hero{min-height:570px;padding:48px 0 58px;background-position:64% center}
  .academy-hero__content{max-width:100%}
- .academy-hero__logo{width:min(240px,72vw);margin-bottom:28px}
+ .academy-hero__logo{width:min(100%,clamp(260px,72vw,390px));margin-bottom:28px}
  .academy-hero__motto{font-size:clamp(38px,11vw,54px);margin-bottom:20px}
  .academy-lead{font-size:.98rem;line-height:1.55;max-width:95%}
  .academy-actions{margin-top:25px}
