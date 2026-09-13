@@ -1930,4 +1930,20 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.satona.fr/fr/merci.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.satona.fr/merci.html" />
   </url>
+
+  <url><loc>https://satona.fr/legal.html</loc></url>
+  <url><loc>https://satona.fr/terms.html</loc></url>
+  <url><loc>https://satona.fr/privacy.html</loc></url>
+  <url><loc>https://satona.fr/fr/legal.html</loc></url>
+  <url><loc>https://satona.fr/fr/terms.html</loc></url>
+  <url><loc>https://satona.fr/fr/privacy.html</loc></url>
+  <url><loc>https://satona.fr/de/legal.html</loc></url>
+  <url><loc>https://satona.fr/de/terms.html</loc></url>
+  <url><loc>https://satona.fr/de/privacy.html</loc></url>
+  <url><loc>https://satona.fr/it/legal.html</loc></url>
+  <url><loc>https://satona.fr/it/terms.html</loc></url>
+  <url><loc>https://satona.fr/it/privacy.html</loc></url>
+  <url><loc>https://satona.fr/es/legal.html</loc></url>
+  <url><loc>https://satona.fr/es/terms.html</loc></url>
+  <url><loc>https://satona.fr/es/privacy.html</loc></url>
 </urlset>

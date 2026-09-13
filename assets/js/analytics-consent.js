@@ -16,6 +16,14 @@
     de: {
       message: 'Wir verwenden Google Analytics, um die Nutzung der Website anonym zu messen und das Erlebnis zu verbessern.',
       accept: 'Akzeptieren', decline: 'Ablehnen', preferences: 'Cookie-Einstellungen', label: 'Analytics-Einstellungen'
+    },
+    it: {
+      message: "Utilizziamo Google Analytics per misurare in forma anonima l'uso del sito e migliorare l'esperienza.",
+      accept: 'Accetta', decline: 'Rifiuta', preferences: 'Preferenze cookie', label: 'Preferenze Analytics'
+    },
+    es: {
+      message: 'Utilizamos Google Analytics para medir de forma anónima el uso del sitio y mejorar la experiencia.',
+      accept: 'Aceptar', decline: 'Rechazar', preferences: 'Preferencias de cookies', label: 'Preferencias de Analytics'
     }
   };
 
@@ -159,7 +167,7 @@
   };
 
   const createPreferencesButton = () => {
-    const footer = document.querySelector('.footer-inner');
+    const footer = document.querySelector('[data-cookie-preferences]');
     if (!footer) return;
     const button = document.createElement('button');
     button.type = 'button';
@@ -169,7 +177,7 @@
       banner.hidden = false;
       banner.querySelector('button').focus();
     });
-    footer.append(button);
+    footer.replaceWith(button);
   };
 
   const initialise = () => {
